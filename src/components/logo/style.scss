@@ -1,0 +1,25 @@
+@import "~style/variables";
+
+svg {
+	transition: transform $t $e;
+
+	overflow: visible;
+
+	&.shrunk {
+		transform: scale(0.333, 0.333);
+	}
+
+	.trapezoid {
+
+	}
+
+	.triangle {
+		transition: transform $t $e;
+		transform-origin: bottom right;
+		transform: translate(55px, 45px);
+		
+		&.grown {
+			transform: scale(1.4, 1.4) translate(55px, 45px);
+		}
+	}
+}

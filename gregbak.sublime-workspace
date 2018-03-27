@@ -1,0 +1,485 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"push",
+				"pushMovies"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"get",
+				"getData"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"link",
+				"linkState"
+			],
+			[
+				"lnk",
+				"linkState"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"hand",
+				"handleDelete"
+			],
+			[
+				"handle",
+				"handleDelete"
+			],
+			[
+				"a",
+				"activeUser"
+			],
+			[
+				"ch",
+				"check"
+			],
+			[
+				"had",
+				"handleClick"
+			],
+			[
+				"hadn",
+				"handleSubmit"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"che",
+				"checks"
+			],
+			[
+				"check",
+				"Check"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"vert",
+				"vertices"
+			],
+			[
+				"Del",
+				"Delaunay2D"
+			],
+			[
+				"we",
+				"weightMatrix"
+			],
+			[
+				"bipa",
+				"bipartiteB"
+			],
+			[
+				"biap",
+				"bipartiteA"
+			],
+			[
+				"bip",
+				"bipartiteB"
+			],
+			[
+				"bipartite",
+				"bipartiteB"
+			],
+			[
+				"Bipa",
+				"bipartiteA"
+			],
+			[
+				"maxmi",
+				"maximalMatching"
+			],
+			[
+				"adja",
+				"adjacencyList"
+			],
+			[
+				"ver",
+				"vertices"
+			],
+			[
+				"e",
+				"edges"
+			],
+			[
+				"stroek",
+				"strokeStyle"
+			],
+			[
+				"lin",
+				"lineTo"
+			],
+			[
+				"mini",
+				"minimumspanningtree"
+			],
+			[
+				"sor",
+				"sortedEdges"
+			],
+			[
+				"ok",
+				"okrąg"
+			],
+			[
+				"k",
+				"krawędzie"
+			],
+			[
+				"con",
+				"continue"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"abs",
+				"abs_y2_y3"
+			],
+			[
+				"or",
+				"otwarte"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"packageinst",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax C+",
+				"Set Syntax: C++"
+			],
+			[
+				"cpp",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sideba",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"material",
+				"Material Theme: Configuration"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/greg/Sites/gregbak",
+		"/Users/greg/Sites/gregbak/src",
+		"/Users/greg/Sites/gregbak/src/assets"
+	],
+	"file_history":
+	[
+		"/Users/greg/Sites/gregbak/package.json",
+		"/Users/greg/Sites/gregbak/build/site.webmanifest",
+		"/Users/greg/Sites/gregbak/src/template.html",
+		"/Users/greg/Sites/gregbak/src/favicon.src.svg",
+		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/api.php",
+		"/Users/greg/Sites/movielist/src/api.js",
+		"/Users/greg/Sites/movielist/src/routes/login/index.js",
+		"/Users/greg/Sites/movielist/src/components/app.js",
+		"/Users/greg/Sites/movielist/src/routes/home/index.js",
+		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/.htaccess 2",
+		"/Users/greg/Sites/movielist/src/manifest.json",
+		"/Users/greg/Sites/movielist/filmolista/index.html",
+		"/Users/greg/Sites/movielist/src/index.js",
+		"/Users/Greg/Sites/movielist/filmolista/index.html",
+		"/Users/greg/Sites/movielist/package.json",
+		"/Users/greg/Sites/movielist/build/index.html",
+		"/Users/greg/Sites/movielist/src/browserconfig.xml",
+		"/Users/greg/Sites/movielist/api.php",
+		"/Users/greg/Sites/movielist/data.json",
+		"/Users/greg/Sites/movielist/src/components/list/index.js",
+		"/Users/greg/Sites/movielist/src/components/adder/index.js",
+		"/Users/greg/Sites/movielist/src/routes/login/style.scss",
+		"/Users/greg/Sites/movielist/src/components/header/style.scss",
+		"/Users/greg/Sites/movielist/src/components/list/style.scss",
+		"/Users/greg/Sites/movielist/src/components/adder/style.scss",
+		"/Users/greg/Sites/movielist/src/routes/home/style.scss",
+		"/Users/greg/Sites/movielist/src/components/header/index.js",
+		"/Users/greg/Sites/movielist/api/data.json",
+		"/Users/greg/Sites/movielist/api/data.php",
+		"/Users/greg/Sites/movielist/api/user.php",
+		"/Users/greg/Sites/movielist/src/components/login/style.scss",
+		"/Users/greg/Sites/movielist/src/components/login/index.js",
+		"/Users/greg/Sites/movielist/src/style/_variables.scss",
+		"/Users/greg/Sites/movielist/api/magic.php",
+		"/Users/greg/Sites/movielist/src/.babelrc",
+		"/Users/greg/Sites/movielist/src/style/index.scss",
+		"/Users/greg/Sites/movielist/src/style/_reset.scss",
+		"/Users/greg/Sites/movielist/src/assets/favicon.src.svg",
+		"/Users/greg/Sites/movielist/src/site.webmanifest",
+		"/Users/greg/Desktop/cta.md",
+		"/Users/greg/Sites/gregbak/cms/views/about.php",
+		"/Users/greg/Desktop/DELAUNAY/index.html",
+		"/Users/greg/Desktop/DELAUNAY/alternative.py",
+		"/Users/greg/Desktop/Grafy/core.js",
+		"/Users/greg/Desktop/Grafy/hungarian.js",
+		"/Users/greg/Desktop/Grafy/index.html",
+		"/Users/greg/Desktop/Grafy/example.gxl",
+		"/Users/greg/Desktop/Grafy/match.js",
+		"/Users/greg/Desktop/Grafy/pool.js",
+		"/Users/greg/Desktop/Grafy/core-old.js",
+		"/Users/greg/Desktop/Grafy/style.css",
+		"/Users/greg/Desktop/Grafy/x2js.js",
+		"/Users/greg/.ssh/known_hosts",
+		"/Users/greg/Desktop/DELAUNAY/minimumspanningtree.js",
+		"/Users/greg/Desktop/DELAUNAY/delaunay.js",
+		"/Users/greg/Desktop/MinimumSpanningTreeDelaunay.html",
+		"/Users/greg/Desktop/MinimumSpanningTreeDelaunay.js",
+		"/Users/greg/Desktop/MinimumSpanningTreeDelanuay",
+		"/Users/greg/Sites/gregbak/cms/config.json",
+		"/Users/greg/Desktop/index.html",
+		"/Users/greg/Desktop/temp/logo.svg",
+		"/Applications/Adobe Photoshop CC 2018/Presets/Scripts/Stack Scripts Only/Terminology.jsx"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gregbak.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"adderscss",
+				"src/components/adder/style.scss"
+			],
+			[
+				"variables",
+				"src/style/_variables.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 353.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 714.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

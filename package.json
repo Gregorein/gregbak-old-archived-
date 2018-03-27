@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "gregbak",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "classnames": "^2.2.5",
+    "identity-obj-proxy": "^3.0.0",
+    "if-env": "^1.0.0",
+    "moment": "^2.21.0",
+    "node-sass": "^4.8.3",
+    "preact-cli": "^2.1.0",
+    "preact-render-spy": "^1.2.1",
+    "sass-loader": "^6.0.7"
+  },
+  "dependencies": {
+    "preact": "^8.2.6",
+    "preact-router": "^2.5.7"
+  }
+}
