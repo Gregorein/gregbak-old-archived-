@@ -2,6 +2,7 @@ import "./style";
 import { h, Component } from "preact";
 import { Router } from "preact-router";
 
+import Splash from "components/splash";
 import Home from "routes/home";
 
 if (module.hot) {
@@ -16,6 +17,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
+				<Splash />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 				</Router>
