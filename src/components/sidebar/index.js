@@ -29,7 +29,7 @@ export default class Sidebar extends Component {
 				}}
 			>
 				<nav>
-					<a href="/" title="home"><Logo /></a>
+					<a href="/" title="home"><Logo class={styles.logo} /></a>
 					<a href="/portfolio" title="portfolio">portfolio</a>
 					<a href="/contact" title="contact">contact</a>
 					<a href="/about" title="about">about</a>
