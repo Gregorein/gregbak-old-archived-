@@ -1,11 +1,11 @@
-import { h, Component } from "preact";
-import { Link } from "preact-router/match";
+import { h, Component } from "preact"
+import { Link } from "preact-router/match"
 
-import cn from "classnames";
-import style from "./style";
+import cn from "classnames"
+import style from "./style"
 
-export default class Logo extends Component {
-	render({color="#242429", state=3}) {
+export default class Splash extends Component {
+	render({color="#bf604b", state=4}) {
 		return (
 			<svg class={style.svg}>
 				<defs>
@@ -17,10 +17,10 @@ export default class Logo extends Component {
 						/>						
 						<path
 							class={cn(style.hole, {
-								[style.split]: state < 3,
-								[style.grown]: state === 0
+								[style.split]: state < 4,
+								[style.grown]: state < 2
 							})}
-							d="M1.000,73.000 L44.000,1.000 L87.000,73.000 L1.000,73.000 Z"
+							d="M1,73 L44,1 L87,73 L1,73 Z"
 							fill="black"
 						/>
 					</mask>
@@ -31,7 +31,7 @@ export default class Logo extends Component {
 					fill={color}
 					mask="url(#hole)"
 					class={cn(style.mask, {
-						[style.hidden]: state === 0
+						[style.hidden]: state < 2
 					})}
 				/>
 				<g
@@ -40,19 +40,22 @@ export default class Logo extends Component {
 					class={style.logo}
 				>
 					<path
-						class={style.trapezoid}
+						class={cn(style.trapezoid, {
+							[style.hidden]: state === 0
+						})}
 						fill={color}
-						d="M0.000,74.000 L44.000,-0.000 L65.000,35.500 L43.500,74.000 L0.000,74.000 Z"
+						d="M0,74 L44,-0 L65,35.5L43.5,74 L0,74 Z"
 					/>
 					<path
 						class={cn(style.triangle, {
-							[style.split]: state > 1
+							[style.split]: state > 2,
+							[style.hidden]: state === 0
 						})}
 						fill={color}
-						d="M16.100,0.500 L33.000,29.000 L0.500,29.000 L16.100,0.500 Z"
+						d="M16.1,0.5L33,29 L0.5,29 L16.1,0.5Z"
 					/>
 				</g>
 			</svg>
-		);
+		)
 	}
 }

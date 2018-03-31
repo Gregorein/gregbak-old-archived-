@@ -1,0 +1,9 @@
+@import "~style/variables";
+
+.sidebar {
+	display: inline-block;
+	height: 100vh;
+	width: $sidebar;
+
+	float: left;
+}

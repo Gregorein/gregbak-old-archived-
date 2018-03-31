@@ -13,6 +13,7 @@
     "classnames": "^2.2.5",
     "identity-obj-proxy": "^3.0.0",
     "if-env": "^1.0.0",
+    "liquid-route": "^1.0.1",
     "moment": "^2.21.0",
     "node-sass": "^4.8.3",
     "preact-cli": "^2.1.0",
@@ -20,6 +21,7 @@
     "sass-loader": "^6.0.7"
   },
   "dependencies": {
+    "npm": "^5.8.0",
     "preact": "^8.2.6",
     "preact-router": "^2.5.7"
   }

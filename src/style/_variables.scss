@@ -18,3 +18,13 @@ $fontFamily: 'Josefin Sans', sans-serif;
 // VARS
 $t: 0.2s;
 $e: ease;
+
+// DIMS
+$sidebar: 300px;
+$viewSidebar: calc(100% - 300px);
+
+$filters: 250px;
+$viewFilters: calc(100% - 250px);
+
+$return: 100px;
+$viewReturn: calc(100% - 100px);

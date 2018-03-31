@@ -1,9 +1,13 @@
-import { h, Component } from "preact";
+import {h, Component} from "preact"
+
+import View from "components/view"
 
 export default class Home extends Component {
 	render() {
 		return (
-			<div />
-		);
+			<View>
+				HOME
+			</View>
+		)
 	}
 }

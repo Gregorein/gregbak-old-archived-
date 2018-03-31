@@ -1,0 +1,9 @@
+@import "~style/variables";
+
+.view {
+	display: inline-block;
+	height: 100vh;
+	width: $viewSidebar;
+
+	float: right;
+}
