@@ -5,7 +5,7 @@
 				background $t $e;
 	
 	display: inline-block;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	padding-left: $sidebar;
 }
@@ -32,6 +32,4 @@
 .view {
 	width: 100%;
 	height: 100%;
-
-	overflow: auto;
 }
