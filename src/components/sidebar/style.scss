@@ -21,7 +21,8 @@
 
 .logo {
 	transition: width $t $e,
-				height $t $e;
+				height $t $e,
+				color $t $e;
 
 	display: block;
 	width: $sidebar;
@@ -31,6 +32,7 @@
 	top: 0;
 	left: 0;
 	z-index: 2;
+
 	svg {
 		transition: transform $t $e;
 
@@ -40,9 +42,11 @@
 		transform: translate(-50%, -50%);
 	}
 }
-.aFilters .logo {
+.aFilters .logo,
+.aReturn .logo {
 	transition: width $t/2 $e,
-				height $t/2 $e;
+				height $t/2 $e,
+				color $t $e;
 
 	height: $return;
 	width: $return;
@@ -52,18 +56,20 @@
 
 		transform: translate(-50%, -50%) scale(0.333);
 	}
-}
-.aFilters .logo.large {
-	transition: width $t $e,
-				height $t $e;
 
-	width: $sidebar;
-	height: $sidebar;
+	&.large {
+		transition: width $t $e,
+					height $t $e,
+					color $t $e;
 
-	svg {
-		transition: transform $t $e;
+		width: $sidebar;
+		height: $sidebar;
 
-		transform: translate(-50%, -50%);
+		svg {
+			transition: transform $t $e;
+
+			transform: translate(-50%, -50%);
+		}
 	}
 }
 
@@ -93,10 +99,12 @@
 	left: 0;
 
 	color: $dark;
+
+	&.disabled {
+		color: transparent;
+	}
 }
-.aFilters .navShow.disabled {
-	color: transparent;
-}
+
 .nav {
 	transition: transform $t $e;
 
@@ -119,7 +127,8 @@
 		background: $medium;		
 	}
 }
-.aFilters .nav {
+.aFilters .nav,
+.aReturn .nav {
 	position: relative;
 	z-index: 1;
 	transform: translate(-$sidebar, 0);
@@ -127,9 +136,10 @@
 	&::before {
 		left: 0;
 	}
-}
-.aFilters .nav.active {
-	transform: translate(0, 0);
+
+	&.nav.active {
+		transform: translate(0, 0);
+	}
 }
 
 .link {
@@ -163,30 +173,41 @@
 	}
 }
 // text styles
-.tHeavy {
+.tDark {
+	.logo,
 	.link {
-		color: $heavy;
+		color: $dark;
 	}
 }
 .tSalmon {
+	.logo,
 	.link {
 		color: $salmon;
 	}
 }
 // hover styles
 .hMedium {
+	.logo:hover {
+		color: $medium;
+	}
 	.link.active::before,
 	.link:hover::before {
 		background: $medium;
 	}
 }
 .hSalmon {
+	.logo:hover {
+		color: $salmon;
+	}
 	.link.active::before,
 	.link:hover::before {
 		background: $salmon;
 	}
 }
 .hGold {
+	.logo:hover {
+		color: $gold;
+	}
 	.link.active::before,
 	.link:hover::before {
 		background: $gold;
@@ -211,5 +232,29 @@
 }
 
 .return {
-	display: none;
+	transition: left $t $e,
+				color $t $e;
+	cursor: pointer;
+
+	height: $return;
+	width: 100vh;
+	position: fixed;
+	top: 0;
+	left: -$return;
+	transform-origin: top left;
+	transform: translate(0, 100vh) rotate(-90deg);
+	
+	color: transparent;
+	font-size: 12px;
+	font-weight: 800;
+	text-align: center;
+	line-height: $return;
+	text-transform: uppercase;
+	text-decoration:none;
+
+	background: $medium;
+}
+.aReturn .return {
+	left: 0;
+	color: $dark;
 }

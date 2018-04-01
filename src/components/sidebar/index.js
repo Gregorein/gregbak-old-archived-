@@ -25,23 +25,21 @@ export default class Sidebar extends Component {
 	}
 
 	render({step = 0}, {forceNav}) {
-		console.log(forceNav)
-
 		return (
 			<Radiv
 				class={styles.sidebar}
 				urls={{
 					"/": cn({
-						[styles.tHeavy]: step === 0,
+						[styles.tDark]: step === 0,
 						[styles.hGold]: step === 0,
 						[styles.tSalmon]: step === 1,
 						[styles.hMedium]: step === 1
 					}),
-					"/portfolio": cn(styles.aFilters, styles.tHeavy, styles.hSalmon),
-					"/portfolio/*": cn(styles.aReturn),
-					"/contact": cn(styles.tHeavy, styles.hGold),
-					"/about": cn(styles.tHeavy, styles.hSalmon), 
-					"/policy-copyrights": cn(styles.tHeavy, styles.hMedium)
+					"/portfolio": cn(styles.aFilters, styles.tDark, styles.hSalmon),
+					"/portfolio/*": cn(styles.aReturn, styles.tDark, styles.hSalmon),
+					"/contact": cn(styles.tDark, styles.hGold),
+					"/about": cn(styles.tDark, styles.hSalmon), 
+					"/policy-copyrights": cn(styles.tDark, styles.hMedium)
 				}}
 			>
 				<a
@@ -106,7 +104,7 @@ export default class Sidebar extends Component {
 					href="/portfolio"
 					title="return to projects"
 				>
-					<span>return to projects</span>
+					return to projects
 				</a>
 			</Radiv>
 		)

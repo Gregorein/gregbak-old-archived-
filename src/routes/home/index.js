@@ -7,6 +7,7 @@ export default class Home extends Component {
 		return (
 			<View>
 				HOME
+				<a href="/portfolio/project">TEMP PROJECT</a>
 			</View>
 		)
 	}
