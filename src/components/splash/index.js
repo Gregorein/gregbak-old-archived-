@@ -5,7 +5,7 @@ import cn from "classnames"
 import style from "./style"
 
 export default class Splash extends Component {
-	render({color="#bf604b", state=4}) {
+	render({color="#53505a", state=3}) {
 		return (
 			<svg class={style.svg}>
 				<defs>
@@ -17,8 +17,8 @@ export default class Splash extends Component {
 						/>						
 						<path
 							class={cn(style.hole, {
-								[style.split]: state < 4,
-								[style.grown]: state < 2
+								[style.split]: state < 3,
+								[style.grown]: state < 1
 							})}
 							d="M1,73 L44,1 L87,73 L1,73 Z"
 							fill="black"
@@ -31,7 +31,7 @@ export default class Splash extends Component {
 					fill={color}
 					mask="url(#hole)"
 					class={cn(style.mask, {
-						[style.hidden]: state < 2
+						[style.hidden]: state < 1
 					})}
 				/>
 				<g
@@ -48,7 +48,7 @@ export default class Splash extends Component {
 					/>
 					<path
 						class={cn(style.triangle, {
-							[style.split]: state > 2,
+							[style.split]: state > 1,
 							[style.hidden]: state === 0
 						})}
 						fill={color}

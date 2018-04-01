@@ -1,19 +1,24 @@
 import {h} from "preact"
 
+import cn from "classnames"
+
 import Radiv from "components/radiv"
 
 import styles from "./style"
 
 const View = ({children, ...props}) => (
 	<Radiv
-		class={styles.view}
-		urls={{
-			"/portfolio": styles.aFilters,
-			"/portfolio/*": styles.aReturn
-		}}
 		{...props}
+		class={styles.container}
+		urls={{
+			"/portfolio": cn(styles.aFilters, styles.bHeavy),
+			"/portfolio/*": cn(styles.aReturn, styles.bHeavy),
+			"/policy-copyrights": styles.bSalmon,
+		}}
 	>
-		{children}
+		<div class={cn(styles.view, ...props.class)}>
+			{children}
+		</div>
 	</Radiv>
 )
 

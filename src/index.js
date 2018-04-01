@@ -11,8 +11,8 @@ import Home from "routes/home"
 import Portfolio from "routes/home"
 import Project from "routes/home"
 import Contact from "routes/home"
-import About from "routes/home"
-import PolicyCopyrights from "routes/home"
+import About from "routes/about"
+import PolicyCopyrights from "routes/policy-copyrights"
 
 if (module.hot) {
 	require("preact/debug")
@@ -20,7 +20,7 @@ if (module.hot) {
 
 export default class App extends Component {
 	state = {
-		splashStep: 4
+		splashStep: 3
 	}
 
 	handleRoute = (e) => {
@@ -34,37 +34,29 @@ export default class App extends Component {
 
 		setTimeout(() => { 
 			this.setState({
-				splashStep: 3
+				splashStep: 2
 			})
 		}, step)
 		setTimeout(() => {
 			this.setState({
-				splashStep: 2
+				splashStep: 1
 			})
 		}, step*2)
 		setTimeout(() => {
 			this.setState({
-				splashStep: 1
-			})
-		}, step*3)
-		setTimeout(() => {
-			this.setState({
 				splashStep: 0
 			})
-		}, step*4)
-		setTimeout(() => {
-			localStorage.setItem("splashPlayed", "true")
-		}, step*5)		
+		}, step*3)	
 	}
 
 	componentDidMount() {
-		if (!localStorage.getItem("splashPlayed")) this.handleSplash()
+		// this.handleSplash()
 	}
 
 	render() {
 		return (
 			<div id="app">				
-				{!localStorage.getItem("splashPlayed") && <Splash state={this.state.splashStep} />}
+				{false && <Splash state={this.state.splashStep} />}
 				<Sidebar url={this.state.currentUrl} />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
@@ -72,7 +64,7 @@ export default class App extends Component {
 					<Project path="/portfolio/:project" />
 					<Contact path="/contact" />
 					<About path="/about" />
-					<PolicyCopyrights path="/policy-copyrights" />					
+					<PolicyCopyrights path="/policy-copyrights" />
 				</Router>
 			</div>
 		)

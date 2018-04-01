@@ -169,7 +169,7 @@
 		left: 20px;
 		right: 20px;
 		z-index: -1;
-		transform: translate(0, -2px);
+		transform: translate(0, -3px);
 	}
 }
 // text styles
@@ -204,6 +204,15 @@
 		background: $salmon;
 	}
 }
+.hSalmonAlt {
+	.logo:hover {
+		color: $salmon;
+	}
+	.link.active::before,
+	.link:hover::before {
+		background: $salmon-alt;
+	}
+}
 .hGold {
 	.logo:hover {
 		color: $gold;
@@ -211,6 +220,37 @@
 	.link.active::before,
 	.link:hover::before {
 		background: $gold;
+	}
+}
+.hGoldAlt {
+	.logo:hover {
+		color: $gold;
+	}
+	.link.active::before,
+	.link:hover::before {
+		background: $gold-alt;
+	}
+}
+// policy & copyrights link
+.link.footer {
+	transition: opacity $t $e;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0;	
+
+	text-align: center;
+
+	opacity: 0.5;
+
+	&::before {
+		display: none;
+		content: none;
+	}
+
+	&:hover {
+		opacity: 1;
 	}
 }
 

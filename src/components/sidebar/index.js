@@ -38,7 +38,7 @@ export default class Sidebar extends Component {
 					"/portfolio": cn(styles.aFilters, styles.tDark, styles.hSalmon),
 					"/portfolio/*": cn(styles.aReturn, styles.tDark, styles.hSalmon),
 					"/contact": cn(styles.tDark, styles.hGold),
-					"/about": cn(styles.tDark, styles.hSalmon), 
+					"/about": cn(styles.tDark, styles.hSalmonAlt), 
 					"/policy-copyrights": cn(styles.tDark, styles.hMedium)
 				}}
 			>
@@ -92,6 +92,13 @@ export default class Sidebar extends Component {
 						title="about"
 					>
 						about
+					</Link>
+					<Link
+						class={cn(styles.link, styles.footer)}
+						href="/policy-copyrights"
+						title="policy & copyrights"
+					>
+						policy & copyrights
 					</Link>
 				</nav>
 
