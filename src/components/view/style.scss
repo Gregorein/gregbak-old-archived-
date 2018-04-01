@@ -1,9 +1,17 @@
 @import "~style/variables";
 
 .view {
+	transition: padding-left $t $e;
+	
 	display: inline-block;
 	height: 100vh;
-	width: $viewSidebar;
+	width: 100vw;
+	padding-left: $sidebar;
+}
 
-	float: right;
+.aFilters {
+	padding-left: $filters;
+}
+.aReturn {
+	padding-left: $return;
 }

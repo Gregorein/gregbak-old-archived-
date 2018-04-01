@@ -1,13 +1,215 @@
 @import "~style/variables";
 
 .sidebar {
+	transition: width $t $e;
+
 	display: inline-block;
 	height: 100vh;
 	width: $sidebar;
-
-	float: left;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+// widths
+.aFilters {
+	width: $filters;
+}
+.aReturn {
+	width: $return;
 }
 
 .logo {
-	background: red;
+	transition: width $t $e,
+				height $t $e;
+
+	display: block;
+	width: $sidebar;
+	height: $sidebar;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	svg {
+		transition: transform $t $e;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.aFilters .logo {
+	transition: width $t/2 $e,
+				height $t/2 $e;
+
+	height: $return;
+	width: $return;
+
+	svg {
+		transition: transform $t/2 $e;
+
+		transform: translate(-50%, -50%) scale(0.333);
+	}
+}
+.aFilters .logo.large {
+	transition: width $t $e,
+				height $t $e;
+
+	width: $sidebar;
+	height: $sidebar;
+
+	svg {
+		transition: transform $t $e;
+
+		transform: translate(-50%, -50%);
+	}
+}
+
+.navShow {
+	transition: left $t $e,
+				color $t $e;
+	cursor: pointer;
+
+	height: $return;
+	width: 100vh;
+	position: fixed;
+	top: 0;
+	left: -$return;
+	transform-origin: top left;
+	transform: translate(0, 100vh) rotate(-90deg);
+	
+	font-size: 12px;
+	font-weight: 800;
+	text-align: center;
+	line-height: $return;
+	text-transform: uppercase;
+	color: transparent;
+
+	background: $medium;
+}
+.aFilters .navShow {
+	left: 0;
+
+	color: $dark;
+}
+.aFilters .navShow.disabled {
+	color: transparent;
+}
+.nav {
+	transition: transform $t $e;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: $sidebar;
+
+	&::before {
+		transition: left $t $e;
+
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: -$sidebar;
+
+		background: $medium;		
+	}
+}
+.aFilters .nav {
+	position: relative;
+	z-index: 1;
+	transform: translate(-$sidebar, 0);
+
+	&::before {
+		left: 0;
+	}
+}
+.aFilters .nav.active {
+	transform: translate(0, 0);
+}
+
+.link {
+	display: block;
+	height: 50px;
+	width: 100%;
+
+	padding: 0 0 0 105px;
+
+	font-size: 13px;
+	font-weight: 800;
+	line-height: 50px;
+
+	text-decoration: none;
+	text-transform: uppercase;
+
+	position: relative;
+	z-index: 1;
+	&::before {
+		transition: background $t $e;
+
+		content: "";
+		height: 2px;
+
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		right: 20px;
+		z-index: -1;
+		transform: translate(0, -2px);
+	}
+}
+// text styles
+.tHeavy {
+	.link {
+		color: $heavy;
+	}
+}
+.tSalmon {
+	.link {
+		color: $salmon;
+	}
+}
+// hover styles
+.hMedium {
+	.link.active::before,
+	.link:hover::before {
+		background: $medium;
+	}
+}
+.hSalmon {
+	.link.active::before,
+	.link:hover::before {
+		background: $salmon;
+	}
+}
+.hGold {
+	.link.active::before,
+	.link:hover::before {
+		background: $gold;
+	}
+}
+
+.filters {
+	transition: left 0s $e;
+
+	height: 100%;
+	width: 150px;
+	position: fixed;
+	top: 0;
+	left: -150px;
+
+	background: $dark;
+}
+.aFilters .filters {
+	transition: left $t $e;
+
+	left: $return;
+}
+
+.return {
+	display: none;
 }

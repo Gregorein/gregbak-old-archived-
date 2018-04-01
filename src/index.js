@@ -1,7 +1,7 @@
 import "./style"
 import {h, Component} from "preact"
 import {Router} from "preact-router"
-import Route, {FadeAnimation} from "liquid-route"
+// import Route, {FadeAnimation} from "liquid-route"
 import "liquid-route/style.css"
 
 import Splash from "components/splash"
@@ -19,12 +19,8 @@ if (module.hot) {
 }
 
 export default class App extends Component {
-	constructor() {
-		super()
-
-		this.state = {
-			splashStep: 4
-		}
+	state = {
+		splashStep: 4
 	}
 
 	handleRoute = (e) => {
@@ -71,12 +67,12 @@ export default class App extends Component {
 				{!localStorage.getItem("splashPlayed") && <Splash state={this.state.splashStep} />}
 				<Sidebar url={this.state.currentUrl} />
 				<Router onChange={this.handleRoute}>
-					<Route animator={FadeAnimation} path="/" component={Home} />
-					<Route animator={FadeAnimation} path="/portfolio" component={Portfolio} />
-					<Route animator={FadeAnimation} path="/portfolio/:project" component={Project} />
-					<Route animator={FadeAnimation} path="/contact" component={Contact} />
-					<Route animator={FadeAnimation} path="/about" component={About} />
-					<Route animator={FadeAnimation} path="/policy-copyrights" component={PolicyCopyrights} />
+					<Home path="/" />
+					<Portfolio path="/portfolio" />
+					<Project path="/portfolio/:project" />
+					<Contact path="/contact" />
+					<About path="/about" />
+					<PolicyCopyrights path="/policy-copyrights" />					
 				</Router>
 			</div>
 		)
