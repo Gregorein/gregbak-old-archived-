@@ -83,8 +83,8 @@ export default class About extends Component {
 					</ul>
 					<ul class={styles.skills}>
 						<h3>web stack</h3>
-						<li class={styles.advanced}>React,Preact with Redux</li>
 						<li class={styles.expert}>SASS</li>
+						<li class={styles.advanced}>React/Preact with Redux</li>
 						<li class={styles.advanced}>ES7</li>
 						<li class={styles.intermediate}>SQL</li>
 					</ul>
@@ -112,11 +112,13 @@ export default class About extends Component {
 					</ul>
 				</div>
 				<div class={styles.theEnd}>
-					<h2>Thanks for stopping by!</h2>
-					<p>
-						If you want to say hello or ask a question,<br/>
-						feel free to contact me at <a href="mailto:gregbak@me.com" title="my contact email">gregbak@me.com</a>
-					</p>
+					<div class={styles.center}>
+						<h2>Thanks for stopping by!</h2>
+						<p>
+							If you want to say hello or ask a question,<br/>
+							feel free to contact me at <a href="mailto:gregbak@me.com" title="my contact email">gregbak@me.com</a>
+						</p>
+					</div>
 				</div>
 			</View>
 		)

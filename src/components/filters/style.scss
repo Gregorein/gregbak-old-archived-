@@ -1,0 +1,109 @@
+@import "~style/variables";
+
+.wrapper {
+	height: 100%;
+}
+
+.reset {
+	transition: color $t $e;
+
+	height: 50px;
+
+	color: $salmon;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	&:hover {
+		color: $salmon-alt;
+	}
+}
+
+.filters {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	height: calc(100% - 100px);
+}
+.filter {
+	transition: color $t $e;
+
+	height: 50px;
+	position: relative;
+
+	color: $salmon;
+	font-size: 18px;
+  font-variant: small-caps;
+  font-weight: 600;
+	line-height: 50px;
+	text-align: center;
+
+	cursor: pointer;
+
+	&::before {
+		transition: color $t $e;
+
+		content: "✕";
+
+		height: 8px;
+		width: 8px;
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translate(0, -3px);
+
+		color: transparent;
+		font-size: 10px;
+		line-height: 8px;
+	}
+
+	&:hover {
+		color: $salmon-alt;
+	}
+
+	&.a {
+		color: $light;
+
+		&::before {
+			color: $light;
+		}
+
+		&:hover {
+			color: $white;
+
+			&::before {
+				color: $white;
+			}
+		}
+	}
+}
+
+.count {
+	display: block;
+
+	height: 50px;
+
+	color: $salmon;
+  font-size: 12px;
+  font-weight: bold;
+  font-variant: small-caps;
+	line-height: 50px;
+  text-align: center;
+}
+.noSelection {
+	display: block;
+
+	height: 50px;
+
+	color: $medium;
+  font-size: 12px;
+  font-weight: bold;
+  font-variant: small-caps;
+	line-height: 50px;
+  text-align: center;	
+}

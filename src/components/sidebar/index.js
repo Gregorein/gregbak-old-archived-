@@ -3,8 +3,9 @@ import {Link} from "preact-router/match"
 
 import cn from "classnames"
 
-import Logo from "components/logo"
 import Radiv from "components/radiv"
+import Logo from "components/logo"
+import Filters from "components/filters"
 
 import styles from "./style"
 
@@ -41,7 +42,7 @@ export default class Sidebar extends Component {
 					"/about": cn(styles.tDark, styles.hSalmonAlt), 
 					"/policy-copyrights": cn(styles.tDark, styles.hMedium)
 				}}
-			>
+				>
 				<a
 					class={cn(styles.logo, {
 						[styles.large]: forceNav
@@ -50,7 +51,7 @@ export default class Sidebar extends Component {
 					title="home"
 					onMouseEnter={this.handleShowNav}
 					onMouseLeave={this.handleHideNav}
-				>
+					>
 					<Logo />
 				</a>
 				<div
@@ -59,7 +60,7 @@ export default class Sidebar extends Component {
 					})}
 					onMouseEnter={this.handleShowNav}
 					onMouseLeave={this.handleHideNav}
-				>
+					>
 					show menu
 				</div>
 				<nav
@@ -68,49 +69,49 @@ export default class Sidebar extends Component {
 					})}
 					onMouseEnter={this.handleShowNav}
 					onMouseLeave={this.handleHideNav}
-				>
+					>
 					<Link
 						class={styles.link}
 						activeClassName={styles.active}
 						href="/portfolio"
 						title="portfolio"
-					>
+						>
 						portfolio
-					</Link>
-					<Link
-						class={styles.link}
-						activeClassName={styles.active}
-						href="/contact"
-						title="contact"
-					>
-						contact
 					</Link>
 					<Link
 						class={styles.link}
 						activeClassName={styles.active}
 						href="/about"
 						title="about"
-					>
+						>
 						about
+					</Link>
+					<Link
+						class={styles.link}
+						activeClassName={styles.active}
+						href="/contact"
+						title="contact"
+						>
+						contact
 					</Link>
 					<Link
 						class={cn(styles.link, styles.footer)}
 						href="/policy-copyrights"
 						title="policy & copyrights"
-					>
+						>
 						policy & copyrights
 					</Link>
 				</nav>
 
 				<nav class={styles.filters}>
-
+					<Filters />
 				</nav>
 
 				<a
 					class={styles.return}
 					href="/portfolio"
 					title="return to projects"
-				>
+					>
 					return to projects
 				</a>
 			</Radiv>

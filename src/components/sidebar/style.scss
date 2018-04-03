@@ -115,16 +115,12 @@
 	width: $sidebar;
 
 	&::before {
-		transition: left $t $e;
-
 		content: "";
 		height: 100%;
 		width: 100%;
 		position: absolute;
 		top: 0;
-		left: -$sidebar;
-
-		background: $medium;		
+		left: 0;
 	}
 }
 .aFilters .nav,
@@ -134,7 +130,7 @@
 	transform: translate(-$sidebar, 0);
 
 	&::before {
-		left: 0;
+		background: $white;
 	}
 
 	&.nav.active {
@@ -258,10 +254,10 @@
 	transition: left 0s $e;
 
 	height: 100%;
-	width: 150px;
+	width: #{$filters - $return};
 	position: fixed;
 	top: 0;
-	left: -150px;
+	left: -#{$filters - $return};
 
 	background: $dark;
 }

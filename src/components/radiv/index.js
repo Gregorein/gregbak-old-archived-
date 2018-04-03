@@ -34,7 +34,7 @@ export default class radiv extends Component {
 			<div
 				{...props}
 				class={cn(props.class, urlClassMap)}
-			>
+				>
 				{children}
 			</div>
 		)

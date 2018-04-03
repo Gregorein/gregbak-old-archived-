@@ -19,6 +19,7 @@
     "preact-cli": "^2.1.0",
     "preact-redux": "^2.0.3",
     "preact-render-spy": "^1.2.1",
+    "redux": "^3.7.2",
     "sass-loader": "^6.0.7"
   },
   "dependencies": {
