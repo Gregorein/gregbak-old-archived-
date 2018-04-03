@@ -20,6 +20,7 @@
     "preact-redux": "^2.0.3",
     "preact-render-spy": "^1.2.1",
     "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.7"
   },
   "dependencies": {

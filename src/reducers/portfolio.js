@@ -1,16 +1,16 @@
+import {api} from "globals"
+
 const initialState = {
 	filters: [
-		{name: "design", shortcode: "design"},
-		{name: "2d", shortcode: "2d"},
-		{name: "3d", shortcode: "3d"},
-		{name: "web", shortcode: "web"},
-		{name: "mobile", shortcode: "mobile"},
-		{name: "code", shortcode: "code"}
+		{name: "design", tag: "design"},
+		{name: "2d", tag: "2d"},
+		{name: "3d", tag: "3d"},
+		{name: "web", tag: "web"},
+		{name: "mobile", tag: "mobile"},
+		{name: "code", tag: "code"}
 	],
 	filteredCount: undefined,
-	projects: [
-
-	]
+	projects: []
 }
 
 const portfolio = (state = initialState, action) => {
@@ -39,6 +39,12 @@ const portfolio = (state = initialState, action) => {
 
 					return filter
 				})
+			}
+
+		case "GET_PROJECTS":
+			return {
+				...state,
+				projects: action.payload.projects
 			}
 
 		default:

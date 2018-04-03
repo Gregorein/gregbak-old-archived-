@@ -11,4 +11,7 @@ export default (config, env, helpers) => {
 	alias.components = path.resolve(__dirname, "src/components")
 	alias.routes = path.resolve(__dirname, "src/routes")
 	alias.reducers = path.resolve(__dirname, "src/reducers")
+
+	alias.globals = path.resolve(__dirname, "src/globals.js")
+	alias.config = path.resolve(__dirname, "src/config.js")
 }

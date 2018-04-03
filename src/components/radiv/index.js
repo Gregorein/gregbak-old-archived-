@@ -22,12 +22,21 @@ export default class radiv extends Component {
 		let path = url.replace(/\?.+$/, "")
 		this.nextUrl = null
 
+		let defaultUrl = ""
+		let matchedUrl = false
 		let urlClassMap = {}
 		for (const u in urls) {
+			if(defaultUrl === "") defaultUrl = u
 			const _u = new RegExp(`^${u.replace(/\*/g, ".+")}$`)
 
 			const urlClass = urls[u] || ""
-			if (path.match(_u) !== null) urlClassMap[urlClass] = true
+			if (path.match(_u) !== null) {
+				matchedUrl = true
+				urlClassMap[urlClass] = true
+			}
+		}
+		if(!matchedUrl) {
+			urlClassMap[defaultUrl] = true
 		}
 
 		return (

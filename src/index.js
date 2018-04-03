@@ -2,7 +2,8 @@ import {h, Component} from "preact"
 import {Router} from "preact-router"
 
 import {Provider} from "preact-redux"
-import {createStore} from "redux"
+import {createStore, applyMiddleware} from "redux"
+import thunk from "redux-thunk"
 import rootReducer from "reducers"
 // import Route, {FadeAnimation} from "liquid-route"
 // import "liquid-route/style.css"
@@ -23,7 +24,10 @@ if (module.hot) {
 	require("preact/debug")
 }
 
-const store = createStore(rootReducer)
+const store = createStore(
+	rootReducer,
+	applyMiddleware(thunk)
+)
 
 export default class App extends Component {
 	state = {

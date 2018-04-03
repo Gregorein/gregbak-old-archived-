@@ -1,0 +1,44 @@
+[
+	{
+		"title": "opus corporis",
+		"path": "/portfolio/opus",
+		"tag": "art",
+		"thumbnail": "/cms/data/portfolio/opus-thumb.png"
+	},
+	{
+		"title": "cyberpunk vivienne",
+		"path": "/portfolio/vivienne",
+		"tag": "art|wip",
+		"thumbnail": "/cms/data/portfolio/vivienne-thumb.png"
+	},
+	{
+		"title": "aimi",
+		"path": "/portfolio/aimi",
+		"tag": "art|wip",
+		"thumbnail": "/cms/data/portfolio/aimi-thumb.png"
+	},
+	{
+		"title": "arc lapv",
+		"path": "/portfolio/lapv",
+		"tag": "art|wip",
+		"thumbnail": "/cms/data/portfolio/lapv-thumb.png"
+	},
+	{
+		"title": "coffee",
+		"path": "/portfolio/coffee",
+		"tag": "art|wip",
+		"thumbnail": "/cms/data/portfolio/coffee-thumb.png"
+	},
+	{
+		"title": "Fundamentum",
+		"path": "/portfolio/fundamentum",
+		"tag": "web",
+		"thumbnail": "/cms/data/portfolio/fundamentum-thumb.png"
+	},
+	{
+		"title": "failstart",
+		"path": "/portfolio/failstart",
+		"tag": "art",
+		"thumbnail": "/cms/data/portfolio/failstart-thumb.png"
+	}
+]

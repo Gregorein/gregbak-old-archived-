@@ -1,13 +1,33 @@
-import {h} from "preact"
+import {h, Component} from "preact"
+import {connect} from "preact-redux"
+
+import {
+	getProjects
+} from "actions"
 
 import View from "components/view"
 
 import styles from "./style"
 
-const Portfolio = () => (
-	<View class={styles.view}>
-		
-	</View>
-)
+class Portfolio extends Component {
+	componentWillMount() {
+		this.props.getProjects()
+	}
 
-export default Portfolio
+	render({projects}) {
+		return (
+			<View class={styles.view}>
+
+			</View>
+		)
+	}
+}
+
+const stateProps = (state, props) => ({
+	projects: state.portfolio.projects
+})
+const dispatchProps = (dispatch, props) => ({
+	getProjects: () => dispatch(getProjects())
+})
+
+export default connect(stateProps, dispatchProps)(Portfolio)
