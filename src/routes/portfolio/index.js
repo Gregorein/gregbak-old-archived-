@@ -18,9 +18,10 @@ class Portfolio extends Component {
 	render({projects}) {
 		return (
 			<View class={styles.view}>
-				{projects.map(project => (
+				{projects.map(project => {
+					if (project.visible) return (
 					<Tile project={project} />
-				))}
+				)})}
 			</View>
 		)
 	}

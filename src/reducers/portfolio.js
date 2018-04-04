@@ -2,13 +2,13 @@ import {api} from "globals"
 
 const initialState = {
 	filters: [
-		{name: "wip", tag: "wip"},
-		{name: "design", tag: "design"},
-		{name: "art", tag: "art"},
-		{name: "2d", tag: "2d"},
-		{name: "3d", tag: "3d"},
-		{name: "web", tag: "web"},
-		{name: "code", tag: "code"}
+		{name: "wip", active: false, tag: "wip"},
+		{name: "design", active: false, tag: "design"},
+		{name: "art", active: false, tag: "art"},
+		{name: "2d", active: false, tag: "2d"},
+		{name: "3d", active: false, tag: "3d"},
+		{name: "web", active: false, tag: "web"},
+		{name: "code", active: false, tag: "code"}
 	],
 	filteredCount: undefined,
 	projects: []
@@ -17,49 +17,60 @@ const initialState = {
 const portfolio = (state = initialState, action) => {
 	switch (action.type) {
 		case "RESET_FILTERS":
+			let filters = state.filters.map(filter => {
+				filter.active = false
+				
+				return filter
+			})
+
+			let projects = state.projects.map(project => {
+				project.visible = true
+
+				return project
+			})
+
 			return {
 				...state,
-				filters: state.filters.map(filter => {
-					filter.active = false
-					
-					return filter
-				}),
-				projects: state.projects.map(project => {
-					project.visible = true
-
-					return project
-				})
+				filters,
+				projects,
+				filteredCount: undefined
 			}
 
 		case "TOGGLE_FILTER":
+
+			filters = state.filters.map(filter => {
+				if (filter.tag === action.payload.tag) {
+					filter.active = !filter.active
+				}
+
+				return filter
+			})
+
+			projects = state.projects.map(project => {
+				project.visible = true
+
+				filters.forEach(filter => {
+					if(filter.active && !project.tag.includes(filter.tag)) project.visible = false
+				})
+				return project
+			})
+
 			return {
 				...state,
-				filters: state.filters.map(filter => {
-					if (filter.active === undefined) {
-						filter.active = false
-					}
-
-					if (filter.tag === action.payload.tag) {
-						filter.active = !filter.active
-					}
-
-					return filter
-				}),
-				projects: state.projects.map(project => {
-					// if (project.visible === undefined) {
-					// 	project.visible = true
-					// }
-
-					console.log(project.tag.includes(action.payload.tag))
-
-					return project
-				})
+				filters,
+				projects
 			}
 
 		case "GET_PROJECTS":
+			projects = action.payload.projects.map(project => {
+				project.visible = true
+
+				return project
+			})
+
 			return {
 				...state,
-				projects: action.payload.projects
+				projects
 			}
 
 		default:
