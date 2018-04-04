@@ -6,6 +6,7 @@ import {
 } from "actions"
 
 import View from "components/view"
+import Tile from "components/tile"
 
 import styles from "./style"
 
@@ -17,7 +18,9 @@ class Portfolio extends Component {
 	render({projects}) {
 		return (
 			<View class={styles.view}>
-
+				{projects.map(project => (
+					<Tile project={project} />
+				))}
 			</View>
 		)
 	}

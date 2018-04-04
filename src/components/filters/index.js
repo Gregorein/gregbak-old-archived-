@@ -13,14 +13,14 @@ import styles from "./style"
 class Filters extends Component {
 	renderFilters = () => {
 		const {filters, toggleFilter} = this.props
-		return filters.map((filter, id) => {
+		return filters.map(filter => {
 			
 			return (
 				<div
 					class={cn(styles.filter, {
 						[styles.a]: filter.active
 					})}
-					onClick={() => toggleFilter(id)}
+					onClick={() => toggleFilter(filter.tag)}
 					>
 					{filter.name}
 				</div>
@@ -42,15 +42,12 @@ class Filters extends Component {
 					{this.renderFilters()}
 				</div>
 
-				{count >= 0 ? (
-					<p class={styles.count}>
-						found {count} project{count !== 1 ? "s" : ""}
-					</p>
-				) : (
-					<p class={styles.noSelection}>
-							showing all projects
-					</p>
-				)}
+				<p class={cn(styles.count, {
+						[styles.noSelection]: count === undefined
+					})}>
+					{count === undefined ? "showing all projects" : `found ${count} project${count !== 1 ? "s" : ""}`
+					}
+				</p>
 			</div>
 		)
 	}
@@ -62,7 +59,7 @@ const stateProps = (state, props) => ({
 })
 const dispatchProps = (dispatch, props) => ({
 	resetFilters: () => dispatch(resetFilters()),
-	toggleFilter: id => dispatch(toggleFilter(id))
+	toggleFilter: tag => dispatch(toggleFilter(tag))
 })
 
 export default connect(stateProps, dispatchProps)(Filters)

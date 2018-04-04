@@ -1,44 +1,58 @@
 [
 	{
 		"title": "opus corporis",
-		"path": "/portfolio/opus",
-		"tag": "art",
-		"thumbnail": "/cms/data/portfolio/opus-thumb.png"
-	},
-	{
-		"title": "cyberpunk vivienne",
-		"path": "/portfolio/vivienne",
-		"tag": "art|wip",
-		"thumbnail": "/cms/data/portfolio/vivienne-thumb.png"
-	},
-	{
-		"title": "aimi",
-		"path": "/portfolio/aimi",
-		"tag": "art|wip",
-		"thumbnail": "/cms/data/portfolio/aimi-thumb.png"
+		"href": "/portfolio/opus",
+		"tag": "art|2d",
+		"date": "1499120340",
+		"thumbnail": "/projects/opus-thumb.png",
+		"config": "opus"
 	},
 	{
 		"title": "arc lapv",
-		"path": "/portfolio/lapv",
-		"tag": "art|wip",
-		"thumbnail": "/cms/data/portfolio/lapv-thumb.png"
+		"href": "/portfolio/lapv",
+		"tag": "art|3d|wip",
+		"date": "1493853060",
+		"thumbnail": "/projects/lapv-thumb.png",
+		"config": "lapv"
+	},
+	{
+		"title": "cyberpunk vivienne",
+		"href": "/portfolio/vivienne",
+		"tag": "art|3d|wip",
+		"date": "1490634960",
+		"thumbnail": "/projects/vivienne-thumb.png",
+		"config": "vivienne"
 	},
 	{
 		"title": "coffee",
-		"path": "/portfolio/coffee",
-		"tag": "art|wip",
-		"thumbnail": "/cms/data/portfolio/coffee-thumb.png"
+		"href": "/portfolio/coffee",
+		"tag": "art|3d|wip",
+		"date": "1490016480",
+		"thumbnail": "/projects/coffee-thumb.png",
+		"config": "coffee"
 	},
 	{
-		"title": "Fundamentum",
-		"path": "/portfolio/fundamentum",
-		"tag": "web",
-		"thumbnail": "/cms/data/portfolio/fundamentum-thumb.png"
+		"title": "aimi",
+		"href": "/portfolio/aimi",
+		"tag": "art|3d|wip",
+		"date": "1485946500",
+		"thumbnail": "/projects/aimi-thumb.png",
+		"config": "aimi"
 	},
 	{
 		"title": "failstart",
-		"path": "/portfolio/failstart",
-		"tag": "art",
-		"thumbnail": "/cms/data/portfolio/failstart-thumb.png"
+		"href": "/portfolio/failstart",
+		"tag": "art|3d",
+		"date": "1481304480",
+		"thumbnail": "/projects/failstart-thumb.png",
+		"config": "failstart"
+	},
+	{
+		"title": "Fundamentum",
+		"href": "/portfolio/fundamentum",
+		"tag": "web|code",
+		"date": "1473342360",
+		"thumbnail": "/projects/fundamentum-thumb.png",
+		"config": "fundamentum"
 	}
 ]

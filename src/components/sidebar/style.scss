@@ -9,7 +9,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 9999;
+	z-index: 9;
 }
 // widths
 .aFilters {
@@ -121,6 +121,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		z-index: 1;
 	}
 }
 .aFilters .nav,

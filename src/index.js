@@ -1,6 +1,8 @@
 import {h, Component} from "preact"
 import {Router} from "preact-router"
 
+import moment from "moment"
+
 import {Provider} from "preact-redux"
 import {createStore, applyMiddleware} from "redux"
 import thunk from "redux-thunk"
@@ -20,15 +22,27 @@ import PolicyCopyrights from "routes/policy-copyrights"
 
 import "./style"
 
+// dev
 if (module.hot) {
 	require("preact/debug")
 }
 
+// stores
 const store = createStore(
 	rootReducer,
 	applyMiddleware(thunk)
 )
 
+// moment
+moment.relativeTimeRounding(Math.floor)
+moment.relativeTimeThreshold("ss", 15)
+moment.relativeTimeThreshold("s", 60)
+moment.relativeTimeThreshold("m", 45)
+moment.relativeTimeThreshold("h", 18)
+moment.relativeTimeThreshold("d", 45)
+moment.relativeTimeThreshold("M", 24)
+
+// love and magic
 export default class App extends Component {
 	state = {
 		splashStep: 3

@@ -2,11 +2,12 @@ import {api} from "globals"
 
 const initialState = {
 	filters: [
+		{name: "wip", tag: "wip"},
 		{name: "design", tag: "design"},
+		{name: "art", tag: "art"},
 		{name: "2d", tag: "2d"},
 		{name: "3d", tag: "3d"},
 		{name: "web", tag: "web"},
-		{name: "mobile", tag: "mobile"},
 		{name: "code", tag: "code"}
 	],
 	filteredCount: undefined,
@@ -22,22 +23,36 @@ const portfolio = (state = initialState, action) => {
 					filter.active = false
 					
 					return filter
+				}),
+				projects: state.projects.map(project => {
+					project.visible = true
+
+					return project
 				})
 			}
 
 		case "TOGGLE_FILTER":
 			return {
 				...state,
-				filters: state.filters.map((filter, id) => {
+				filters: state.filters.map(filter => {
 					if (filter.active === undefined) {
 						filter.active = false
 					}
 
-					if (id === action.payload.id) {
+					if (filter.tag === action.payload.tag) {
 						filter.active = !filter.active
 					}
 
 					return filter
+				}),
+				projects: state.projects.map(project => {
+					// if (project.visible === undefined) {
+					// 	project.visible = true
+					// }
+
+					console.log(project.tag.includes(action.payload.tag))
+
+					return project
 				})
 			}
 

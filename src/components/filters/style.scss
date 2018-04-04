@@ -84,26 +84,20 @@
 }
 
 .count {
+	transition: color $t $e;
+	
 	display: block;
 
 	height: 50px;
 
 	color: $salmon;
-  font-size: 12px;
-  font-weight: bold;
-  font-variant: small-caps;
+	font-size: 13px;
+	font-weight: bold;
+	font-variant: small-caps;
 	line-height: 50px;
-  text-align: center;
-}
-.noSelection {
-	display: block;
+	text-align: center;
 
-	height: 50px;
-
-	color: $medium;
-  font-size: 13px;
-  font-weight: bold;
-  font-variant: small-caps;
-	line-height: 50px;
-  text-align: center;	
+  &.noSelection {
+		color: $medium;
+  }
 }
