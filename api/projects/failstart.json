@@ -1,0 +1,19 @@
+{
+	"date": 1481304480,
+	"title": "Failstart",
+	"software": [
+		"Blender",
+		"Photoshop"
+	],
+	"description": [
+		"\"The Sleep of Reason Produces Monsters.\""
+	],
+	"slides": [
+		{
+			"type": "image",
+			"height": 1440,
+			"width": 3440,
+			"url": "/cms/data/portfolio/failstart.png"
+		}
+	]
+}

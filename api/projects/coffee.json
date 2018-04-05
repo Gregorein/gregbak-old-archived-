@@ -1,0 +1,19 @@
+{
+	"date": 1490016480,
+	"title": "Coffee",
+	"software": [
+		"Blender"
+	],
+	"description": [
+		"A quick setup to test 'Filmic Blender' color ranges.",
+		"<a href='https://github.com/sobotka/filmic-blender'>Filmic Blender on github</a>"
+	],
+	"slides": [
+		{
+			"type": "image",
+			"height": 1000,
+			"width": 1500, 
+			"url": "/projects/coffee.png"
+		}
+	]
+}

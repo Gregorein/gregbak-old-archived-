@@ -15,7 +15,7 @@ import Sidebar from "components/sidebar"
 
 import Home from "routes/home"
 import Portfolio from "routes/portfolio"
-import Project from "routes/home"
+import Project from "routes/project"
 import Contact from "routes/home"
 import About from "routes/about"
 import PolicyCopyrights from "routes/policy-copyrights"

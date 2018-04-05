@@ -11,7 +11,8 @@ const initialState = {
 		{name: "code", active: false, tag: "code"}
 	],
 	filteredCount: undefined,
-	projects: []
+	projects: [],
+	currentProject: undefined
 }
 
 const portfolio = (state = initialState, action) => {
@@ -71,6 +72,12 @@ const portfolio = (state = initialState, action) => {
 			return {
 				...state,
 				projects
+			}
+
+		case "GET_PROJECT":
+			return {
+				...state,
+				currentProject: action.payload.project
 			}
 
 		default:

@@ -19,7 +19,7 @@ const Tile = ({project}) => (
 			/>
 		<div class={styles.header}>
 			<p class={styles.title}>
-				{project.title} {project.tag}
+				{project.title}
 			</p>
 			<p class={styles.date}>
 				{moment.unix(project.date).fromNow()}

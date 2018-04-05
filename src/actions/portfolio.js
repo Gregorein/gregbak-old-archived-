@@ -28,9 +28,9 @@ export const getProject = project => dispatch => {
 	api(`${config.api}/projects/${project}.json`)
 	.then(data => {
 		dispatch({
-			type: "GET_PROJECTS",
+			type: "GET_PROJECT",
 			payload: {
-				projects: data
+				project: data
 			}
 		})
 	})	

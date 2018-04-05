@@ -1,0 +1,36 @@
+{
+	"date": 1473342360,
+	"title": "Fundamentum",
+	"software": [
+		"Wordpress"
+	],
+	"description": [
+		"<a href='http://fundamentum.com.pl'>Fundamentum website</a>"
+	],
+	"slides": [
+		{
+			"type": "image",
+			"height": 2421,
+			"width": 1280,
+			"url": "/projects/fundamentum-home.png"
+		},
+		{
+			"type": "image",
+			"height": 3485,
+			"width": 1280,
+			"url": "/projects/fundamentum-article.png"
+		},
+		{
+			"type": "image",
+			"height": 1323,
+			"width": 1280,
+			"url": "/projects/fundamentum-archive.png"
+		},
+		{
+			"type": "image",
+			"height": 1000,
+			"width": 1280,
+			"url": "/projects/fundamentum-login.png"
+		}
+	]
+}

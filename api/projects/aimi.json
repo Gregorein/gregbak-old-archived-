@@ -1,0 +1,30 @@
+{
+	"date": 1485946500,
+	"title": "Aimi",
+	"software": [
+		"Blender"
+	],
+	"description": [
+		"Procedural skin shader."
+	],
+	"slides": [
+		{
+			"type": "image",
+			"height": 982,
+			"width": 650,
+			"url": "/projects/aimi.png"
+		},
+		{
+			"type": "image",
+			"height": 773,
+			"width": 773,
+			"url": "/projects/aimi-hair.png"
+		},
+		{
+			"type": "image",
+			"height": 718,
+			"width": 663,
+			"url": "/projects/aimi-rig.png"
+		}
+	]
+}

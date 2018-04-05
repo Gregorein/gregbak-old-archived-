@@ -3,56 +3,49 @@
 		"title": "opus corporis",
 		"href": "/portfolio/opus",
 		"tag": "art|2d",
-		"date": "1499120340",
+		"date": 1499120340,
 		"thumbnail": "/projects/opus-thumb.png",
-		"config": "opus"
 	},
 	{
 		"title": "arc lapv",
 		"href": "/portfolio/lapv",
 		"tag": "art|3d|wip",
-		"date": "1493853060",
+		"date": 1493853060,
 		"thumbnail": "/projects/lapv-thumb.png",
-		"config": "lapv"
 	},
 	{
 		"title": "cyberpunk vivienne",
 		"href": "/portfolio/vivienne",
 		"tag": "art|3d|wip",
-		"date": "1490634960",
+		"date": 1490634960,
 		"thumbnail": "/projects/vivienne-thumb.png",
-		"config": "vivienne"
 	},
 	{
 		"title": "coffee",
 		"href": "/portfolio/coffee",
 		"tag": "art|3d|wip",
-		"date": "1490016480",
+		"date": 1490016480,
 		"thumbnail": "/projects/coffee-thumb.png",
-		"config": "coffee"
 	},
 	{
 		"title": "aimi",
 		"href": "/portfolio/aimi",
 		"tag": "art|3d|wip",
-		"date": "1485946500",
+		"date": 1485946500,
 		"thumbnail": "/projects/aimi-thumb.png",
-		"config": "aimi"
 	},
 	{
 		"title": "failstart",
 		"href": "/portfolio/failstart",
 		"tag": "art|3d",
-		"date": "1481304480",
+		"date": 1481304480,
 		"thumbnail": "/projects/failstart-thumb.png",
-		"config": "failstart"
 	},
 	{
 		"title": "Fundamentum",
 		"href": "/portfolio/fundamentum",
 		"tag": "web|code",
-		"date": "1473342360",
+		"date": 1473342360,
 		"thumbnail": "/projects/fundamentum-thumb.png",
-		"config": "fundamentum"
 	}
 ]

@@ -1,0 +1,18 @@
+{
+	"date": 1490634960,
+	"title": "Cyberpunk vivienne",
+	"software": [
+		"Blender"
+	],
+	"description": [
+		"A tribute to one of best games I played."
+	],
+	"slides": [
+		{
+			"type": "image",
+			"height": 2000,
+			"width": 2000, 
+			"url": "/projects/vivienne.png"
+		}
+	]
+}

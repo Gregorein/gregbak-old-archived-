@@ -1,12 +1,14 @@
 import {
 	resetFilters,
 	toggleFilter,
-	getProjects
+	getProjects,
+	getProject
 } from "./portfolio"
 
 
 export {
 	resetFilters,
 	toggleFilter,
-	getProjects
+	getProjects,
+	getProject
 }
