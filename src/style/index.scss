@@ -11,9 +11,14 @@ html, body {
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
 }
 
 * {
 	box-sizing: border-box;
+}
+
+#app,
+main {
+	height: 100%;
+	widht: 100%;
 }

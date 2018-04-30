@@ -1,6 +1,6 @@
 import {combineReducers} from "redux"
 
-import portfolio from "reducers/portfolio"
+import portfolio from "./portfolio"
 
 export default combineReducers({
 	portfolio

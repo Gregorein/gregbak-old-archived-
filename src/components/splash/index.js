@@ -5,7 +5,7 @@ import cn from "classnames"
 import style from "./style"
 
 export default class Splash extends Component {
-	render({color="#53505a", state=3}) {
+	render({color="#bf604b", state=3}) {
 		return (
 			<svg class={style.svg}>
 				<defs>

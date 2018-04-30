@@ -1,5 +1,84 @@
 @import "~style/variables";
 
-.view {
+.view.single {
+	height: 100vh;
+}
 
+.content {
+	width: 100%;
+	padding-right: 300px;
+
+	&.single {
+		height: 100%;
+		position: relative;
+	}
+}
+
+.sidebar {
+	height: 100%;
+	width: 300px;
+	padding: 35px 20px;
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	background: $dark;
+
+	.title {
+	  color: $salmon;
+	  font-size: 28px;
+	  line-height: 32px;
+	}
+	.date,
+	.info {
+		margin: 20px 0;
+
+		color: $medium;
+	  font-size: 14px;
+	  font-weight: 600;
+	  line-height: 16px;
+	}
+	.description {
+	  font-size: 16px;
+	  color: $white;
+	  line-height: 18px;
+	}
+	.links {
+
+	}
+}
+
+.imageWrap {	
+	margin: 20px auto 0;
+
+	&.single {
+		width: calc(100% - 300px);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translate(0, -50%);
+	}
+	&.first {
+		margin-top: 0px;
+	}
+}
+.image {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+	cursor: pointer;
+
+	position: relative;
+	&::before {
+		content: "";
+
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		background: red;
+	}
 }

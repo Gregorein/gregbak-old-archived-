@@ -22,6 +22,10 @@ export const getProjects = () => dispatch => {
 			}
 		})
 	})
+	.catch(e => {
+		console.error(e)
+		dispatch({type: "GET_PROJECTS_ERROR"})
+	})
 }
 
 export const getProject = project => dispatch => {
@@ -33,5 +37,9 @@ export const getProject = project => dispatch => {
 				project: data
 			}
 		})
-	})	
+	})
+	.catch(e => {
+		console.error(e)
+		dispatch({type: "GET_PROJECT_ERROR"})
+	})
 }

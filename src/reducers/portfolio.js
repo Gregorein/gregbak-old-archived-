@@ -1,5 +1,3 @@
-import {api} from "globals"
-
 const initialState = {
 	filters: [
 		{name: "wip", active: false, tag: "wip"},
@@ -12,7 +10,9 @@ const initialState = {
 	],
 	filteredCount: undefined,
 	projects: [],
-	currentProject: undefined
+	projectsError: false,
+	currentProject: undefined,
+	currentProjectError: false,
 }
 
 const portfolio = (state = initialState, action) => {
@@ -38,6 +38,7 @@ const portfolio = (state = initialState, action) => {
 			}
 
 		case "TOGGLE_FILTER":
+			let filteredCount = state.projects.length
 
 			filters = state.filters.map(filter => {
 				if (filter.tag === action.payload.tag) {
@@ -51,14 +52,20 @@ const portfolio = (state = initialState, action) => {
 				project.visible = true
 
 				filters.forEach(filter => {
-					if(filter.active && !project.tag.includes(filter.tag)) project.visible = false
+					if(filter.active && !project.tag.includes(filter.tag)) {
+						project.visible = false
+						filteredCount--
+					}
 				})
 				return project
 			})
 
+			if (filteredCount === state.projects.length) filteredCount = undefined
+
 			return {
 				...state,
 				filters,
+				filteredCount,
 				projects
 			}
 
@@ -71,13 +78,25 @@ const portfolio = (state = initialState, action) => {
 
 			return {
 				...state,
-				projects
+				projects,
+				projectsError: false,
+			}
+		case "GET_PROJECTS_ERROR":
+			return {
+				...state,
+				projectsError: true,
 			}
 
 		case "GET_PROJECT":
 			return {
 				...state,
-				currentProject: action.payload.project
+				currentProject: action.payload.project,
+				currentProjectError: false,
+			}
+		case "GET_PROJECT_ERROR":
+			return {
+				...state,
+				currentProjectError: true,
 			}
 
 		default:

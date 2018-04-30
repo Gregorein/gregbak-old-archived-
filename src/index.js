@@ -48,7 +48,7 @@ export default class App extends Component {
 		splashStep: 3
 	}
 
-	handleRoute = (e) => {
+	handleRoute = e => {
 		this.setState({
 			currentUrl: e.url
 		})
@@ -75,7 +75,7 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-		// this.handleSplash()
+		this.handleSplash()
 	}
 
 	render() {
@@ -83,7 +83,7 @@ export default class App extends Component {
 			<div id="app">
 				<Provider store={store}>
 					<main>
-						{false && <Splash state={this.state.splashStep} />}
+						{/*<Splash state={this.state.splashStep} />*/}
 						<Sidebar url={this.state.currentUrl} />
 						<Router onChange={this.handleRoute}>
 							<Home path="/" />

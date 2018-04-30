@@ -1,0 +1,7 @@
+node_modules
+/build
+/*.log
+*.lock
+*.sublime-project
+
+package-lock.json

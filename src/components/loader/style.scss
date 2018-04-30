@@ -1,7 +1,7 @@
 @import "~style/variables";
 
 .loader {
-	animation: loader $t*20 infinite linear;
+	animation: loader $t*30 infinite;
 
 	pointer-events: none;
 
@@ -10,7 +10,7 @@
 	left: 50%;
 
 	transform-origin: 44px 50.8px;
-	transform: translate(-50%, -50%) scale(0.5);
+	transform: translate(-50%, -50%) scale(0.75);
 
 	color: $dark;
 
@@ -20,11 +20,13 @@
 		animation: left $t*10 infinite;
 
 		transform-origin: 0 76.21px;
+		transform: scale(1.03);
 	}
 	.top {
 		animation: top $t*10 infinite;
 
 		transform-origin: 44px 0px;
+		transform: scale(1.03);
 	}
 	.right {
 		animation: right $t*10 infinite;
@@ -55,7 +57,7 @@
 
 @keyframes left {
 	23% {
-		transform: scale(1.02);
+		transform: scale(1.03);
 	}
 	28% {
 		transform: scale(0.8);
@@ -64,13 +66,13 @@
 		transform: scale(0.8);
 	}
 	43% {
-		transform: scale(1.02);
+		transform: scale(1.03);
 	}
 }
 
 @keyframes top {
 	56% {
-		transform: scale(1.02);
+		transform: scale(1.03);
 	}
 	61% {
 		transform: scale(0.8);
@@ -79,7 +81,7 @@
 		transform: scale(0.8);
 	}
 	76% {
-		transform: scale(1.02);
+		transform: scale(1.03);
 	}
 }
 
@@ -88,11 +90,11 @@
 		transform: scale(0.8);
 	}
 	10% {
-		transform: scale(1.02);		
+		transform: scale(1.03);		
 	}
 
 	90% {
-		transform: scale(1.02);		
+		transform: scale(1.03);		
 	}
 	95% {
 		transform: scale(0.8);
