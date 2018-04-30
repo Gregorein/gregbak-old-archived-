@@ -6,8 +6,8 @@ import config from "config"
 import cn from "classnames"
 
 import Loader from "components/loader"
-
 import View from "components/view"
+import ImageTile from "components/imageTile"
 
 import styles from "./style"
 
@@ -15,29 +15,6 @@ import {
 	getProject
 } from "actions"
 
-const ImageLink = ({height, width, url, single, first, handleClick}) => {
-	return (
-		<div
-			class={cn(styles.imageWrap, {
-				[styles.single]: single,
-				[styles.first]: first,
-			})}
-			style={{
-				maxHeight: `${100}vh`,
-				maxWidth: `${width}px`,
-			}}
-			>
-			<div
-				class={styles.image}
-				onClick={e => handleClick(e)}
-				style={{
-					paddingBottom: `${100*height/width}%`,
-					backgroundImage: `url(${config.api}${url})`,
-				}}
-			/>
-		</div>
-	)
-} 
 
 class Project extends Component {
 	componentWillMount() {
@@ -53,10 +30,14 @@ class Project extends Component {
 		return (
 			<div class={cn(styles.content, {[styles.single]: project.slides.length === 1})}>
 				{project.slides.map((slide, i) => {
-					console.log(slide)
 					switch(slide.type) {
 						case "image":
-							return <ImageLink {...slide} single={project.slides.length === 1} first={i === 0 && project.slides.length > 1} />
+							return <ImageTile
+								{...slide}
+								single={project.slides.length === 1}
+								first={i === 0 && project.slides.length > 1}
+								handleClick={() => {console.log(`${config.api}${slide.url}`)}}
+								/>
 
 						default: return
 					}

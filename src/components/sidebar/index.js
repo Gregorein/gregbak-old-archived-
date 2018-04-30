@@ -4,8 +4,9 @@ import {Link} from "preact-router/match"
 import cn from "classnames"
 
 import Radiv from "components/radiv"
-import Logo from "components/logo"
 import Filters from "components/filters"
+
+import Logo from "icons/logo"
 
 import styles from "./style"
 

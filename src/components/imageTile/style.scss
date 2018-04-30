@@ -1,0 +1,81 @@
+@import "~style/variables";
+
+.imageWrap {
+	display: block;
+	box-sizing: border-box;
+	max-height: calc(100vh - 200px);
+	margin: 20px auto 0;
+
+	&.first {
+		margin-top: 0px;
+	}
+	&.single {
+		margin-top: 0px;
+		width: 100%;
+		display: inline-block;
+
+		.image {
+			width: calc(100% - 300px);
+			margin: 0 auto;
+			position: absolute;
+			top: 50%;
+			left: calc(50% - 150px);
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+.image {
+	transition: max-width $t $e;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+	cursor: pointer;
+
+	position: relative;
+
+	svg {
+		transition: opacity $t $e,
+								color $t $e;
+
+		height: 25px;
+		width: 25px;
+		position: absolute;
+		bottom: 40px;
+		right: 40px;
+		z-index: 1;
+		// transform: translate(-50%, -50%);
+		color: $medium;
+
+		opacity: 0.667;
+
+		path {
+			transform: translateZ(0) scale(0.025);
+		}
+	}
+	&::after {
+		transition: opacity $t $e;
+
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		background: $salmon;
+		opacity: 0;
+	}
+
+	&:hover {
+		svg {
+			color: $white;
+
+			opacity: 1;
+		}
+		&::after {
+			opacity: 0.667;
+		}
+	}
+}

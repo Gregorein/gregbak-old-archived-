@@ -5,6 +5,7 @@
 }
 
 .content {
+	height: 100%;
 	width: 100%;
 	padding-right: 300px;
 
@@ -45,40 +46,5 @@
 	}
 	.links {
 
-	}
-}
-
-.imageWrap {	
-	margin: 20px auto 0;
-
-	&.single {
-		width: calc(100% - 300px);
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translate(0, -50%);
-	}
-	&.first {
-		margin-top: 0px;
-	}
-}
-.image {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-
-	cursor: pointer;
-
-	position: relative;
-	&::before {
-		content: "";
-
-		height: 100px;
-		width: 100px;
-		position: absolute;
-		top: 0;
-		left: 0;
-
-		background: red;
 	}
 }
