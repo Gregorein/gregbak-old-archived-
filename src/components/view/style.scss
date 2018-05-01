@@ -11,6 +11,10 @@
 	position: relative;
 
 	overflow: auto;
+
+	&.full {
+		padding-left: 0;
+	}
 }
 
 // "widths"

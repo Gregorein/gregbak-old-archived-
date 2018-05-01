@@ -7,7 +7,9 @@ import Fullscreen from "icons/fullscreen"
 import styles from "./style"
 
 class ImageLink extends Component {
-	super(props) {
+	constructor(props) {
+		super(props)
+
 		this.state = {
 			updates: 0
 		}
@@ -25,7 +27,7 @@ class ImageLink extends Component {
 				...this.state,
 				updates: updates++
 			})
-		}, 250)
+		}, 25)
 	}
 
 	componentDidMount() {
@@ -44,15 +46,13 @@ class ImageLink extends Component {
 					[styles.first]: first,
 				})}
 				style={{
-					maxHeight: `${height}px`,
-					maxWidth: `${width}px`,		
+					maxWidth: !single ? `${width}px` : `${(window.innerHeight/height) * width}px`,
 				}}
 				>
 				<div
 					class={styles.image}
-					onClick={e => handleClick(e)}
+					onClick={() => handleClick()}
 					style={{
-						maxWidth: `${(window.innerHeight/height) * width}px`,
 						paddingBottom: `${100*height/width}%`,
 						backgroundImage: `url(${config.api}${url})`,
 					}}

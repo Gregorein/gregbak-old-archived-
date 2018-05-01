@@ -26,7 +26,7 @@ export default class radiv extends Component {
 		let matchedUrl = false
 		let urlClassMap = {}
 		for (const u in urls) {
-			if(defaultUrl === "") defaultUrl = u
+			if (defaultUrl === "") defaultUrl = u
 			const _u = new RegExp(`^${u.replace(/\*/g, ".+")}$`)
 
 			const urlClass = urls[u] || ""
@@ -34,9 +34,6 @@ export default class radiv extends Component {
 				matchedUrl = true
 				urlClassMap[urlClass] = true
 			}
-		}
-		if(!matchedUrl) {
-			urlClassMap[defaultUrl] = true
 		}
 
 		return (

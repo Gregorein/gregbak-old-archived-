@@ -9,10 +9,8 @@ export const api = (url, method="GET", data, headers={}) => {
 		}
 	})
 	.then(response => {
-		if (response.ok) {
-			return response.json()
-		}
-		return Promise.reject(Error("ERROR :: malformed API response"))
+		if (response.ok) return response.json()
+		else return Promise.reject(Error("ERROR :: malformed API response"))
 	})
 	.catch(error => {
 		return Promise.reject(Error(error.message))

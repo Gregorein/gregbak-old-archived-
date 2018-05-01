@@ -16,16 +16,14 @@ import Sidebar from "components/sidebar"
 import Home from "routes/home"
 import Portfolio from "routes/portfolio"
 import Project from "routes/project"
-import Contact from "routes/home"
+import Contact from "routes/contact"
 import About from "routes/about"
 import PolicyCopyrights from "routes/policy-copyrights"
 
 import "./style"
 
 // dev
-if (module.hot) {
-	require("preact/debug")
-}
+if (module.hot) require("preact/debug")
 
 // stores
 const store = createStore(
@@ -76,6 +74,11 @@ export default class App extends Component {
 
 	componentDidMount() {
 		this.handleSplash()
+
+		const app = document.querySelector("#app")
+		const overlay = document.createElement("div")
+		overlay.id = "overlay"
+		app.parentElement.appendChild(overlay)
 	}
 
 	render() {

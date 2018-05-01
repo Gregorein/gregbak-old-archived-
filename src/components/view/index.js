@@ -11,6 +11,7 @@ const View = ({children, ...props}) => (
 		{...props}
 		class={styles.container}
 		urls={{
+			"/": styles.full,
 			"/portfolio": cn(styles.aFilters, styles.bHeavy),
 			"/portfolio/*": cn(styles.aReturn, styles.bHeavy),
 			"/policy-copyrights": styles.bSalmon,

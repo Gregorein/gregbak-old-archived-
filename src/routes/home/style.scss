@@ -1,5 +1,50 @@
 @import "~style/variables";
 
 .view {
+	min-height: 100vh;
+	position: relative;
+}
 
+.cta {
+	width: 880px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	.word1 {
+		display: block;
+
+		color: $medium;
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 38px;
+		text-align: right;
+	}
+	.word2 {
+		display: block;
+
+		color: $salmon;
+		font-size: 108px;
+		font-weight: 100;
+		line-height: 80px;
+		text-transform: uppercase;
+
+	}
+	.word3 {
+		display: block;
+
+		color: $medium;
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 38px;
+		text-align: center;
+	}
+	.word4 {
+		display: block;
+
+		color: $salmon;
+		font-size: 36px;
+		line-height: 38px;
+	}
 }

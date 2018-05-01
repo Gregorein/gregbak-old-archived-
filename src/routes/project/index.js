@@ -1,4 +1,4 @@
-import {h, Component} from "preact"
+import {h, render, Component} from "preact"
 import {connect} from "preact-redux"
 import {route} from "preact-router"
 import moment from "moment"
@@ -8,6 +8,7 @@ import cn from "classnames"
 import Loader from "components/loader"
 import View from "components/view"
 import ImageTile from "components/imageTile"
+import ImageOverlay from "components/imageOverlay"
 
 import styles from "./style"
 
@@ -17,13 +18,34 @@ import {
 
 
 class Project extends Component {
+	constructor() {
+		super()
+
+		this.overlay = undefined
+	}
+
 	componentWillMount() {
 		const {getProject, matches: {project}} = this.props
 
 		getProject(project)
 	}
 	componentWillReceiveProps(newProps) {
-		if(newProps.error) route("/portfolio")
+		if (newProps.error) route("/portfolio")
+	}
+	
+	closeOverlay = () => {
+		const overlayNode = document.getElementById("overlay")
+
+		overlayNode.parentNode.style.overflow = ""
+		render(null, overlayNode, this.overlay)
+		this.overlay = undefined
+	}
+	renderOverlay = image => {
+		const overlayNode = document.getElementById("overlay")
+
+		overlayNode.parentNode.style.overflow = "hidden"
+		if (this.overlay !== undefined) render(null, overlayNode, this.overlay)
+		this.overlay = render((<ImageOverlay image={image} handleOverlay={this.closeOverlay} />), overlayNode)
 	}
 
 	renderSlides = project => {
@@ -35,8 +57,8 @@ class Project extends Component {
 							return <ImageTile
 								{...slide}
 								single={project.slides.length === 1}
-								first={i === 0 && project.slides.length > 1}
-								handleClick={() => {console.log(`${config.api}${slide.url}`)}}
+								first={i === 0}
+								handleClick={() => this.renderOverlay(`${config.api}${slide.url}`)}
 								/>
 
 						default: return

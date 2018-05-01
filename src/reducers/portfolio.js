@@ -52,7 +52,7 @@ const portfolio = (state = initialState, action) => {
 				project.visible = true
 
 				filters.forEach(filter => {
-					if(filter.active && !project.tag.includes(filter.tag)) {
+					if (filter.active && !project.tag.includes(filter.tag)) {
 						project.visible = false
 						filteredCount--
 					}

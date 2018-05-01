@@ -1,32 +1,8 @@
 @import "~style/variables";
 
-.imageWrap {
-	display: block;
-	box-sizing: border-box;
-	max-height: calc(100vh - 200px);
-	margin: 20px auto 0;
-
-	&.first {
-		margin-top: 0px;
-	}
-	&.single {
-		margin-top: 0px;
-		width: 100%;
-		display: inline-block;
-
-		.image {
-			width: calc(100% - 300px);
-			margin: 0 auto;
-			position: absolute;
-			top: 50%;
-			left: calc(50% - 150px);
-			transform: translate(-50%, -50%);
-		}
-	}
-}
 .image {
 	transition: max-width $t $e;
-	
+
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -35,7 +11,7 @@
 
 	position: relative;
 
-	svg {
+	.fullscreen {
 		transition: opacity $t $e,
 								color $t $e;
 
@@ -45,7 +21,7 @@
 		bottom: 40px;
 		right: 40px;
 		z-index: 1;
-		// transform: translate(-50%, -50%);
+
 		color: $medium;
 
 		opacity: 0.667;
@@ -69,13 +45,36 @@
 	}
 
 	&:hover {
-		svg {
+		.fullscreen {
 			color: $white;
 
 			opacity: 1;
 		}
 		&::after {
 			opacity: 0.667;
+		}
+	}
+}
+.imageWrap {
+	transition: max-width $t $e;
+	
+	box-sizing: border-box;
+	margin: 20px auto 0;
+
+	position: relative;
+
+	&.first {
+		margin-top: 0px;
+	}
+	&.single {
+		height: 100vh;
+
+		.image {
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
 		}
 	}
 }

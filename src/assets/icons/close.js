@@ -4,6 +4,7 @@ const Close = (props) => (
 	<svg 
 		width="1500px"
 		height="1500px"
+		{...props}
 		>
 		<path
 			fill="currentColor"
