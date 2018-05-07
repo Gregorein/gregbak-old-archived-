@@ -1,5 +1,4 @@
 import { h, Component } from "preact"
-import { Link } from "preact-router/match"
 
 import cn from "classnames"
 import style from "./style"

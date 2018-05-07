@@ -9,7 +9,7 @@ const PolicyCopyrights = () => {
 	return (
 		<View class={styles.view}>
 			<h1>Policy &amp; Copyrights</h1>
-			<p>This website and the content by <a href="/" title="Greg Bak Portfolio">Greg Bak</a> is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" title="Attribution 4.0 International">Attribution 4.0 International</a>, unless otherwise noted.</p>
+			<p>This website and the content by <a target="_blank" href="/" title="Greg Bak Portfolio">Greg Bak</a> is licensed under a <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" title="Attribution 4.0 International">Attribution 4.0 International</a>, unless otherwise noted.</p>
 			<h2>Simply:</h2>
 			<p>
 				You can <em>Share</em> — copy and redistribute the material in any medium or format.<br/>

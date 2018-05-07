@@ -1,14 +1,16 @@
 import {h} from "preact"
-import {Link} from "preact-router/match"
 import moment from "moment"
+import cn from "classnames"
 
 import config from "config"
 
 import styles from "./style"
 
-const Tile = ({project}) => (
-	<Link
-		class={styles.tile}
+const Tile = ({project, small}) => (
+	<a
+		class={cn(styles.tile, {
+				[styles.small]: small
+			})}
 		href={project.href}
 		>
 		<div
@@ -25,7 +27,7 @@ const Tile = ({project}) => (
 				{moment.unix(project.date).fromNow()}
 			</p>
 		</div>
-	</Link>
+	</a>
 )
 
 export default Tile

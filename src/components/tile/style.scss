@@ -3,13 +3,32 @@
 .tile {
 	float: left;
 	display: inline-block;
-	width: 50%;
-	padding-bottom: calc(50% + 100px);
+
+	width: 20%;
+	padding-bottom: calc(20% + 100px);
+	@media (max-width: 1920px) {
+		width: 33.333%;
+		padding-bottom: calc(33.333% + 100px);
+	}
+	@media (max-width: 1336px) {
+		width: 50%;
+		padding-bottom: calc(50% + 100px);
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+		padding-bottom: calc(100% + 100px);
+	}
 
 	position: relative;
 	z-index: 10;
 
 	background: $salmon;
+
+	&.small {
+		float: right;
+		width: 400px;
+		padding-bottom: 500px;
+	}
 }
 
 .thumb {

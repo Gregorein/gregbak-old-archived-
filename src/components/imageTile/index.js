@@ -7,8 +7,8 @@ import Fullscreen from "icons/fullscreen"
 import styles from "./style"
 
 class ImageLink extends Component {
-	constructor(props) {
-		super(props)
+	constructor() {
+		super()
 
 		this.state = {
 			updates: 0
@@ -24,7 +24,7 @@ class ImageLink extends Component {
 	  this.resizeTimer = setTimeout(() => {
 
 			this.setState({
-				...this.state,
+				// ...this.state,
 				updates: updates++
 			})
 		}, 25)

@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build --template src/template.html",
-    "serve": "preact build --template src/template.html && preact serve --template src/template.html",
+    "build": "preact build --no-prerender --template src/template.html",
+    "serve": "preact build --no-prerender --template src/template.html && preact serve --template src/template.html",
     "dev": "preact watch --template src/template.html"
   },
   "devDependencies": {
@@ -14,7 +14,6 @@
     "identity-obj-proxy": "^3.0.0",
     "if-env": "^1.0.0",
     "liquid-route": "^1.0.1",
-    "moment": "^2.21.0",
     "node-sass": "^4.8.3",
     "preact-cli": "^2.1.0",
     "preact-redux": "^2.0.3",
@@ -24,7 +23,10 @@
     "sass-loader": "^6.0.7"
   },
   "dependencies": {
+    "moment": "^2.21.0",
     "preact": "^8.2.6",
-    "preact-router": "^2.5.7"
+    "preact-router": "^2.5.7",
+    "smooth-scroll": "^12.1.5",
+    "three": "^0.92.0"
   }
 }

@@ -1,6 +1,6 @@
 import {h} from "preact"
 
-const Fullscreen = (props) => (
+const Fullscreen = props => (
 	<svg 
 	 width="1000px"
 	 height="1000px"

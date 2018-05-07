@@ -18,7 +18,7 @@ export default class About extends Component {
 					</div>
 					<h2>about me</h2>
 					<h1 class={styles.copy}>I’m Greg Bak (Grzegorz Bąk)</h1>
-					<p class={styles.copy}>I’m a 23 year old Software Engineer and a self-taught CGI generalist based in Poland. Currently I'm in the middle of my Master's degree (Computer Science) and I'll graduate in February 2019. I work as a fullstack lead developer at Crafton. In my free time I learn languages, climb rocks and sing in a chamber choir (check it out). Unfortunately, I'm unable to perform all of that at the same time.</p>
+					<p class={styles.copy}>I’m a 23 year old Software Engineer and a self-taught CGI generalist based in Poland. Currently I'm in the middle of my Master's degree (Computer Science) and I'll graduate in February 2019.<br/>In my free time I learn languages, climb rocks and sing in a chamber choir <a class={styles.link} target="_blank" href="http://dysonans.pl/en/" title="Dysonans Chamber Choir">(check it out)</a>. Unfortunately, I'm unable to perform all of that at the same time.</p>
 					<p class={styles.copy}>Being heavily influenced by the Japanese culture, I strive for the balance of precise technical thinking and artistic mindset.</p>
 
 					<h2 class={styles.smallDip}>my timeline</h2>
@@ -29,46 +29,46 @@ export default class About extends Component {
 						</li>
 						<li>
 							<p class={styles.date}>7.2011&mdash;2013</p>
-							<h3 class={styles.title}>concept 3d artist and animator</h3>
-							<a class={styles.location} href="https://www.unvanquished.net">@Unvanquished Development <span>(https://www.unvanquished.net)</span></a>
+							<h3 class={styles.title}>I was a concept 3d artist and animator. I worked on early alpha's character models and structures.</h3>
+							<a class={styles.location} target="_blank" href="https://www.unvanquished.net">@Unvanquished Development <span>(https://www.unvanquished.net)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>6.2012&mdash;10.2013</p>
-							<h3 class={styles.title}>volunteer UI translator (polish team)</h3>
-							<a class={styles.location} href="https://www.blender.org">@Blender Institute <span>(https://www.blender.org)</span></a>
+							<h3 class={styles.title}>I was a volunteer UI translator (polish team)</h3>
+							<a class={styles.location} target="_blank" href="https://www.blender.org">@Blender Institute <span>(https://www.blender.org)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>10.2013&mdash;3.2017</p>
-							<h3 class={styles.title}>Bachelor of Engineering, Computer Science</h3>
+							<h3 class={styles.title}>I graduated as a Bachelor of Engineering, Computer Science</h3>
 							<div class={styles.location}>@Adam Mickiewicz University, Poznań</div>
 						</li>
 						<li>
 							<p class={styles.date}>4.2014&mdash;10.2014</p>
-							<h3 class={styles.title}>junior backend developer</h3>
-							<a class={styles.location} href="http://e-kwarta.pl">@Kwarta <span>(http://e-kwarta.pl)</span></a>
+							<h3 class={styles.title}>I worked as a junior backend developer. I worked on plugins that patched-in missing functionality of database exports</h3>
+							<a class={styles.location} target="_blank" href="http://e-kwarta.pl">@Kwarta <span>(http://e-kwarta.pl)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>10.2014&mdash;10.2015</p>
-							<h3 class={styles.title}>design and fullstack developer (freelance)</h3>
-							<a class={styles.location} href="http://www.da.poznan.dominikanie.pl">@DA Dominikanie <span>(http://www.da.poznan.dominikanie.pl)</span></a>
+							<h3 class={styles.title}>I worked freelance, as a designer and fullstack developer. I had to migrate previous CMS to a new Wordpress-based solution</h3>
+							<a class={styles.location} target="_blank" href="http://www.da.poznan.dominikanie.pl">@DA Dominikanie <span>(http://www.da.poznan.dominikanie.pl)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>7.2015&mdash;5.2016</p>
-							<h3 class={styles.title}>junior frontend developer</h3>
-							<a class={styles.location} href="http://uxdream.com">@UX Dream <span>(http://uxdream.com)</span></a>
+							<h3 class={styles.title}>I worked as a junior frontend developer. </h3>
+							<a class={styles.location} target="_blank" href="http://uxdream.com">@UX Dream <span>(http://uxdream.com)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>9.2016&mdash;1.2017</p>
-							<h3 class={styles.title}>design and fullstack developer (freelance)</h3>
-							<a class={styles.location} href="http://fundamentum.com.pl">@Fundamentum <span>(http://fundamentum.com.pl)</span></a>
+							<h3 class={styles.title}>I worked freelance. I designed identification and the website, and developed a Wordpress solution</h3>
+							<a class={styles.location} target="_blank" href="http://fundamentum.com.pl">@Fundamentum <span>(http://fundamentum.com.pl)</span></a>
 						</li>
 						<li>
-							<p class={styles.date}>5.2017&mdash;now</p>
+							<p class={styles.date}>5.2017&mdash;5.2018</p>
 							<h3 class={styles.title}>fullstack web developer</h3>
-							<a class={styles.location} href="http://crafton.com">@Crafton <span>(http://crafton.com)</span></a>
+							<a class={styles.location} target="_blank" href="http://crafton.com">@Crafton <span>(http://crafton.com)</span></a>
 						</li>
 						<li>
-							<p class={styles.date}>102017&mdash;now</p>
+							<p class={styles.date}>10.2017&mdash;now</p>
 							<h3 class={styles.title}>Master of Engineering, Computer Science</h3>
 							<div class={styles.location}>@Adam Mickiewicz University, Poznań</div>
 						</li>
@@ -84,7 +84,7 @@ export default class About extends Component {
 					<ul class={styles.skills}>
 						<h3>web stack</h3>
 						<li class={styles.expert}>SASS</li>
-						<li class={styles.advanced}>React/Preact with Redux</li>
+						<li class={styles.advanced}>React/Preact with Redux (with Saga, rx.js too)</li>
 						<li class={styles.advanced}>ES7</li>
 						<li class={styles.intermediate}>SQL</li>
 					</ul>
@@ -116,7 +116,7 @@ export default class About extends Component {
 						<h2>Thanks for stopping by!</h2>
 						<p>
 							If you want to say hello or ask a question,<br/>
-							feel free to contact me at <a href="mailto:gregbak@me.com" title="my contact email">gregbak@me.com</a>
+							feel free to contact me at <a href="mailto:gregbak@me.com?subject= Portfolio feedback |&body=Hello Greg," title="my contact email">gregbak@me.com</a>
 						</p>
 					</div>
 				</div>

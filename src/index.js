@@ -16,7 +16,6 @@ import Sidebar from "components/sidebar"
 import Home from "routes/home"
 import Portfolio from "routes/portfolio"
 import Project from "routes/project"
-import Contact from "routes/contact"
 import About from "routes/about"
 import PolicyCopyrights from "routes/policy-copyrights"
 
@@ -42,8 +41,13 @@ moment.relativeTimeThreshold("M", 24)
 
 // love and magic
 export default class App extends Component {
-	state = {
-		splashStep: 3
+	constructor() {
+		super()
+
+		this.state = {
+			sidebarStep: 0,
+			splashStep: 3
+		}
 	}
 
 	handleRoute = e => {
@@ -69,30 +73,42 @@ export default class App extends Component {
 			this.setState({
 				splashStep: 0
 			})
-		}, step*3)	
+		}, step*3)
+		setTimeout(() => {
+			this.setState({
+				splashStep: -1
+			})
+		}, step*4)
+	}
+
+	handleSidebarStep = sidebarStep => {
+		this.setState({
+			sidebarStep
+		})
 	}
 
 	componentDidMount() {
 		this.handleSplash()
 
-		const app = document.querySelector("#app")
-		const overlay = document.createElement("div")
-		overlay.id = "overlay"
-		app.parentElement.appendChild(overlay)
+		if(document.querySelector("#overlay") === null) {
+			const app = document.querySelector("#app")
+			const overlay = document.createElement("div")
+			overlay.id = "overlay"
+			app.parentElement.appendChild(overlay)
+		}
 	}
 
-	render() {
+	render({}, {splashStep, sidebarStep, currentUrl}) {
 		return (
 			<div id="app">
 				<Provider store={store}>
 					<main>
-						{/*<Splash state={this.state.splashStep} />*/}
-						<Sidebar url={this.state.currentUrl} />
+						{false && splashStep >= 0 && <Splash state={splashStep} />}
+						<Sidebar step={sidebarStep} url={currentUrl} />
 						<Router onChange={this.handleRoute}>
-							<Home path="/" />
+							<Home handleSidebarStep={this.handleSidebarStep} sidebarStep={sidebarStep} path="/" />
 							<Portfolio path="/portfolio" />
 							<Project path="/portfolio/:project" />
-							<Contact path="/contact" />
 							<About path="/about" />
 							<PolicyCopyrights path="/policy-copyrights" />
 						</Router>

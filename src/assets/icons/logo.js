@@ -1,6 +1,6 @@
 import {h} from "preact"
 
-const Logo = (props) => (
+const Logo = props => (
 	<svg
 		width="88px"
 		height="74px"

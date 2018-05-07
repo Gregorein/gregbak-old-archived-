@@ -1,0 +1,12 @@
+@import "~style/variables";
+
+.mun {
+	height: 400px;
+	width: 400px;
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	z-index: 1;
+}

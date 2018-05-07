@@ -27,6 +27,7 @@ class Project extends Component {
 	componentWillMount() {
 		const {getProject, matches: {project}} = this.props
 
+		window.scroll(0,0)
 		getProject(project)
 	}
 	componentWillReceiveProps(newProps) {
@@ -77,9 +78,7 @@ class Project extends Component {
 				<p class={styles.date}>
 					{moment.unix(project.date).fromNow()}
 				</p>
-				<p class={styles.description}>
-					{project.description}
-				</p>
+				<p dangerouslySetInnerHTML={{__html: project.description}} class={styles.description} />
 				{project.links && <p class={styles.info}>in the network</p>}
 			</div>
 		)

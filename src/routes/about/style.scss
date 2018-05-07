@@ -235,6 +235,18 @@
 			}
 		}
 	}
+
+	.link {
+		transition: color $t $e;
+
+		color: $salmon;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			color: $salmon-alt;
+		}
+	}
 }
 
 .theEnd {

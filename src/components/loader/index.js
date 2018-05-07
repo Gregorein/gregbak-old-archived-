@@ -2,7 +2,7 @@ import {h} from "preact"
 
 import styles from "./style"
 
-const Loader = (props) => (
+const Loader = props => (
 	<svg
 		class={styles.loader}
 		width="88px"

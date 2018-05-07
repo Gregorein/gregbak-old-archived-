@@ -32,14 +32,15 @@ export default class Sidebar extends Component {
 				class={styles.sidebar}
 				urls={{
 					"/": cn({
+						// splash
 						[styles.tDark]: step === 0,
-						[styles.hGold]: step === 0,
+						[styles.hSalmonAlt]: step === 0,
+						// story
 						[styles.tSalmon]: step === 1,
 						[styles.hMedium]: step === 1
 					}),
 					"/portfolio": cn(styles.aFilters, styles.tDark, styles.hSalmon),
 					"/portfolio/*": cn(styles.aReturn, styles.tDark, styles.hSalmon),
-					"/contact": cn(styles.tDark, styles.hGold),
 					"/about": cn(styles.tDark, styles.hSalmonAlt), 
 					"/policy-copyrights": cn(styles.tDark, styles.hMedium)
 				}}
@@ -86,14 +87,6 @@ export default class Sidebar extends Component {
 						title="about"
 						>
 						about
-					</Link>
-					<Link
-						class={styles.link}
-						activeClassName={styles.active}
-						href="/contact"
-						title="contact"
-						>
-						contact
 					</Link>
 					<Link
 						class={cn(styles.link, styles.footer)}

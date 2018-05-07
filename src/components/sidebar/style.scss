@@ -140,6 +140,8 @@
 }
 
 .link {
+	transition: color $t $e;
+	
 	display: block;
 	height: 50px;
 	width: 100%;
@@ -221,7 +223,7 @@
 }
 .hGoldAlt {
 	.logo:hover {
-		color: $gold;
+		color: $gold-alt;
 	}
 	.link.active::before,
 	.link:hover::before {

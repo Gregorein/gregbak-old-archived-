@@ -6,7 +6,7 @@ import Close from "icons/close"
 import styles from "./style"
 
 class ImageOverlay extends Component {
-	handleKeyDown = (e) => {
+	handleKeyDown = e => {
 		if (e.keyCode === 27) this.props.handleOverlay()
 	}
 
