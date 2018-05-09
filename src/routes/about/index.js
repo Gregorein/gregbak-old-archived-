@@ -34,42 +34,42 @@ export default class About extends Component {
 						</li>
 						<li>
 							<p class={styles.date}>6.2012&mdash;10.2013</p>
-							<h3 class={styles.title}>I was a volunteer UI translator (polish team)</h3>
+							<h3 class={styles.title}>I was a volunteer UI translator (polish team).</h3>
 							<a class={styles.location} target="_blank" href="https://www.blender.org">@Blender Institute <span>(https://www.blender.org)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>10.2013&mdash;3.2017</p>
-							<h3 class={styles.title}>I graduated as a Bachelor of Engineering, Computer Science</h3>
+							<h3 class={styles.title}>I graduated as a Bachelor of Engineering, Computer Science.</h3>
 							<div class={styles.location}>@Adam Mickiewicz University, Poznań</div>
 						</li>
 						<li>
 							<p class={styles.date}>4.2014&mdash;10.2014</p>
-							<h3 class={styles.title}>I worked as a junior backend developer. I worked on plugins that patched-in missing functionality of database exports</h3>
+							<h3 class={styles.title}>I worked as a junior backend developer. I worked on plugins that patched-in missing functionality of database exports.</h3>
 							<a class={styles.location} target="_blank" href="http://e-kwarta.pl">@Kwarta <span>(http://e-kwarta.pl)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>10.2014&mdash;10.2015</p>
-							<h3 class={styles.title}>I worked freelance, as a designer and fullstack developer. I had to migrate previous CMS to a new Wordpress-based solution</h3>
+							<h3 class={styles.title}>I worked freelance, as a designer and fullstack developer. I had to migrate previous CMS to a new Wordpress-based solution.</h3>
 							<a class={styles.location} target="_blank" href="http://www.da.poznan.dominikanie.pl">@DA Dominikanie <span>(http://www.da.poznan.dominikanie.pl)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>7.2015&mdash;5.2016</p>
-							<h3 class={styles.title}>I worked as a junior frontend developer. </h3>
+							<h3 class={styles.title}>I worked as a junior frontend developer in React.</h3>
 							<a class={styles.location} target="_blank" href="http://uxdream.com">@UX Dream <span>(http://uxdream.com)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>9.2016&mdash;1.2017</p>
-							<h3 class={styles.title}>I worked freelance. I designed identification and the website, and developed a Wordpress solution</h3>
+							<h3 class={styles.title}>I worked freelance. I designed identification, the website, and developed a Wordpress solution for a web-based newspaper.</h3>
 							<a class={styles.location} target="_blank" href="http://fundamentum.com.pl">@Fundamentum <span>(http://fundamentum.com.pl)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>5.2017&mdash;5.2018</p>
-							<h3 class={styles.title}>fullstack web developer</h3>
+							<h3 class={styles.title}>I worked as a fullstack web developer. I introduced ESNext, React and an update to the existing project lifecycle.</h3>
 							<a class={styles.location} target="_blank" href="http://crafton.com">@Crafton <span>(http://crafton.com)</span></a>
 						</li>
 						<li>
 							<p class={styles.date}>10.2017&mdash;now</p>
-							<h3 class={styles.title}>Master of Engineering, Computer Science</h3>
+							<h3 class={styles.title}>I'm finishing my Master of Engineering, Computer Science</h3>
 							<div class={styles.location}>@Adam Mickiewicz University, Poznań</div>
 						</li>
 					</ul>

@@ -1,3 +1,3 @@
 export default {
-	api: "http://0.0.0.0/api"
+	api: "http://gregbak.com/api"
 };
