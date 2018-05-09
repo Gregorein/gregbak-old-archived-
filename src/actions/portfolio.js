@@ -43,3 +43,9 @@ export const getProject = project => dispatch => {
 		dispatch({type: "GET_PROJECT_ERROR"})
 	})
 }
+
+export const clearProject = () => {
+	return {
+		type: "CLEAR_PROJECT"
+	}
+}

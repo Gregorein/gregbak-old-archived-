@@ -2,6 +2,7 @@ import {h, Component} from "preact"
 import config from "config"
 import cn from "classnames"
 
+import Loader from "components/loader"
 import Fullscreen from "icons/fullscreen"
 
 import styles from "./style"
@@ -11,10 +12,12 @@ class ImageLink extends Component {
 		super()
 
 		this.state = {
-			updates: 0
+			updates: 0,
+			loaded: false
 		}
 
 		this.resizeTimer
+		this.img = new Image()
 	}
 
 	updateDimensions = () => {
@@ -30,15 +33,25 @@ class ImageLink extends Component {
 		}, 25)
 	}
 
-	componentDidMount() {
-		this.updateDimensions()
-		 window.addEventListener("resize", this.updateDimensions)
-	}
-	componentWillUnmount() {
-		 window.removeEventListener("resize", this.updateDimensions)
+	loadImage = url => {
+		this.img.src = url
+		this.img.onload = () => {
+			this.setState({
+				loaded: true
+			})
+		}
 	}
 
-	render ({height, width, url, single, first, handleClick}) {
+	componentDidMount() {
+		this.updateDimensions()
+		window.addEventListener("resize", this.updateDimensions)
+	}
+	componentWillUnmount() {
+		window.removeEventListener("resize", this.updateDimensions)
+	}
+
+	render ({height, width, url, single, first, handleClick}, {loaded}) {
+		if(!loaded) this.loadImage(`${config.api}${url}`)
 		return (
 			<div
 				class={cn(styles.imageWrap, {
@@ -49,16 +62,20 @@ class ImageLink extends Component {
 					maxWidth: !single ? `${width}px` : `${(window.innerHeight/height) * width}px`,
 				}}
 				>
-				<div
-					class={styles.image}
-					onClick={() => handleClick()}
-					style={{
-						paddingBottom: `${100*height/width}%`,
-						backgroundImage: `url(${config.api}${url})`,
-					}}
-					>
-					<Fullscreen class={styles.fullscreen} />
-				</div>
+				{loaded ? (
+					<div
+						class={styles.image}
+						onClick={() => handleClick()}
+						style={{
+							paddingBottom: `${100*height/width}%`,
+							backgroundImage: `url(${config.api}${url})`,
+						}}
+						>
+						<Fullscreen class={styles.fullscreen} />
+					</div>
+					) : (
+						<Loader />
+					)}
 			</div>
 		)
 	}

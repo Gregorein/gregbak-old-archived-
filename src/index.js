@@ -57,7 +57,7 @@ export default class App extends Component {
 	}
 	
 	handleSplash = () => {
-		let step = 1000
+		let step = 500
 
 		setTimeout(() => { 
 			this.setState({
@@ -103,7 +103,7 @@ export default class App extends Component {
 			<div id="app">
 				<Provider store={store}>
 					<main>
-						{false && splashStep >= 0 && <Splash state={splashStep} />}
+						{splashStep >= 0 && <Splash state={splashStep} />}
 						<Sidebar step={sidebarStep} url={currentUrl} />
 						<Router onChange={this.handleRoute}>
 							<Home handleSidebarStep={this.handleSidebarStep} sidebarStep={sidebarStep} path="/" />

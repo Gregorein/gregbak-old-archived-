@@ -13,7 +13,8 @@ import ImageOverlay from "components/imageOverlay"
 import styles from "./style"
 
 import {
-	getProject
+	getProject,
+	clearProject
 } from "actions"
 
 
@@ -29,6 +30,11 @@ class Project extends Component {
 
 		window.scroll(0,0)
 		getProject(project)
+	}
+	componentWillUnmount() {
+		const {clearProject} = this.props
+
+		clearProject()
 	}
 	componentWillReceiveProps(newProps) {
 		if (newProps.error) route("/portfolio")
@@ -100,7 +106,8 @@ const stateProps = (state, props) => ({
 	error: state.portfolio.currentProjectError,
 })
 const dispatchProps = (dispatch, props) => ({
-	getProject: project => dispatch(getProject(project))
+	getProject: project => dispatch(getProject(project)),
+	clearProject: () => dispatch(clearProject())
 })
 
 export default connect(stateProps, dispatchProps)(Project)

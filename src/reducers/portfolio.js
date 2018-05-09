@@ -99,6 +99,13 @@ const portfolio = (state = initialState, action) => {
 				currentProjectError: true,
 			}
 
+		case "CLEAR_PROJECT":
+			return {
+				...state,
+				currentProject: undefined,
+				currentProjectError: false,
+			}
+
 		default:
 			return state
 	}
