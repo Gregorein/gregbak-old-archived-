@@ -4,20 +4,276 @@
 		"selected_items":
 		[
 			[
+				"P",
+				"Provider"
+			],
+			[
+				"GETPR",
+				"GET_PROJECTS_ERROR"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"handl",
+				"handleForm"
+			],
+			[
+				"Preac",
+				"preact-router"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"get",
+				"getUsername"
+			],
+			[
+				"comm",
+				"comment"
+			],
+			[
+				"com",
+				"commentsVisible"
+			],
+			[
+				"rna",
+				"random"
+			],
+			[
+				"random",
+				"randomText"
+			],
+			[
+				"ln",
+				"lname"
+			],
+			[
+				"render",
+				"renderPosts"
+			],
+			[
+				"randm",
+				"randomText"
+			],
+			[
+				"rand",
+				"randomWord"
+			],
+			[
+				"menu",
+				"menuVisible"
+			],
+			[
+				"e",
+				"export"
+			],
+			[
+				"set",
+				"setSession"
+			],
+			[
+				"po",
+				"pointer-events"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"log",
+				"loginForm"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"g",
+				"green-alt"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"borde",
+				"border-bottom-color"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"dis",
+				"dispatch"
+			],
+			[
+				"sta",
+				"stateProps"
+			],
+			[
+				"proj",
+				"project"
+			],
+			[
+				"pr",
+				"project"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"proje",
+				"project"
+			],
+			[
+				"defa",
+				"defaultUrl"
+			],
+			[
+				"urlca",
+				"urlClassMap"
+			],
+			[
+				"ma",
+				"matchedUrl"
+			],
+			[
+				"def",
+				"defaultUrl"
+			],
+			[
+				"s",
+				"stateProps"
+			],
+			[
+				"reset",
+				"resetFilters"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"rende",
+				"renderFilters"
+			],
+			[
+				"styl",
+				"styles"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"of",
+				"overflow"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"sal",
+				"salmon-alt"
+			],
+			[
+				"policyCopy",
+				"policy-copyrights"
+			],
+			[
+				"trasit",
+				"transition"
+			],
+			[
+				"for",
+				"forceNav"
+			],
+			[
+				"fo",
+				"forceNav"
+			],
+			[
+				"handle",
+				"handleHideMenu"
+			],
+			[
+				"hand",
+				"handleShowMenu"
+			],
+			[
+				"tras",
+				"transition"
+			],
+			[
+				"after",
+				"aFilters"
+			],
+			[
+				"url",
+				"urlClassMap"
+			],
+			[
+				"p",
+				"portfolio"
+			],
+			[
+				"inner",
+				"innerWidth"
+			],
+			[
+				"tarn",
+				"transform-origin"
+			],
+			[
 				"push",
 				"pushMovies"
 			],
 			[
 				"loca",
 				"localStorage"
-			],
-			[
-				"get",
-				"getData"
-			],
-			[
-				"fo",
-				"font-size"
 			],
 			[
 				"link",
@@ -28,10 +284,6 @@
 				"linkState"
 			],
 			[
-				"for",
-				"foreach\tforeach …"
-			],
-			[
 				"json",
 				"json_encode"
 			],
@@ -40,20 +292,8 @@
 				"border-radius"
 			],
 			[
-				"tra",
-				"transparent"
-			],
-			[
 				"c",
 				"cursor"
-			],
-			[
-				"hand",
-				"handleDelete"
-			],
-			[
-				"handle",
-				"handleDelete"
 			],
 			[
 				"a",
@@ -132,16 +372,8 @@
 				"vertices"
 			],
 			[
-				"e",
-				"edges"
-			],
-			[
 				"stroek",
 				"strokeStyle"
-			],
-			[
-				"lin",
-				"lineTo"
 			],
 			[
 				"mini",
@@ -158,10 +390,6 @@
 			[
 				"k",
 				"krawędzie"
-			],
-			[
-				"con",
-				"continue"
 			],
 			[
 				"le",
@@ -187,21 +415,65 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 207.0,
+		"height": 354.0,
 		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"wrap",
-				"Word Wrap: Toggle"
+				"ecma",
+				"Set Syntax: Ecmascript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sideba",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"Sideb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"syntax java",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"syntaxja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntaxbabe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"ansi",
+				"Set Syntax: ANSI"
 			],
 			[
 				"settings",
 				"Preferences: Settings"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
+				"npm run",
+				"npm: Run Script"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
 			],
 			[
 				"remove",
@@ -256,15 +528,11 @@
 				"Package Control: Upgrade Package"
 			],
 			[
-				"sideba",
-				"View: Toggle Open Files in Side Bar"
-			],
-			[
 				"material",
 				"Material Theme: Configuration"
 			]
 		],
-		"width": 464.0
+		"width": 496.0
 	},
 	"console":
 	{
@@ -286,77 +554,147 @@
 	"expanded_folders":
 	[
 		"/Users/greg/Sites/gregbak",
+		"/Users/greg/Sites/gregbak/api",
 		"/Users/greg/Sites/gregbak/src",
-		"/Users/greg/Sites/gregbak/src/assets"
+		"/Users/greg/Sites/gregbak/src/assets",
+		"/Users/greg/Sites/gregbak/src/components",
+		"/Users/greg/Sites/gregbak/src/reducers",
+		"/Users/greg/Sites/gregbak/src/routes"
 	],
 	"file_history":
 	[
-		"/Users/greg/Sites/gregbak/package.json",
-		"/Users/greg/Sites/gregbak/build/site.webmanifest",
+		"/Users/greg/Sites/gregbak/src/index.js",
 		"/Users/greg/Sites/gregbak/src/template.html",
-		"/Users/greg/Sites/gregbak/src/favicon.src.svg",
+		"/Users/greg/Sites/gregbak/src/actions/index.js",
+		"/Users/greg/Sites/gregbak/src/index.jsx",
+		"/Users/greg/Sites/gregbak/src/style/index.scss",
+		"/Users/greg/Sites/gregbak/src/style/_variables.scss",
+		"/Users/greg/Sites/gregbak/src/style/_reset.scss",
+		"/Users/greg/Sites/gregbak/src/actions/portfolio.js",
+		"/Users/greg/Sites/gregbak/package.json",
+		"/Users/greg/Sites/gregbak/src/browserconfig.xml",
+		"/Users/greg/Sites/gregbak/src/manifest.json",
+		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/macabre.json",
+		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/portfolio.json",
+		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/Macabre.json",
+		"/Users/greg/Desktop/wyjazd listopadowy",
+		"/Volumes/Windows/Windows/System32/drivers/etc/hosts",
+		"/Users/greg/Downloads/GabrielaTelm_bd7d9db1bd/p6.html",
+		"/Users/greg/Downloads/GabrielaTelm_bd7d9db1bd/p5.html",
+		"/Users/greg/Downloads/GabrielaTelm_bd7d9db1bd/message.html",
+		"/Users/greg/Downloads/GabrielaTelm_bd7d9db1bd/p4.html",
+		"/Users/greg/Downloads/GabrielaTelm_bd7d9db1bd/p3.html",
+		"/Users/greg/Downloads/GabrielaTelm_bd7d9db1bd/p2.html",
+		"/Users/greg/Downloads/GabrielaTelm_bd7d9db1bd/p1.html",
+		"/Users/greg/Downloads/messages/GabrielaTelm_bd7d9db1bd/message.json",
+		"/Users/greg/Downloads/facebook-Gregorein/messages/GabrielaTelm_bd7d9db1bd/message.html",
+		"/Users/greg/Library/Mobile Documents/com~apple~CloudDocs/Desktop/My Account Info/portability.json",
+		"/Users/greg/Sites/punishly/src/actions/main.js",
+		"/Users/greg/Sites/punishly/package.json",
+		"/Users/greg/Sites/punishly/src/routes/trending/index.js",
+		"/Users/greg/Sites/punishly/src/routes/home/index.js",
+		"/Users/greg/Sites/punishly/src/routes/profile/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/portfolio/index.js",
+		"/Users/greg/Sites/punishly/src/routes/login/index.js",
+		"/Users/greg/Sites/punishly/src/routes/newPost/index.js",
+		"/Users/greg/Sites/punishly/src/routes/newPost/style.scss",
+		"/Users/greg/Sites/punishly/src/index.js",
+		"/Users/greg/Sites/punishly/src/components/userMenu/index.js",
+		"/Users/greg/Sites/punishly/src/components/header/index.js",
+		"/Users/greg/Sites/punishly/src/globals.js",
+		"/Users/greg/Sites/punishly/src/actions/index.js",
+		"/Users/greg/Sites/punishly/src/reducers/main.js",
+		"/Users/greg/Sites/punishly/src/routes/login/style.scss",
+		"/Users/greg/Sites/gregbak/src/reducers/portfolio.js",
+		"/Users/greg/Sites/punishly/src/actions/types.js",
+		"/Users/greg/Sites/punishly/src/config.js",
+		"/Users/greg/Sites/punishly/src/reducers/index.js",
+		"/Users/greg/Sites/gregbak/src/components/imageTile/index.js",
+		"/Users/greg/Sites/punishly/src/components/commentBox/style.scss",
+		"/Users/greg/Sites/punishly/src/components/commentBox/index.js",
+		"/Users/greg/Sites/punishly/src/routes/trending/style.scss",
+		"/Users/greg/Sites/punishly/src/routes/profile/style.scss",
+		"/Users/greg/Sites/punishly/src/components/post/index.js",
+		"/Users/greg/Sites/punishly/src/components/userProfile/index.js",
+		"/Users/greg/Sites/punishly/src/components/comment/index.js",
+		"/Users/greg/Sites/punishly/src/components/comment/style.scss",
+		"/Users/greg/Sites/punishly/src/components/userMenu/style.scss",
+		"/Users/greg/Sites/punishly/src/routes/home/style.scss",
+		"/Users/greg/Sites/punishly/src/components/userProfile/style.scss",
+		"/Users/greg/Sites/punishly/src/components/profile/style.scss",
+		"/Users/greg/Sites/punishly/src/components/profile/index.js",
+		"/Users/greg/Sites/punishly/src/components/post/style.scss",
+		"/Users/greg/Sites/punishly/src/style/_variables.scss",
+		"/Users/greg/Sites/punishly/src/style/index.scss",
+		"/Users/greg/Sites/punishly/src/components/header/style.scss",
+		"/Users/greg/Sites/punishly/src/components/authenticatedRoute/index.js",
+		"/Users/greg/backup_rsa.pub",
+		"/Users/greg/backup_rsa",
+		"/Users/greg/Sites/movielist/node_modules/npm/node_modules/tar/node_modules/minipass/bench/lib/numbers.js",
+		"/Users/greg/Sites/punishly/src/template.html",
+		"/Users/greg/Sites/punishly/build/index.html",
+		"/Users/greg/Sites/punishly/src/components/logo/index.js",
+		"/Users/greg/Sites/punishly/.gitignore",
+		"/Users/greg/Sites/gregbak/src/components/loader/index.js",
+		"/Users/greg/Sites/gregbak/src/components/loader/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/splash/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/splash/index.js",
+		"/Users/greg/Sites/gregbak/src/components/view/style.scss",
+		"/Users/greg/Sites/gregbak/api/portfolio.json",
+		"/Users/greg/Sites/gregbak/src/routes/portfolio/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/project/style.scss",
+		"/Users/greg/Sites/gregbak/api/projects/opus.json",
+		"/Users/greg/Sites/gregbak/api/projects/failstart.json",
+		"/Users/greg/Sites/gregbak/api/projects/fundamentum.json",
+		"/Users/greg/Sites/gregbak/api/projects/aimi.json",
+		"/Users/greg/Sites/gregbak/api/projects/coffee.json",
+		"/Users/greg/Sites/gregbak/api/projects/vivienne.json",
+		"/Users/greg/Sites/gregbak/api/projects/lapv.json",
+		"/Users/greg/Sites/gregbak/src/components/tile/index.js",
+		"/Users/greg/Sites/gregbak/src/components/tile/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/filters/index.js",
+		"/Users/greg/Sites/gregbak/src/components/sidebar/index.js",
+		"/Users/greg/Sites/gregbak/src/components/sidebar/style.scss",
+		"/Users/greg/Sites/gregbak/src/config.js",
+		"/Users/greg/Sites/gregbak/preact.config.js",
+		"/Users/greg/Sites/gregbak/src/components/project/index.js",
+		"/Users/greg/Sites/gregbak/src/components/project/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/filters/style.scss",
+		"/Users/greg/Sites/gregbak/src/globals.js",
+		"/Users/greg/Sites/gregbak/server.py",
+		"/Users/greg/Sites/gregbak/build/.htaccess",
+		"/Users/greg/Sites/gregbak/src/components/radiv/index.js",
+		"/Users/greg/Sites/gregbak/src/.htaccess",
+		"/Users/greg/Sites/gregbak/src/reducers/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/view/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/about/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/home/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/index.js",
+		"/Users/greg/Sites/gregbak/src/containers/filters.js",
+		"/Users/greg/Sites/gregbak/src/components/logo/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/about/style.scss",
+		"/Users/greg/Sites/gregbak-old/cms/styles/sass/views/_about.scss",
+		"/Users/greg/Sites/gregbak-old/cms/views/about.php",
+		"/Users/greg/Sites/gregbak/src/routes/home/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/policyCopyrights/index.js",
+		"/Users/greg/Sites/gregbak/node_modules/preact-router/match.js",
+		"/Users/greg/Sites/gregbak/src/components/logo/style.scss",
+		"/Users/greg/Sites/gregbak/gregbak.sublime-workspace",
+		"/Users/greg/Sites/gregbak/notpreact.config.js",
+		"/Users/greg/Sites/gregbak/src/components/header/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/profile/index.js",
+		"/Users/greg/Sites/gregbak/.gitignore",
+		"/Users/greg/Sites/gregbak/src/site.webmanifest",
+		"/Users/greg/Sites/movielist/package.json",
 		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/api.php",
 		"/Users/greg/Sites/movielist/src/api.js",
 		"/Users/greg/Sites/movielist/src/routes/login/index.js",
-		"/Users/greg/Sites/movielist/src/components/app.js",
-		"/Users/greg/Sites/movielist/src/routes/home/index.js",
-		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/.htaccess 2",
-		"/Users/greg/Sites/movielist/src/manifest.json",
-		"/Users/greg/Sites/movielist/filmolista/index.html",
-		"/Users/greg/Sites/movielist/src/index.js",
-		"/Users/Greg/Sites/movielist/filmolista/index.html",
-		"/Users/greg/Sites/movielist/package.json",
-		"/Users/greg/Sites/movielist/build/index.html",
-		"/Users/greg/Sites/movielist/src/browserconfig.xml",
-		"/Users/greg/Sites/movielist/api.php",
-		"/Users/greg/Sites/movielist/data.json",
-		"/Users/greg/Sites/movielist/src/components/list/index.js",
-		"/Users/greg/Sites/movielist/src/components/adder/index.js",
-		"/Users/greg/Sites/movielist/src/routes/login/style.scss",
-		"/Users/greg/Sites/movielist/src/components/header/style.scss",
-		"/Users/greg/Sites/movielist/src/components/list/style.scss",
-		"/Users/greg/Sites/movielist/src/components/adder/style.scss",
-		"/Users/greg/Sites/movielist/src/routes/home/style.scss",
-		"/Users/greg/Sites/movielist/src/components/header/index.js",
-		"/Users/greg/Sites/movielist/api/data.json",
-		"/Users/greg/Sites/movielist/api/data.php",
-		"/Users/greg/Sites/movielist/api/user.php",
-		"/Users/greg/Sites/movielist/src/components/login/style.scss",
-		"/Users/greg/Sites/movielist/src/components/login/index.js",
-		"/Users/greg/Sites/movielist/src/style/_variables.scss",
-		"/Users/greg/Sites/movielist/api/magic.php",
-		"/Users/greg/Sites/movielist/src/.babelrc",
-		"/Users/greg/Sites/movielist/src/style/index.scss",
-		"/Users/greg/Sites/movielist/src/style/_reset.scss",
-		"/Users/greg/Sites/movielist/src/assets/favicon.src.svg",
-		"/Users/greg/Sites/movielist/src/site.webmanifest",
-		"/Users/greg/Desktop/cta.md",
-		"/Users/greg/Sites/gregbak/cms/views/about.php",
-		"/Users/greg/Desktop/DELAUNAY/index.html",
-		"/Users/greg/Desktop/DELAUNAY/alternative.py",
-		"/Users/greg/Desktop/Grafy/core.js",
-		"/Users/greg/Desktop/Grafy/hungarian.js",
-		"/Users/greg/Desktop/Grafy/index.html",
-		"/Users/greg/Desktop/Grafy/example.gxl",
-		"/Users/greg/Desktop/Grafy/match.js",
-		"/Users/greg/Desktop/Grafy/pool.js",
-		"/Users/greg/Desktop/Grafy/core-old.js",
-		"/Users/greg/Desktop/Grafy/style.css",
-		"/Users/greg/Desktop/Grafy/x2js.js",
-		"/Users/greg/.ssh/known_hosts",
-		"/Users/greg/Desktop/DELAUNAY/minimumspanningtree.js",
-		"/Users/greg/Desktop/DELAUNAY/delaunay.js",
-		"/Users/greg/Desktop/MinimumSpanningTreeDelaunay.html",
-		"/Users/greg/Desktop/MinimumSpanningTreeDelaunay.js",
-		"/Users/greg/Desktop/MinimumSpanningTreeDelanuay",
-		"/Users/greg/Sites/gregbak/cms/config.json",
-		"/Users/greg/Desktop/index.html",
-		"/Users/greg/Desktop/temp/logo.svg",
-		"/Applications/Adobe Photoshop CC 2018/Presets/Scripts/Stack Scripts Only/Terminology.jsx"
+		"/Users/greg/Sites/movielist/src/components/app.js"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -370,6 +708,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\t\t\t\t\n",
+			"package"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -394,7 +734,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -427,11 +767,15 @@
 	{
 		"height": 0.0
 	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
 	"pinned_build_system": "",
 	"project": "gregbak.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -440,6 +784,494 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"html",
+				"src/template.html"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"profile",
+				"src/routes/profile/index.js"
+			],
+			[
+				"trending",
+				"src/routes/trending/index.js"
+			],
+			[
+				"newpostyle",
+				"src/routes/newPost/style.scss"
+			],
+			[
+				"login",
+				"src/routes/login/index.js"
+			],
+			[
+				"index",
+				"src/index.js"
+			],
+			[
+				"usermenu",
+				"src/components/userMenu/index.js"
+			],
+			[
+				"glo",
+				"src/globals.js"
+			],
+			[
+				"header",
+				"src/components/header/index.js"
+			],
+			[
+				"reducer",
+				"src/reducers/main.js"
+			],
+			[
+				"actions",
+				"src/actions/index.js"
+			],
+			[
+				"redmain",
+				"src/reducers/main.js"
+			],
+			[
+				"globa",
+				"src/globals.js"
+			],
+			[
+				"action",
+				"src/actions/main.js"
+			],
+			[
+				"reduce",
+				"src/reducers/main.js"
+			],
+			[
+				"loginstyle",
+				"src/routes/login/style.scss"
+			],
+			[
+				"type",
+				"src/actions/types.js"
+			],
+			[
+				"types",
+				"src/actions/types.js"
+			],
+			[
+				"glob",
+				"src/globals.js"
+			],
+			[
+				"conf",
+				"src/config.js"
+			],
+			[
+				"newsyle",
+				"src/routes/newPost/style.scss"
+			],
+			[
+				"commenbostyle",
+				"src/components/commentBox/style.scss"
+			],
+			[
+				"trenstyle",
+				"src/routes/trending/style.scss"
+			],
+			[
+				"prostyle",
+				"src/routes/profile/style.scss"
+			],
+			[
+				"userpro",
+				"src/components/userProfile/index.js"
+			],
+			[
+				"commestyle",
+				"src/components/comment/style.scss"
+			],
+			[
+				"cmstyle",
+				"src/components/userMenu/style.scss"
+			],
+			[
+				"postjs",
+				"src/components/post/index.js"
+			],
+			[
+				"comment",
+				"src/components/comment/index.js"
+			],
+			[
+				"ind",
+				"src/index.js"
+			],
+			[
+				"user",
+				"src/components/userMenu/index.js"
+			],
+			[
+				"cobostyle",
+				"src/components/commentBox/style.scss"
+			],
+			[
+				"comentb",
+				"src/components/commentBox/index.js"
+			],
+			[
+				"inde",
+				"src/index.js"
+			],
+			[
+				"tren",
+				"src/routes/trending/index.js"
+			],
+			[
+				"trestyle",
+				"src/routes/trending/style.scss"
+			],
+			[
+				"home",
+				"src/routes/home/index.js"
+			],
+			[
+				"treinsyle",
+				"src/routes/trending/style.scss"
+			],
+			[
+				"homestyle",
+				"src/routes/home/style.scss"
+			],
+			[
+				"profliestyle",
+				"src/routes/profile/style.scss"
+			],
+			[
+				"globals",
+				"src/globals.js"
+			],
+			[
+				"postindex",
+				"src/components/post/index.js"
+			],
+			[
+				"var",
+				"src/style/_variables.scss"
+			],
+			[
+				"g",
+				"src/globals.js"
+			],
+			[
+				"indexs",
+				"src/style/index.scss"
+			],
+			[
+				"vair",
+				"src/style/_variables.scss"
+			],
+			[
+				"usermsyle",
+				"src/components/userMenu/style.scss"
+			],
+			[
+				"usermen",
+				"src/components/userMenu/index.js"
+			],
+			[
+				"postsyle",
+				"src/components/post/style.scss"
+			],
+			[
+				"headsyl",
+				"src/components/header/style.scss"
+			],
+			[
+				"global",
+				"src/globals.js"
+			],
+			[
+				"usemenusyl",
+				"src/components/userMenu/style.scss"
+			],
+			[
+				"headstyle",
+				"src/components/header/style.scss"
+			],
+			[
+				"vari",
+				"src/style/_variables.scss"
+			],
+			[
+				"temmp",
+				"src/template.html"
+			],
+			[
+				"variab",
+				"src/style/_variables.scss"
+			],
+			[
+				"templ",
+				"src/template.html"
+			],
+			[
+				"tem",
+				"src/template.html"
+			],
+			[
+				"template",
+				"src/template.html"
+			],
+			[
+				"varia",
+				"src/style/_variables.scss"
+			],
+			[
+				"headerscs",
+				"src/components/header/style.scss"
+			],
+			[
+				"loadstyle",
+				"src/components/loader/style.scss"
+			],
+			[
+				"splasin",
+				"src/components/splash/index.js"
+			],
+			[
+				"splasstyle",
+				"src/components/splash/style.scss"
+			],
+			[
+				"viewst",
+				"src/components/view/style.scss"
+			],
+			[
+				"orj",
+				"api/portfolio.json"
+			],
+			[
+				"tile",
+				"src/components/tile/index.js"
+			],
+			[
+				"filters",
+				"src/components/filters/index.js"
+			],
+			[
+				"porfjs",
+				"src/reducers/portfolio.js"
+			],
+			[
+				"tilsyl",
+				"src/components/tile/style.scss"
+			],
+			[
+				"sideb",
+				"src/components/sidebar/index.js"
+			],
+			[
+				"sidebatyl",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"sideba",
+				"src/components/sidebar/index.js"
+			],
+			[
+				"sidestyle",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"filtesy",
+				"src/components/filters/style.scss"
+			],
+			[
+				"radiv",
+				"src/components/radiv/index.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"con",
+				"preact.config.js"
+			],
+			[
+				"filtsl",
+				"src/components/filters/style.scss"
+			],
+			[
+				"sidebsytl",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"routeportf",
+				"src/routes/portfolio/index.js"
+			],
+			[
+				"sidebstyl",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"redu",
+				"src/reducers/portfolio.js"
+			],
+			[
+				"filterstl",
+				"src/components/filters/style.scss"
+			],
+			[
+				"reduc",
+				"src/reducers/portfolio.js"
+			],
+			[
+				"policystyle",
+				"src/routes/policy-copyrights/style.scss"
+			],
+			[
+				"reset",
+				"src/style/_reset.scss"
+			],
+			[
+				"viewstyle",
+				"src/components/view/style.scss"
+			],
+			[
+				"side",
+				"src/components/sidebar/index.js"
+			],
+			[
+				"sidebastyl",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"config",
+				"preact.config.js"
+			],
+			[
+				"about",
+				"src/routes/about/style.scss"
+			],
+			[
+				"sidebar",
+				"src/components/sidebar/index.js"
+			],
+			[
+				"sidebastyle",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"aboutstyl",
+				"src/routes/about/style.scss"
+			],
+			[
+				"viewstyl",
+				"src/components/view/style.scss"
+			],
+			[
+				"indexscs",
+				"src/style/index.scss"
+			],
+			[
+				"copystyle",
+				"src/routes/policy-copyrights/style.scss"
+			],
+			[
+				"aboustyle",
+				"src/routes/about/style.scss"
+			],
+			[
+				"copy",
+				"src/routes/policy-copyrights/index.js"
+			],
+			[
+				"preac",
+				"preact.config.js"
+			],
+			[
+				"policy",
+				"src/routes/policy-copyrights/index.js"
+			],
+			[
+				"sidesty",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"splash",
+				"src/components/splash/index.js"
+			],
+			[
+				"splashi",
+				"src/components/splash/index.js"
+			],
+			[
+				"polisyle",
+				"src/routes/policy-copyrights/style.scss"
+			],
+			[
+				"view",
+				"src/components/view/index.js"
+			],
+			[
+				"viestyle",
+				"src/components/view/style.scss"
+			],
+			[
+				"vie",
+				"src/components/view/index.js"
+			],
+			[
+				"views",
+				"src/components/view/style.scss"
+			],
+			[
+				"vies",
+				"src/components/view/style.scss"
+			],
+			[
+				"logo",
+				"src/components/logo/index.js"
+			],
+			[
+				"splashstyle",
+				"src/components/splash/style.scss"
+			],
+			[
+				"splashs",
+				"src/components/splash/style.scss"
+			],
+			[
+				"sidebas",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"splas",
+				"src/components/splash/style.scss"
+			],
+			[
+				"styl",
+				"src/components/splash/style.scss"
+			],
+			[
+				"spla",
+				"src/components/splash/index.js"
+			],
+			[
+				"peact",
+				"preact.config.js"
+			],
+			[
+				"splasstyl",
+				"src/components/splash/style.scss"
+			],
+			[
+				"splashindex.js",
+				"src/components/splash/index.js"
+			],
 			[
 				"adderscss",
 				"src/components/adder/style.scss"
@@ -462,12 +1294,12 @@
 	},
 	"select_symbol":
 	{
-		"height": 353.0,
+		"height": 354.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 714.0
+		"width": 1172.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -477,7 +1309,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 222.0,
+	"side_bar_width": 218.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -5,7 +5,7 @@
 		"Blender"
 	],
 	"description": [
-		"A tribute to one of best games I played."
+		"A tribute to one of best games I played and hopefully another one coming out soon."
 	],
 	"slides": [
 		{
@@ -13,6 +13,18 @@
 			"height": 2000,
 			"width": 2000, 
 			"url": "/projects/vivienne.png"
+		},
+		{
+			"type": "image",
+			"height": 512,
+			"width": 1024, 
+			"url": "/projects/vivienne-logo.png"
+		},
+		{
+			"type": "image",
+			"height": 2000,
+			"width": 2000, 
+			"url": "/projects/vivienne-face.png"
 		}
 	]
 }

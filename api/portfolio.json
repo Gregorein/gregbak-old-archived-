@@ -1,5 +1,19 @@
 [
 	{
+		"title": "macabre",
+		"href": "/portfolio/macabre",
+		"tag": "art|2d",
+		"date": 1541096073,
+		"thumbnail": "/projects/macabre-thumb.png"
+	},
+	{
+		"title": "warmup",
+		"href": "/portfolio/warmup",
+		"tag": "art|2d",
+		"date": 1518722340,
+		"thumbnail": "/projects/warmup-thumb.png"
+	},
+	{
 		"title": "opus corporis",
 		"href": "/portfolio/opus",
 		"tag": "art|2d",
@@ -44,8 +58,36 @@
 	{
 		"title": "Fundamentum",
 		"href": "/portfolio/fundamentum",
-		"tag": "web|code|design",
+		"tag": "web|2d|code|design",
 		"date": 1473342360,
 		"thumbnail": "/projects/fundamentum-thumb.png"
+	},
+	{
+		"title": "munchk",
+		"href": "/portfolio/munchk",
+		"tag": "art|2d",
+		"date": 1461770580,
+		"thumbnail": "/projects/munchk-thumb.png"
+	},	
+	{
+		"title": "doom",
+		"href": "/portfolio/doom",
+		"tag": "art|2d|wip",
+		"date": 1431031500,
+		"thumbnail": "/projects/doom-thumb.png"
+	},
+	{
+		"title": "armlet",
+		"href": "/portfolio/armlet",
+		"tag": "art|3d|2d",
+		"date": 1409651640,
+		"thumbnail": "/projects/armlet-thumb.png"
+	},
+	{
+		"title": "unvanquished",
+		"href": "/portfolio/unvanquished",
+		"tag": "art|3d",
+		"date": 1336169460,
+		"thumbnail": "/projects/unvanquished-thumb.png"
 	}
 ]

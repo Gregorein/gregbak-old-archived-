@@ -1,0 +1,67 @@
+@import "~style/variables";
+
+.svg {
+	height: 100vh;
+	width: 100vw;
+	overflow: visible;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11;
+
+	pointer-events: none;
+
+	.rect {
+		height: 100vh;
+		width: 100vh;
+	}
+
+	.hole {
+		transition: transform $t $e;
+		transform-origin: 50% 50.75%;
+		transform: translate(calc(50vw - 44px), calc(50vh - 37px));
+		&.split {
+			transform: scale(1.37, 1.37) translate(calc(50vw - 44px), calc(50vh - 37px));			
+		}
+		&.grown {
+			transform: scale(3, 3) translate(calc(50vw - 44px), calc(50vh - 37px));				
+		}
+	}
+
+	.mask {
+		transition: opacity $t $e;
+
+		opacity: 1;
+
+		&.hidden {
+			opacity: 0;
+		}
+	}
+
+	.logo {
+		transition: transform $t $e;
+		transform: translate(calc(50vw - 44px), calc(50vh - 37px));
+	}
+
+	.trapezoid {
+		transition: opacity $t*5 $e;
+		&.hidden {
+			opacity: 0;
+		}
+	}
+
+	.triangle {
+		transition: transform $t $e,
+					opacity $t*5 $e;
+		transform-origin: 88px 74px;
+		transform: translate(55px, 45px);
+		
+		&.split {
+			transform: scale(1.38, 1.38) translate(55px, 45px);
+		}
+		&.hidden {
+			opacity: 0;
+		}
+	}
+}

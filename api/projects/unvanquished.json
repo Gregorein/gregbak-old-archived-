@@ -1,0 +1,36 @@
+{
+	"date": 1485946500,
+	"title": "Unvanquished",
+	"software": [
+		"Blender"
+	],
+	"description": [
+		"The first game project I too part in. It has changed a bit, but those two models should be recognizable.<br/>You can download the game <a href='www.unvanquished.net'>here</a>."
+	],
+	"slides": [
+		{
+			"type": "image",
+			"height": 816,
+			"width": 831,
+			"url": "/projects/unvanquished-spider.png"
+		},
+		{
+			"type": "image",
+			"height": 500,
+			"width": 800,
+			"url": "/projects/unvanquished-sculpt.png"
+		},
+		{
+			"type": "image",
+			"height": 800,
+			"width": 1280,
+			"url": "/projects/unvanquished-hardsurface.png"
+		},
+		{
+			"type": "image",
+			"height": 2048,
+			"width": 2048,
+			"url": "/projects/unvanquished-texture.png"
+		}
+	]
+}

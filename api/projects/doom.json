@@ -1,0 +1,42 @@
+{
+	"date": 1431031500,
+	"title": "Doombringer's armor & weapon set",
+	"software": [
+		"Photoshop"
+	],
+	"description": [
+		"Another item set for Dota2 game, unfortunately the source files have been lost when an old drive gave up on its life."
+	],
+	"slides": [
+		{
+			"type": "image",
+			"height": 5500,
+			"width": 3000,
+			"url": "/projects/doom-promo.png"
+		},
+		{
+			"type": "image",
+			"height": 3100,
+			"width": 4600,
+			"url": "/projects/doom-color-gear.png"
+		},
+		{
+			"type": "image",
+			"height": 3100,
+			"width": 4600,
+			"url": "/projects/doom-sketch-gear.png"
+		},
+		{
+			"type": "image",
+			"height": 3100,
+			"width": 5400,
+			"url": "/projects/doom-sketch-armor.png"
+		},
+		{
+			"type": "image",
+			"height": 3115,
+			"width": 1200,
+			"url": "/projects/doom-sketch-skills.png"
+		}
+	]
+}

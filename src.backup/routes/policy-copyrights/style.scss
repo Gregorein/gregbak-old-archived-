@@ -1,0 +1,35 @@
+@import "~style/variables";
+
+.view {
+	max-width: 1220px;
+	padding: 235px 20px 0 100px;
+
+	h1 {
+		margin: 0 0 40px;
+
+		color: $dark;
+		font-size: 36px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	h2 {
+		color: $medium;
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 28px;
+	}
+	p {
+		margin-bottom: 35px;
+
+		color: $dark;
+		font-size: 21px;
+		line-height: 24px;
+	}
+	em {
+		font-weight: 800;
+	}
+
+	a {
+		color: $light;
+	}
+}
