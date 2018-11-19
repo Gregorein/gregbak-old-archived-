@@ -1,0 +1,506 @@
+@import "~styles/variables";
+
+
+.view {
+  max-width: $desktop - 300px;
+  padding-left: 100px;
+
+  .avatar {
+    height: 400px;
+    width: 275px;
+    margin: 40px auto 25px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  h1, p {
+    color: $dark;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  h2 {
+    height: 12px;
+    margin-bottom: 25px;
+
+    color: $salmon;
+    font-size: 24px;
+    font-family: "Josefin Sans";
+    font-variant: small-caps;
+    text-align: center;
+  }
+
+  .copy {
+    display: inline-block;
+    width: 800px;
+    margin: 0 auto 25px;
+  }
+  .smallDip {
+    margin: 35px 0;
+  }
+
+  ul.timeline {
+    li {
+      margin-bottom: 20px;
+      padding: 0 10px;
+
+      .date {
+        color: $salmon;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+      }
+      .title {
+        color: $dark;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      .location {
+        color: $medium;
+        text-decoration: none;
+        line-height: 21px;
+
+        span {
+          color: $salmon-alt;
+        }
+      }
+    }
+  }
+
+  .bigDip {
+    margin: 60px 0 35px;
+  }
+
+  ul.skills {
+    & + ul.skills {
+      margin-top: 20px;
+    }
+
+    h3 {
+      height: 16px;
+      margin-bottom: 10px;
+
+      color: $medium;
+      font-size: 18px;
+      font-weight: 800;
+      font-variant: small-caps;
+      text-align: center;
+    }
+    
+    li {
+      height: 13px;
+      width: 50%;
+      margin-bottom: 10px;
+      padding-right: 10px;
+      position: relative;
+
+      color: $dark;
+      font-size: 21px;
+      text-align: right;
+
+      &::before {
+        height: 21px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+
+        font-size: 18px;
+        font-weight: 800;
+        font-variant: small-caps;
+      }
+      &::after {
+        content: "";
+
+        height: 2px;
+        width: 25px;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translate(100%, -50%);
+      }
+
+      &.expert {
+        &::before {
+          content: "expert";
+
+          right: -#{15px + 5*25px};
+
+          color: $dark;
+        }
+        &::after {
+          width: #{5*25px};
+
+          background-color: $dark;
+          background: linear-gradient(to right, $dark 20px, transparent 20px);
+          background-size: 25px 100px;
+        }
+      }
+      &.advanced {
+        &::before {
+          content: "advanced";
+
+          right: -#{15px + 4*25px};
+
+          color: $salmon;
+        }
+        &::after {
+          width: #{4*25px};
+
+          background-color: $salmon;
+          background: linear-gradient(to right, $salmon 20px, transparent 20px);
+          background-size: 25px 100px;
+        }
+      }
+      &.intermediate {
+        &::before {
+          content: "intermediate";
+
+          right: -#{15px + 3*25px};
+
+          color: $salmon-alt;
+        }
+        &::after {
+          width: #{3*25px};
+
+          background-color: $salmon-alt;
+          background: linear-gradient(to right, $salmon-alt 20px, transparent 20px);
+          background-size: 25px 100px;
+        }
+      }
+      &.basic {
+        &::before {
+          content: "basic";
+          
+          right: -#{15px + 2*25px};
+
+          color: $gold-alt;
+        }
+        &::after {
+          width: #{2*25px};
+
+          background-color: $gold-alt;
+          background: linear-gradient(to right, $gold-alt 20px, transparent 20px);
+          background-size: 25px 100px;
+        }
+      }
+      &.learning {
+        &::before {
+          content: "learning";
+
+          right: -#{15px + 1*25px};
+
+          color: $medium;
+        }
+        &::after {
+          width: #{1*25px};
+
+          background-color: $medium;
+          background: linear-gradient(to right, $medium 20px, transparent 20px);
+          background-size: 25px 100px;
+        }
+      }
+
+      &.butwhytho {
+        &::before {
+          color: $medium;
+        }
+        &::after {
+          background-color: $medium;
+          background: linear-gradient(to right,
+            $medium 0px,
+            $medium 6.2px,
+            transparent 6.2px,
+            transparent 12.5px,
+            $medium 12.5px,
+            $medium 18.8px,
+            transparent 18.8px,
+            transparent 25px
+          );
+          background-size: 25px 100px;
+        }
+      }
+      &.loremipsum {
+        &::before {
+          content: "lorem ipsum";
+        }
+      }
+    }
+  }
+
+  .link {
+    transition: color $t $e;
+
+    color: $salmon;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: $salmon-alt;
+    }
+  }
+}
+
+.theEnd {
+  margin-top: 60px;
+  background: $salmon;
+
+  .center {
+    width: 100%;
+    max-width: 1220px;
+    padding: 40px 0;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+
+    color: $light;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+  p {
+    color: $heavy;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+  }
+  a {
+    color: $medium;
+    font-weight: 800;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .view {
+    ul.timeline {
+      li {
+        width: 50%;
+
+        text-align: right;
+
+        &:nth-of-type(2n) {
+          margin-left: 50%;
+
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .view {
+    max-width: 100%;
+    padding: 0 50px; 
+
+    .avatar {
+      height: 250px;
+      width: 175px;
+      margin: 40px auto 20px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .copy {
+      width: 100%;
+    }
+
+    .smallDip {
+      margin: 20px 0;
+    }
+
+    ul.timeline {
+      li {
+        padding: 0;
+
+        .date {
+          text-align: center;
+          font-size: 16px;
+        }
+        .title {
+          text-align: center;
+          font-size: 16px;
+        }
+        .location {
+          display: block;
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .bigDip {
+      margin: 50px 0 20px;
+    }
+
+    ul.skills {
+      h3 {
+        height: 10px;
+
+        font-size: 14px;
+      }
+
+      li {
+        font-size: 18px;
+
+        &::before {
+          height: 18px;
+          font-size: 14px;
+        }
+        &::after {
+          transform: translate(100%, -50%);
+        }
+      }
+    }
+  }
+
+  .theEnd {
+    margin-top: 40px;
+
+    .center {
+      max-width: 100%;
+    }
+
+    h2 {
+      font-size: 21px;
+      line-height: 24px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .view {
+    padding: 0 20px;
+
+    .avatar {
+      margin: 20px auto;
+    }
+
+    .copy {
+      font-size: 16px;
+    }
+    .smallDip {
+      margin: 15px 0;
+    }
+
+    ul.timeline {
+      li {
+        margin-bottom: 15px;
+      }
+    }
+
+    .bigDip {
+      margin: 30px 0 15px;
+    }
+
+    ul.skills {
+      & + ul.skills {
+        margin-top: 15px;
+      }
+
+      li {
+        font-size: 16px;
+
+        &::before {
+          height: 16px;
+          font-size: 12px;
+        }
+
+        &.expert {
+          &::before {
+            right: -#{15px + 5*5};
+          }
+          &::after {
+            height: 3px;
+            width: #{5*5px};
+
+            background: linear-gradient(to right, $dark 3px, transparent 3px);
+            background-size: 5px 100px;
+          }
+        }
+        &.advanced {
+          &::before {
+            right: -#{15px + 4*5};
+          }
+          &::after {
+            height: 3px;
+            width: #{4*5px};
+
+            background: linear-gradient(to right, $salmon 3px, transparent 3px);
+            background-size: 5px 100px;
+          }
+        }
+        &.intermediate {
+          &::before {
+            right: -#{15px + 3*5};
+          }
+          &::after {
+            height: 3px;
+            width: #{3*5px};
+
+            background: linear-gradient(to right, $salmon-alt 3px, transparent 3px);
+            background-size: 5px 100px;
+          }
+        }
+        &.basic {
+          &::before {
+           
+            color: $gold-alt;
+          }
+          &::after {
+            height: 3px;
+            width: #{2*5px};
+            background-color: $gold-alt;
+            background: linear-gradient(to right, $gold-alt 3px, transparent 3px);
+            background-size: 5px 100px;
+          }
+        }
+        &.learning {
+          &::before {
+            right: -#{15px + 1*5};
+          }
+          &::after {
+            height: 3px;
+            width: #{1*5px};
+
+            background: linear-gradient(to right, $medium 3px, transparent 3px);
+            background-size: 5px 100px;
+          }
+        }
+
+        &.butwhytho {
+          &::after {
+            background-color: $medium;
+            background: linear-gradient(to right,
+              $medium 0px,
+              $medium 6.2px,
+              transparent 6.2px,
+              transparent 12.5px,
+              $medium 12.5px,
+              $medium 18.8px,
+              transparent 18.8px,
+              transparent 25px
+            );
+            background-size: 5px 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .theEnd {
+    margin-top: 30px;
+
+    .center {
+      padding: 30px 0;
+    }
+  }
+}

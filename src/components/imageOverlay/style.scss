@@ -1,0 +1,47 @@
+@import "~styles/variables";
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+
+  overflow: auto;
+
+  background: $heavy;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+}
+
+.close {
+  transition: opacity $t $e,
+              color $t $e;
+
+  height: 37.5px;
+  width: 37.5px;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 1; 
+
+  color: $white;
+
+  opacity: 1;
+
+  cursor: pointer;
+
+  path {
+    transform: translateZ(0) scale(0.25);
+  }
+
+  &:hover {   
+    color: $salmon;
+
+    opacity: 0.667;
+  }
+}

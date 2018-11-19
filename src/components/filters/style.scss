@@ -1,0 +1,142 @@
+@import "~styles/variables";
+
+.wrapper {
+  .reset {
+    transition: color $t $e;
+
+    height: 60px;
+
+    color: $salmon;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $salmon-alt;
+    }
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 100px);
+
+    overflow-y: auto;
+  }
+  .filter {
+    transition: color $t $e;
+
+    height: 50px;
+    position: relative;
+
+    color: $salmon;
+    font-size: 18px;
+    font-variant: small-caps;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+
+    cursor: pointer;
+
+    &::before {
+      transition: color $t $e;
+
+      content: "✕";
+
+      height: 8px;
+      width: 8px;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translate(0, -3px);
+
+      color: transparent;
+      font-size: 10px;
+      line-height: 8px;
+    }
+
+    &:hover {
+      color: $salmon-alt;
+    }
+
+    &.active {
+      color: $light;
+
+      &::before {
+        color: $light;
+      }
+
+      &:hover {
+        color: $white;
+
+        &::before {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .count {
+    transition: color $t $e;
+    
+    display: block;
+
+    height: 50px;
+
+    color: $salmon;
+    font-size: 13px;
+    font-weight: bold;
+    font-variant: small-caps;
+    line-height: 50px;
+    text-align: center;
+
+    &.noSelection {
+      color: $medium;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .wrapper {
+    display: flex;
+
+    .reset {
+      height: 50px;
+      padding: 0 20px;
+
+      line-height: 50px;
+    }
+
+    .filters {
+      flex: 1;
+      height: 50px;
+      justify-content: flex-start;
+      flex-direction: row;
+      padding-left: 20px;
+
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+    .filter {
+      margin: 0 10px;
+
+      &::before {
+        left: 0;
+      }
+
+      &.active {
+        padding-left: 15px;
+      }
+    }
+
+    .count {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}

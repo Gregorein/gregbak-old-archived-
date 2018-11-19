@@ -1,0 +1,64 @@
+@import "~styles/variables";
+
+.view {
+  max-width: 1220px;
+
+  h1 {
+    margin: 0 0 40px;
+
+    color: $dark;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: $medium;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  p {
+    margin-bottom: 35px;
+
+    color: $dark;
+    font-size: 21px;
+    line-height: 24px;
+  }
+  em {
+    font-weight: 800;
+  }
+
+  a {
+    color: $light;
+  }
+}
+
+@media (min-width: $desktop) {
+  .view {
+    padding: 235px 400px 0 100px;  
+  }
+}
+@media (max-width: $tablet) {
+  .view {
+    padding: 170px 250px 0 50px;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .view {
+    padding: 25px 20px 0;
+  }
+}

@@ -1,0 +1,377 @@
+@import "~styles/variables";
+
+// text styles
+.tDark {
+  .logo,
+  .link {
+    color: $dark;
+  }
+}
+.tSalmon {
+  .logo,
+  .link {
+    color: $salmon;
+  }
+}
+
+// hover styles
+.hMedium {
+  .logo:hover {
+    color: $medium;
+  }
+  .link.active::before,
+  .link:hover::before {
+    background: $medium;
+  }
+}
+.hSalmon {
+  .logo:hover {
+    color: $salmon;
+  }
+  .link.active::before,
+  .link:hover::before {
+    background: $salmon;
+  }
+}
+.hSalmonAlt {
+  .logo:hover {
+    color: $salmon;
+  }
+  .link.active::before,
+  .link:hover::before {
+    background: $salmon-alt;
+  }
+}
+.hGold {
+  .logo:hover {
+    color: $gold;
+  }
+  .link.active::before,
+  .link:hover::before {
+    background: $gold;
+  }
+}
+.hGoldAlt {
+  .logo:hover {
+    color: $gold-alt;
+  }
+  .link.active::before,
+  .link:hover::before {
+    background: $gold-alt;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .logo {
+    transition: color $t $e;
+
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .menuToggle {
+    transition: color $t $e;
+
+    display: none;
+    pointer-events: none;
+    visibility: none;
+
+    position: relative;
+    z-index: 2;
+
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    &.story {
+      color: $salmon;
+    }
+  }
+  .menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 300px;
+  }
+
+  .link {
+    transition: color $t $e;
+    
+    display: block;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 50px;
+
+    text-align: center;;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &::before {
+      transition: background $t $e;
+
+      content: "";
+      height: 2px;
+
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      right: 20px;
+      z-index: -1;
+      transform: translate(0, -3px);
+    }
+  }
+
+  &.activeFilters,
+  &.activeReturn {
+    .menuToggle {
+      display: block;
+      pointer-events: initial;
+      visibility: visible;
+
+      color: $dark;
+      text-align: center;
+
+      background: $medium;
+
+      &:hover {
+        color: $salmon;
+      }
+    }
+    .menu {
+      display: none;
+      margin: 0;
+      position: fixed;
+      left: 0;
+      z-index: 1;
+
+      background: $medium;
+
+      &.visible {
+        display: flex;
+
+        .link {
+          color: $salmon !important;
+
+          &:hover::before,
+          &.active::before {
+            background: $dark !important;
+          }
+        }
+      }
+    }
+
+    .filters {
+      background: $dark;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .sidebar {
+    &.activeFilters,
+    &.activeReturn {
+      .logo {
+        height: 100px;
+        width: 100px;
+        background: $medium;
+
+        svg {
+          transform: translate(-50%, -50%) scale(0.333);
+        }
+      }
+
+      .menuToggle {
+        height: 100px;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 100px;
+
+        line-height: 100px;
+      }
+      .menu {
+        height: calc(100vh - 100px);
+        width: 300px;
+        top: 100px;
+        padding-bottom: 100px;
+      }
+
+      .filters {
+        height: calc(100vh - 100px);
+      }
+    }
+  }
+
+  @media (max-height: $sidebar-lock) {
+    .sidebar .menu {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .sidebar {
+    height: 100vh;
+    width: 200px;
+
+    .logo {
+      height: 200px;
+      width: 200px;
+
+      svg {
+        transform: translate(-50%, -50%) scale(0.667);
+      }
+    }
+
+    .menu {
+      margin-bottom: 200px;
+    }
+
+    &.activeFilters,
+    &.activeReturn {
+      .logo {
+        background: $medium;
+      }
+
+      .menuToggle {        
+        line-height: 100px;
+      }
+      .menu {
+        height: calc(100vh - 300px);
+        width: 200px;
+        top: 300px;
+        padding-bottom: 300px;
+      }
+
+      .filters {
+        height: calc(100vh - 300px);
+      }
+    }
+  }
+
+  @media (max-height: $sidebar-lock) {
+    .menu {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .sidebar {
+    flex-direction: row; 
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+
+    .logo {
+      height: 50px;
+      width: 50px;
+
+      svg {
+        transform: translate(-50%, -50%) scale(0.25);
+      }
+
+      &.active {
+        color: $salmon !important;
+
+        &:hover {
+          color: $dark !important;
+        }
+      }
+    }
+
+    .menuToggle {
+      display: block;
+      padding: 0 20px;
+      pointer-events: initial;
+      visibility: visible;
+
+      line-height: 50px;
+
+      &.active {
+        color: $salmon;
+      }
+    }
+    .menu,
+    &.activeFilters .menu,
+    &.activeReturn .menu {
+      display: none;
+      height: 100%;
+      width: 100%;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 50px 20px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+
+      background: $medium;
+
+      &.visible {
+        display: flex;
+
+        .link {
+          color: $salmon !important;
+
+          &:hover::before,
+          &.active::before {
+            background: $dark !important;
+          }
+        }
+      }
+    }
+
+    &.activeFilters,
+    &.activeReturn {
+      height: 100px;
+      flex-wrap: wrap;
+      background: $medium;
+
+      .logo {
+        background: none;
+      }
+
+      .menuToggle {
+        line-height: 50px;
+        background: transparent;
+      }
+
+      .filters {
+        height: 50px;
+        width: 100%;
+      }
+    }
+
+    &.activeReturn {
+      height: 50px;
+    }
+  }
+}

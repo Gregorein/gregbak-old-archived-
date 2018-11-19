@@ -11,14 +11,14 @@
 	"slides": [
 		{
 			"type": "image",
-			"height": 1600,
-			"width": 800,
+			"height": 800,
+			"width": 1600,
 			"url": "/projects/armlet-promo.png"
 		},
 		{
 			"type": "image",
-			"height": 1280,
-			"width": 800,
+			"height": 800,
+			"width": 1280,
 			"url": "/projects/armlet-ingame.png"
 		},
 		{

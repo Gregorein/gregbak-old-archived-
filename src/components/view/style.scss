@@ -1,0 +1,50 @@
+@import "~styles/variables";
+
+.container {
+  transition: background $t $e;
+  
+  min-height: 100%;
+  width: 100%;
+
+  position: relative;
+
+  overflow: auto;
+
+  &.full {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+// backgrounds
+.bDark {
+  background: $dark;
+}
+.bHeavy {
+  background: $heavy;
+}
+.bSalmon {
+  background: $salmon;
+}
+
+.view {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: $desktop) {
+  .container {
+    padding-left: 300px;
+  }
+}
+@media (max-width: $tablet) {
+  .container {
+    padding-left: 200px;
+  }
+}
+@media (max-width: $mobile) {
+  .container {
+    padding-top: 50px;
+    padding-left: 0;
+  }
+}

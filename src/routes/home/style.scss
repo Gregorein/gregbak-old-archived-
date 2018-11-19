@@ -1,0 +1,272 @@
+@import "~styles/variables";
+
+.section {
+  display: block;
+  min-height: 100vh;
+  position: relative;
+
+  overflow: visible;
+
+  &.dark {
+    background: $dark;
+  }
+}
+
+.mountain {
+  height: 180px;
+  width: 100%;
+  background-image: url("images/mountain.png");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cta {
+  width: 880px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 100px);
+  transform: translate(-50%, -50%);
+
+  .word1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0);
+
+    color: $medium;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: right;
+  }
+  .word2 {
+    display: block;
+
+    color: $salmon;
+    font-size: 108px;
+    font-weight: 100;
+    line-height: 98px;
+    text-transform: uppercase;
+  }
+  .word3 {
+    display: block;
+
+    color: $medium;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: center;
+  }
+  .word4 {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 14px;
+    transform-origin: bottom left;
+    transform: translate(100%, 0) rotate(90deg);
+
+    color: $salmon;
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+
+.more {
+  padding: 10px 10px 240px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+  color: $white;
+  font-size: 24px;
+  font-variant: small-caps;
+  font-weight: 800;
+  text-decoration: none;
+
+  &::before,
+  &::after {
+    transition: background $t $e,
+                top $t $e,
+                left $t $e;
+
+    content: "";
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &::before {
+    background: $salmon;
+  }
+  &::after {
+    top: -10px;
+    left: 10px;
+    background: transparent;
+  }
+
+  &:hover::before {
+    top: 10px;
+    left: -10px;
+    background: transparent;
+  }
+  &:hover::after {
+    top: 0;
+    left: 0;
+    background: $medium;
+  }
+}
+
+.story {
+  max-width: 1500px;
+  width: 100%;
+  padding: 300px 20px 0 400px;
+
+  .text {
+    display: inline-block;
+    width: 500px;
+    padding-top: 100px;
+
+    vertical-align: top;
+
+    h2 {
+      color: $salmon;
+      font-size: 28px;
+      line-height: 36px;
+
+      span {
+        display: block;
+        margin-left: 15px;
+      }
+    }
+
+    p {
+      margin: 30px 0 0 15px;
+
+      color: $white;
+      font-size: 21px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .story {
+    display: flex;
+    justify-content: space-between;
+
+
+    .vertical {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .tile {
+    width: 400px;
+  }
+
+  @media (max-height: $sidebar-lock) {
+    .cta {
+      top: unset;
+      bottom: 250px;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .mountain {
+    height: 100px;
+  }
+
+  .cta {
+    width: 335px;
+    left: 50%;
+
+    .word2 {
+      font-size: 96px;
+    }
+    .word1,
+    .word3,
+    .word4 {
+      font-size: 28px;
+    }
+  }
+
+  .story {
+    max-width: 100%;
+    padding: 320px 250px 50px;
+    position: static;
+    transform: none;
+
+    .text {
+      display: inline-block;
+      width: 100%;
+      padding: 0;
+    }
+
+    .vertical {
+      display: inline;
+      visibility: visible;
+    }
+    .horizontal {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .tile {
+    display: block;
+    width: 400px;
+    margin: 50px auto 0;
+  }
+
+  @media (max-height: $sidebar-lock) {
+    .cta {
+      top: unset;
+      bottom: 225px;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .view {
+    overflow-x: hidden;
+  }
+
+  .mountain {
+    height: 50px;
+  }
+
+  .cta {
+    width: 255px;
+
+    .word3,
+    .word4 {
+      font-size: 21px;
+    }
+  }
+
+  .story {
+    padding: 220px 20px 20px;
+  }
+
+  .tile {    
+    margin: 20px auto 0;
+  }
+
+  @media (max-height: $sidebar-lock) {}
+}
+
+@media (max-width: 440px) {
+  .tile {
+    width: 100%;
+  }
+
+  @media (max-height: $sidebar-lock) {}
+}

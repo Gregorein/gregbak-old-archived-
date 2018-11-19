@@ -10,8 +10,8 @@
 	"slides": [
 		{
 			"type": "image",
-			"height": 5500,
-			"width": 3000,
+			"height": 3000,
+			"width": 5500,
 			"url": "/projects/doom-promo.png"
 		},
 		{
@@ -34,8 +34,8 @@
 		},
 		{
 			"type": "image",
-			"height": 3115,
-			"width": 1200,
+			"height": 623,
+			"width": 240,
 			"url": "/projects/doom-sketch-skills.png"
 		}
 	]

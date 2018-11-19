@@ -1,0 +1,74 @@
+@import "~styles/variables";
+
+.image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  cursor: pointer;
+
+  position: relative;
+
+  .fullscreen {
+    transition: opacity $t $e,
+                color $t $e;
+
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
+
+    color: $medium;
+
+    opacity: 0.667;
+
+    path {
+      transform: translateZ(0) scale(0.25);
+    }
+  }
+  &::after {
+    transition: opacity $t $e;
+
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: $salmon;
+    opacity: 0;
+  }
+
+  &:hover {
+    .fullscreen {
+      color: $white;
+
+      opacity: 1;
+    }
+    &::after {
+      opacity: 0.667;
+    }
+  }
+}
+
+.imageWrap {
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  position: relative;
+
+  &.single {
+    height: 100vh;
+
+    .image {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+  }
+}

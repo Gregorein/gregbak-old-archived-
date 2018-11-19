@@ -4,6 +4,202 @@
 		"selected_items":
 		[
 			[
+				"hand",
+				"handleColors"
+			],
+			[
+				"tran",
+				"transform\tproperty"
+			],
+			[
+				"image",
+				"imageWrap"
+			],
+			[
+				"ima",
+				"imageWrap"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"compon",
+				"componentDidMount"
+			],
+			[
+				"cosn",
+				"console"
+			],
+			[
+				"render",
+				"renderOverlay"
+			],
+			[
+				"get",
+				"getProject"
+			],
+			[
+				"pi",
+				"pointer-events"
+			],
+			[
+				"spa",
+				"space-between\tjustify-content"
+			],
+			[
+				"ds",
+				"display\tproperty"
+			],
+			[
+				"ac",
+				"activeTags"
+			],
+			[
+				"pr",
+				"projects"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"ov",
+				"overflow-x\tproperty"
+			],
+			[
+				"over",
+				"overflow-y\tproperty"
+			],
+			[
+				"menu",
+				"menuToggle"
+			],
+			[
+				"act",
+				"action"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"sal",
+				"salmon"
+			],
+			[
+				"transf",
+				"transform-origin\tproperty"
+			],
+			[
+				"sa",
+				"salmon"
+			],
+			[
+				"ran",
+				"randomProject"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"m",
+				"mountain"
+			],
+			[
+				"proje",
+				"projects"
+			],
+			[
+				"componen",
+				"componentDidMount"
+			],
+			[
+				"cu",
+				"currentStep"
+			],
+			[
+				"wind",
+				"windowHeight"
+			],
+			[
+				"ge",
+				"getProjects"
+			],
+			[
+				"compo",
+				"components"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"up",
+				"updateDimensions"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"lo",
+				"loremipsum"
+			],
+			[
+				"c",
+				"container"
+			],
+			[
+				"di",
+				"dispatchProps"
+			],
+			[
+				"styl",
+				"style"
+			],
+			[
+				"med",
+				"medium"
+			],
+			[
+				"texa",
+				"text-align\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"rad",
+				"Radiv"
+			],
+			[
+				"sideb",
+				"sidebarStep"
+			],
+			[
+				"cur",
+				"currentProjectError"
+			],
+			[
+				"GEP",
+				"GET_PROJECT_ERROR"
+			],
+			[
+				"GE",
+				"GET_PROJECT"
+			],
+			[
 				"P",
 				"Provider"
 			],
@@ -48,16 +244,8 @@
 				"font-weight"
 			],
 			[
-				"get",
-				"getUsername"
-			],
-			[
 				"comm",
 				"comment"
-			],
-			[
-				"com",
-				"commentsVisible"
 			],
 			[
 				"rna",
@@ -72,20 +260,12 @@
 				"lname"
 			],
 			[
-				"render",
-				"renderPosts"
-			],
-			[
 				"randm",
 				"randomText"
 			],
 			[
 				"rand",
 				"randomWord"
-			],
-			[
-				"menu",
-				"menuVisible"
 			],
 			[
 				"e",
@@ -98,10 +278,6 @@
 			[
 				"po",
 				"pointer-events"
-			],
-			[
-				"di",
-				"display"
 			],
 			[
 				"log",
@@ -128,10 +304,6 @@
 				"line-height"
 			],
 			[
-				"tran",
-				"transform"
-			],
-			[
 				"dis",
 				"dispatch"
 			],
@@ -144,24 +316,12 @@
 				"project"
 			],
 			[
-				"pr",
-				"project"
-			],
-			[
 				"pro",
 				"projects"
 			],
 			[
-				"pad",
-				"padding-bottom"
-			],
-			[
 				"trans",
 				"transition"
-			],
-			[
-				"proje",
-				"project"
 			],
 			[
 				"defa",
@@ -196,10 +356,6 @@
 				"renderFilters"
 			],
 			[
-				"styl",
-				"styles"
-			],
-			[
 				"margin",
 				"margin-top"
 			],
@@ -214,10 +370,6 @@
 			[
 				"marg",
 				"margin-top"
-			],
-			[
-				"sal",
-				"salmon-alt"
 			],
 			[
 				"policyCopy",
@@ -238,10 +390,6 @@
 			[
 				"handle",
 				"handleHideMenu"
-			],
-			[
-				"hand",
-				"handleShowMenu"
 			],
 			[
 				"tras",
@@ -290,10 +438,6 @@
 			[
 				"bo",
 				"border-radius"
-			],
-			[
-				"c",
-				"cursor"
 			],
 			[
 				"a",
@@ -370,38 +514,6 @@
 			[
 				"ver",
 				"vertices"
-			],
-			[
-				"stroek",
-				"strokeStyle"
-			],
-			[
-				"mini",
-				"minimumspanningtree"
-			],
-			[
-				"sor",
-				"sortedEdges"
-			],
-			[
-				"ok",
-				"okrąg"
-			],
-			[
-				"k",
-				"krawędzie"
-			],
-			[
-				"le",
-				"length"
-			],
-			[
-				"abs",
-				"abs_y2_y3"
-			],
-			[
-				"or",
-				"otwarte"
 			]
 		]
 	},
@@ -420,15 +532,7 @@
 		"selected_items":
 		[
 			[
-				"ecma",
-				"Set Syntax: Ecmascript"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"sideba",
+				"side",
 				"View: Toggle Side Bar"
 			],
 			[
@@ -436,11 +540,43 @@
 				"View: Toggle Side Bar"
 			],
 			[
-				"sid",
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"eslint",
+				"ESLint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"ESLint"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ecma",
+				"Set Syntax: Ecmascript"
+			],
+			[
+				"sideba",
 				"View: Toggle Side Bar"
 			],
 			[
-				"side",
+				"sid",
 				"View: Toggle Side Bar"
 			],
 			[
@@ -476,15 +612,7 @@
 				"Word Wrap: Toggle"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"instal",
 				"Package Control: Install Package"
 			],
 			[
@@ -536,7 +664,7 @@
 	},
 	"console":
 	{
-		"height": 130.0,
+		"height": 308.0,
 		"history":
 		[
 			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
@@ -553,26 +681,83 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/greg/Sites/gregbak",
-		"/Users/greg/Sites/gregbak/api",
-		"/Users/greg/Sites/gregbak/src",
-		"/Users/greg/Sites/gregbak/src/assets",
-		"/Users/greg/Sites/gregbak/src/components",
-		"/Users/greg/Sites/gregbak/src/reducers",
-		"/Users/greg/Sites/gregbak/src/routes"
+		"/Users/greg/Sites/gregbak/build"
 	],
 	"file_history":
 	[
-		"/Users/greg/Sites/gregbak/src/index.js",
+		"/Users/greg/Downloads/manifest.mpd",
+		"/Users/greg/Sites/gregbak/build/index.html",
+		"/Users/greg/Sites/gregbak/package.json",
 		"/Users/greg/Sites/gregbak/src/template.html",
+		"/Users/greg/Sites/gregbak/src/components/view/index.js",
+		"/Users/greg/Sites/gregbak/api/projects/armlet.json",
+		"/Users/greg/Sites/gregbak/api/projects/doom.json",
+		"/Users/greg/Sites/gregbak/src/assets/styles/_variables.scss",
+		"/Users/greg/Sites/gregbak/src/components/splash/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/home/index.js",
+		"/Users/greg/Sites/gregbak/src/index.js",
+		"/Users/greg/Sites/gregbak/src/globals.js",
+		"/Users/greg/Sites/gregbak/src/components/splash/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/project/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/portfolio/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/home/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/sidebar/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/about/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/index.js",
+		"/Users/greg/Sites/gregbak/preact.config.js",
+		"/Users/greg/Sites/gregbak/src/routes/project/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/imageTile/index.js",
+		"/Users/greg/Sites/gregbak/src/components/imageTile/style.scss",
+		"/Users/greg/Sites/gregbak/api/projects/aimi.json",
+		"/Users/greg/Sites/gregbak/src/components/sidebar/index.js",
+		"/Users/greg/Sites/gregbak/src/components/imageOverlay/index.js",
+		"/Users/greg/Sites/gregbak/src/components/imageOverlay/style.scss",
+		"/Users/greg/Sites/gregbak/src/state/reducers/portfolio.js",
+		"/Users/greg/Sites/gregbak/src/components/filters/index.js",
+		"/Users/greg/Sites/gregbak/src/assets/icons/close.js",
+		"/Users/greg/Sites/gregbak/src/assets/icons/fullscreen.js",
+		"/Users/greg/Sites/gregbak/src/components/loader/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/loader/index.js",
+		"/Users/greg/Sites/gregbak/src/components/tile/style.scss",
+		"/Users/greg/Sites/gregbak/src/assets/styles/_reset.scss",
+		"/Users/greg/Sites/gregbak/src/components/tile/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/portfolio/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/filters/style.scss",
+		"/Users/greg/Sites/gregbak/src/state/actions/portfolio.js",
+		"/Users/greg/Sites/gregbak/src/components/mun/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/mun/index.js",
+		"/Users/greg/Sites/gregbak/src/components/view/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/about/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/style.scss",
+		"/Users/greg/Sites/gregbak/src/assets/styles/index.scss",
+		"/Users/greg/Sites/gregbak/src/components/radiv/index.js",
+		"/Users/greg/Sites/gregbak/src/elements/splash/index.js",
+		"/Users/greg/Sites/gregbak/src/elements/splash/style.scss",
+		"/Users/greg/Sites/gregbak/src/elements/Splash/style.scss",
+		"/Users/greg/Sites/gregbak/src/elements/Splash/index.js",
+		"/Users/greg/Sites/gregbak/src/.eslintrc.js",
+		"/Users/greg/Library/Application Support/Sublime Text 3/Packages/User/ESLint.sublime-settings",
+		"/Users/greg/Sites/gregbak/src/assets/style/_variables.scss",
+		"/Users/greg/Sites/gregbak/src/state/types/portfolio.js",
+		"/Users/greg/Sites/gregbak/api/portfolio.json",
+		"/Users/greg/Sites/gregbak/src/state/reducers/index.js",
+		"/Users/greg/Sites/gregbak/src/state/models/portfolio.js",
+		"/Users/greg/Sites/gregbak/src/state/types/index.js",
+		"/Users/greg/Sites/gregbak/src/state/actions/index.js",
+		"/Users/greg/Sites/gregbak/src/assets/style/index.scss",
+		"/Users/greg/Sites/gregbak/src/assets/style/_reset.scss",
+		"/Users/greg/Sites/gregbak/src/tests/.gitkeep",
+		"/Users/greg/Sites/gregbak/.gitignore",
+		"/Users/greg/Sites/gregbak/src/browserconfig.xml",
+		"/Users/greg/Sites/gregbak/src/.htaccess",
+		"/Users/greg/Sites/gregbak/src/.babelrc",
+		"/Users/greg/Sites/gregbak/src/reducers/index.js",
 		"/Users/greg/Sites/gregbak/src/actions/index.js",
 		"/Users/greg/Sites/gregbak/src/index.jsx",
 		"/Users/greg/Sites/gregbak/src/style/index.scss",
 		"/Users/greg/Sites/gregbak/src/style/_variables.scss",
 		"/Users/greg/Sites/gregbak/src/style/_reset.scss",
 		"/Users/greg/Sites/gregbak/src/actions/portfolio.js",
-		"/Users/greg/Sites/gregbak/package.json",
-		"/Users/greg/Sites/gregbak/src/browserconfig.xml",
 		"/Users/greg/Sites/gregbak/src/manifest.json",
 		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/macabre.json",
 		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/portfolio.json",
@@ -594,7 +779,6 @@
 		"/Users/greg/Sites/punishly/src/routes/trending/index.js",
 		"/Users/greg/Sites/punishly/src/routes/home/index.js",
 		"/Users/greg/Sites/punishly/src/routes/profile/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/portfolio/index.js",
 		"/Users/greg/Sites/punishly/src/routes/login/index.js",
 		"/Users/greg/Sites/punishly/src/routes/newPost/index.js",
 		"/Users/greg/Sites/punishly/src/routes/newPost/style.scss",
@@ -609,7 +793,6 @@
 		"/Users/greg/Sites/punishly/src/actions/types.js",
 		"/Users/greg/Sites/punishly/src/config.js",
 		"/Users/greg/Sites/punishly/src/reducers/index.js",
-		"/Users/greg/Sites/gregbak/src/components/imageTile/index.js",
 		"/Users/greg/Sites/punishly/src/components/commentBox/style.scss",
 		"/Users/greg/Sites/punishly/src/components/commentBox/index.js",
 		"/Users/greg/Sites/punishly/src/routes/trending/style.scss",
@@ -629,78 +812,20 @@
 		"/Users/greg/Sites/punishly/src/components/header/style.scss",
 		"/Users/greg/Sites/punishly/src/components/authenticatedRoute/index.js",
 		"/Users/greg/backup_rsa.pub",
-		"/Users/greg/backup_rsa",
-		"/Users/greg/Sites/movielist/node_modules/npm/node_modules/tar/node_modules/minipass/bench/lib/numbers.js",
-		"/Users/greg/Sites/punishly/src/template.html",
-		"/Users/greg/Sites/punishly/build/index.html",
-		"/Users/greg/Sites/punishly/src/components/logo/index.js",
-		"/Users/greg/Sites/punishly/.gitignore",
-		"/Users/greg/Sites/gregbak/src/components/loader/index.js",
-		"/Users/greg/Sites/gregbak/src/components/loader/style.scss",
-		"/Users/greg/Sites/gregbak/src/components/splash/style.scss",
-		"/Users/greg/Sites/gregbak/src/components/splash/index.js",
-		"/Users/greg/Sites/gregbak/src/components/view/style.scss",
-		"/Users/greg/Sites/gregbak/api/portfolio.json",
-		"/Users/greg/Sites/gregbak/src/routes/portfolio/style.scss",
-		"/Users/greg/Sites/gregbak/src/routes/project/style.scss",
-		"/Users/greg/Sites/gregbak/api/projects/opus.json",
-		"/Users/greg/Sites/gregbak/api/projects/failstart.json",
-		"/Users/greg/Sites/gregbak/api/projects/fundamentum.json",
-		"/Users/greg/Sites/gregbak/api/projects/aimi.json",
-		"/Users/greg/Sites/gregbak/api/projects/coffee.json",
-		"/Users/greg/Sites/gregbak/api/projects/vivienne.json",
-		"/Users/greg/Sites/gregbak/api/projects/lapv.json",
-		"/Users/greg/Sites/gregbak/src/components/tile/index.js",
-		"/Users/greg/Sites/gregbak/src/components/tile/style.scss",
-		"/Users/greg/Sites/gregbak/src/components/filters/index.js",
-		"/Users/greg/Sites/gregbak/src/components/sidebar/index.js",
-		"/Users/greg/Sites/gregbak/src/components/sidebar/style.scss",
-		"/Users/greg/Sites/gregbak/src/config.js",
-		"/Users/greg/Sites/gregbak/preact.config.js",
-		"/Users/greg/Sites/gregbak/src/components/project/index.js",
-		"/Users/greg/Sites/gregbak/src/components/project/style.scss",
-		"/Users/greg/Sites/gregbak/src/components/filters/style.scss",
-		"/Users/greg/Sites/gregbak/src/globals.js",
-		"/Users/greg/Sites/gregbak/server.py",
-		"/Users/greg/Sites/gregbak/build/.htaccess",
-		"/Users/greg/Sites/gregbak/src/components/radiv/index.js",
-		"/Users/greg/Sites/gregbak/src/.htaccess",
-		"/Users/greg/Sites/gregbak/src/reducers/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/style.scss",
-		"/Users/greg/Sites/gregbak/src/components/view/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/about/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/home/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/index.js",
-		"/Users/greg/Sites/gregbak/src/containers/filters.js",
-		"/Users/greg/Sites/gregbak/src/components/logo/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/about/style.scss",
-		"/Users/greg/Sites/gregbak-old/cms/styles/sass/views/_about.scss",
-		"/Users/greg/Sites/gregbak-old/cms/views/about.php",
-		"/Users/greg/Sites/gregbak/src/routes/home/style.scss",
-		"/Users/greg/Sites/gregbak/src/routes/policyCopyrights/index.js",
-		"/Users/greg/Sites/gregbak/node_modules/preact-router/match.js",
-		"/Users/greg/Sites/gregbak/src/components/logo/style.scss",
-		"/Users/greg/Sites/gregbak/gregbak.sublime-workspace",
-		"/Users/greg/Sites/gregbak/notpreact.config.js",
-		"/Users/greg/Sites/gregbak/src/components/header/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/profile/index.js",
-		"/Users/greg/Sites/gregbak/.gitignore",
-		"/Users/greg/Sites/gregbak/src/site.webmanifest",
-		"/Users/greg/Sites/movielist/package.json",
-		"/private/var/folders/tn/8xjkds1d32z8jlw34_dz_bs40000gn/T/fz3temp-2/api.php",
-		"/Users/greg/Sites/movielist/src/api.js",
-		"/Users/greg/Sites/movielist/src/routes/login/index.js",
-		"/Users/greg/Sites/movielist/src/components/app.js"
+		"/Users/greg/backup_rsa"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
 		"height": 136.0,
 		"where_history":
 		[
+			"/Users/greg/Sites/gregbak/src",
+			"/Users/greg/Sites/gregbak",
+			"/Users/greg/Sites/gregbak/src"
 		]
 	},
 	"find_state":
@@ -708,13 +833,111 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fill={}",
+			"Math.floor",
+			"#",
+			"single",
+			"unset",
+			"transform-origin",
+			"origin",
+			"transform-origin",
+			"\n        pointer-events: initial;\n        visibility: visible;",
+			"content",
+			"styles",
+			".000",
+			"-.000",
+			"0.000",
+			"100",
+			".000",
+			"-.000",
+			"0[p.]",
+			"00[p.]",
+			"1000px",
+			"styles",
+			"p",
+			"styles",
+			"sidebar",
+			"x, y",
+			"dir",
+			"receiveProps",
+			"styles",
+			"Portfolio",
+			"e => this.toggleMenu(e, false)",
+			"toggleMenu",
+			"menuToggle",
+			"this.toggleMenu",
+			"toggleMenu",
+			"tile",
+			"88px",
+			"activeFilters",
+			"50",
+			"z-index",
+			".sidebar",
+			"filters",
+			".logo {",
+			"console.log",
+			"menuToggle",
+			"styles",
+			"400",
+			"400px",
+			"\n\n@media (min-width: $desktop) {\n\n}\n@media (max-width: $tablet) {\n\n}\n@media (max-width: $mobile) {\n\n}",
+			"story",
+			"home",
+			"page",
+			"styles",
+			"url",
+			"red",
+			"width: #{",
+			"5*5",
+			"20px, transparent 20px);",
+			"background-size: 25px 100px;",
+			"*25px",
+			"content",
+			"bold",
+			"12px",
+			"media",
+			"styles.",
+			"class={styles.",
+			"padding",
+			"\n\n  @media (max-height: 768px) {}",
+			") {",
+			"fixed",
+			"About",
+			"copyrights",
+			"styles",
+			"about",
+			"styles",
+			"sidebarStyle",
+			"1",
+			"0",
+			"step",
+			"sidebar",
+			"sidebarStep",
+			"page",
+			"'",
+			"elements",
+			"state",
+			"GET_PROJECTS",
+			"GET_PROJECT",
+			"config",
+			"response",
+			",",
+			"Portfolio",
+			",",
+			"alias.",
+			": ",
+			"),",
+			",",
+			"dir",
+			"views",
+			"alias",
 			"\t\t\t\t\n",
 			"package"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 		],
@@ -734,11 +957,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
-		"height": 43.0
+		"height": 44.0
 	},
 	"layout":
 	{
@@ -763,6 +986,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 324.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -775,7 +1002,7 @@
 	"project": "gregbak.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -785,8 +1012,348 @@
 		"selected_items":
 		[
 			[
+				"template",
+				"gregbak/src/template.html"
+			],
+			[
+				"pag",
+				"gregbak/package.json"
+			],
+			[
+				"templ",
+				"src/template.html"
+			],
+			[
+				"view",
+				"src/components/view/index.js"
+			],
+			[
+				"arml",
+				"api/projects/armlet.json"
+			],
+			[
+				"splash",
+				"src/components/splash/index.js"
+			],
+			[
+				"var",
+				"src/assets/styles/_variables.scss"
+			],
+			[
+				"doom",
+				"api/projects/doom.json"
+			],
+			[
+				"glb",
+				"src/globals.js"
+			],
+			[
+				"globa",
+				"src/globals.js"
+			],
+			[
+				"vari",
+				"src/assets/styles/_variables.scss"
+			],
+			[
+				"splasstyle",
+				"src/components/splash/style.scss"
+			],
+			[
+				"index",
+				"src/index.js"
+			],
+			[
+				"side",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"homestyle",
+				"src/routes/home/style.scss"
+			],
+			[
+				"sidestyle",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"sideb",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"prea",
+				"preact.config.js"
+			],
+			[
+				"home",
+				"src/routes/home/index.js"
+			],
+			[
+				"image",
+				"src/components/imageTile/index.js"
+			],
+			[
+				"proj",
+				"src/routes/project/index.js"
+			],
+			[
+				"imtile",
+				"src/components/imageTile/index.js"
+			],
+			[
+				"proje",
+				"src/routes/project/index.js"
+			],
+			[
+				"projjs",
+				"api/projects/aimi.json"
+			],
+			[
+				"projein",
+				"src/routes/project/index.js"
+			],
+			[
+				"sidebar",
+				"src/components/sidebar/style.scss"
+			],
+			[
 				"html",
 				"src/template.html"
+			],
+			[
+				"ove",
+				"src/components/imageOverlay/style.scss"
+			],
+			[
+				"redu",
+				"src/state/reducers/portfolio.js"
+			],
+			[
+				"filters",
+				"src/components/filters/index.js"
+			],
+			[
+				"imtil",
+				"src/components/imageTile/index.js"
+			],
+			[
+				"projecin",
+				"src/routes/project/index.js"
+			],
+			[
+				"im",
+				"src/components/imageTile/style.scss"
+			],
+			[
+				"imatei",
+				"src/components/imageTile/index.js"
+			],
+			[
+				"imagte",
+				"src/components/imageTile/index.js"
+			],
+			[
+				"loain",
+				"src/components/loader/index.js"
+			],
+			[
+				"loadstyle",
+				"src/components/loader/style.scss"
+			],
+			[
+				"imaovstyle",
+				"src/components/imageOverlay/style.scss"
+			],
+			[
+				"imageov",
+				"src/components/imageOverlay/index.js"
+			],
+			[
+				"sidebstyl",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"inde",
+				"src/index.js"
+			],
+			[
+				"tile",
+				"src/components/tile/style.scss"
+			],
+			[
+				"reset",
+				"src/assets/styles/_reset.scss"
+			],
+			[
+				"splast",
+				"src/components/splash/style.scss"
+			],
+			[
+				"splastyle",
+				"src/components/splash/style.scss"
+			],
+			[
+				"overla",
+				"src/components/imageOverlay/index.js"
+			],
+			[
+				"tilestyle",
+				"src/components/tile/style.scss"
+			],
+			[
+				"porstyle",
+				"src/routes/portfolio/style.scss"
+			],
+			[
+				"filter",
+				"src/components/filters/index.js"
+			],
+			[
+				"reduce",
+				"src/state/reducers/portfolio.js"
+			],
+			[
+				"filterj",
+				"src/components/filters/index.js"
+			],
+			[
+				"filtestyl",
+				"src/components/filters/style.scss"
+			],
+			[
+				"filstyle",
+				"src/components/filters/style.scss"
+			],
+			[
+				"filterstyle",
+				"src/components/filters/style.scss"
+			],
+			[
+				"reducer",
+				"src/state/reducers/portfolio.js"
+			],
+			[
+				"homei",
+				"src/routes/home/index.js"
+			],
+			[
+				"color",
+				"src/components/loader/index.js"
+			],
+			[
+				"homestyl",
+				"src/routes/home/style.scss"
+			],
+			[
+				"tilestyl",
+				"src/components/tile/style.scss"
+			],
+			[
+				"action",
+				"src/state/actions/portfolio.js"
+			],
+			[
+				"confi",
+				"preact.config.js"
+			],
+			[
+				"glob",
+				"src/globals.js"
+			],
+			[
+				"actions",
+				"src/state/actions/portfolio.js"
+			],
+			[
+				"munscs",
+				"src/components/mun/style.scss"
+			],
+			[
+				"munjs",
+				"src/components/mun/index.js"
+			],
+			[
+				"mun",
+				"src/components/mun/style.scss"
+			],
+			[
+				"munin",
+				"src/components/mun/index.js"
+			],
+			[
+				"actionss",
+				"src/state/actions/portfolio.js"
+			],
+			[
+				"sidebarscss",
+				"src/components/sidebar/style.scss"
+			],
+			[
+				"viewst",
+				"src/components/view/style.scss"
+			],
+			[
+				"viewstyle",
+				"src/components/view/style.scss"
+			],
+			[
+				"acpo",
+				"src/state/actions/portfolio.js"
+			],
+			[
+				"filtersin",
+				"src/components/filters/index.js"
+			],
+			[
+				"radiv",
+				"src/components/radiv/index.js"
+			],
+			[
+				"ht",
+				"src/template.html"
+			],
+			[
+				"preac",
+				"preact.config.js"
+			],
+			[
+				"splasscs",
+				"src/components/splash/style.scss"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"eslin",
+				"src/.eslintrc.js"
+			],
+			[
+				"styleva",
+				"src/assets/style/_variables.scss"
+			],
+			[
+				"type",
+				"src/state/types/portfolio.js"
+			],
+			[
+				"redupo",
+				"src/state/reducers/portfolio.js"
+			],
+			[
+				"porf",
+				"api/portfolio.json"
+			],
+			[
+				"reduc",
+				"src/state/reducers/index.js"
+			],
+			[
+				"conf",
+				"preact.config.js"
 			],
 			[
 				"package",
@@ -809,10 +1376,6 @@
 				"src/routes/login/index.js"
 			],
 			[
-				"index",
-				"src/index.js"
-			],
-			[
 				"usermenu",
 				"src/components/userMenu/index.js"
 			],
@@ -825,27 +1388,7 @@
 				"src/components/header/index.js"
 			],
 			[
-				"reducer",
-				"src/reducers/main.js"
-			],
-			[
-				"actions",
-				"src/actions/index.js"
-			],
-			[
 				"redmain",
-				"src/reducers/main.js"
-			],
-			[
-				"globa",
-				"src/globals.js"
-			],
-			[
-				"action",
-				"src/actions/main.js"
-			],
-			[
-				"reduce",
 				"src/reducers/main.js"
 			],
 			[
@@ -853,20 +1396,8 @@
 				"src/routes/login/style.scss"
 			],
 			[
-				"type",
-				"src/actions/types.js"
-			],
-			[
 				"types",
 				"src/actions/types.js"
-			],
-			[
-				"glob",
-				"src/globals.js"
-			],
-			[
-				"conf",
-				"src/config.js"
 			],
 			[
 				"newsyle",
@@ -921,10 +1452,6 @@
 				"src/components/commentBox/index.js"
 			],
 			[
-				"inde",
-				"src/index.js"
-			],
-			[
 				"tren",
 				"src/routes/trending/index.js"
 			],
@@ -933,16 +1460,8 @@
 				"src/routes/trending/style.scss"
 			],
 			[
-				"home",
-				"src/routes/home/index.js"
-			],
-			[
 				"treinsyle",
 				"src/routes/trending/style.scss"
-			],
-			[
-				"homestyle",
-				"src/routes/home/style.scss"
 			],
 			[
 				"profliestyle",
@@ -955,10 +1474,6 @@
 			[
 				"postindex",
 				"src/components/post/index.js"
-			],
-			[
-				"var",
-				"src/style/_variables.scss"
 			],
 			[
 				"g",
@@ -1001,283 +1516,11 @@
 				"src/components/header/style.scss"
 			],
 			[
-				"vari",
-				"src/style/_variables.scss"
-			],
-			[
 				"temmp",
 				"src/template.html"
 			],
 			[
 				"variab",
-				"src/style/_variables.scss"
-			],
-			[
-				"templ",
-				"src/template.html"
-			],
-			[
-				"tem",
-				"src/template.html"
-			],
-			[
-				"template",
-				"src/template.html"
-			],
-			[
-				"varia",
-				"src/style/_variables.scss"
-			],
-			[
-				"headerscs",
-				"src/components/header/style.scss"
-			],
-			[
-				"loadstyle",
-				"src/components/loader/style.scss"
-			],
-			[
-				"splasin",
-				"src/components/splash/index.js"
-			],
-			[
-				"splasstyle",
-				"src/components/splash/style.scss"
-			],
-			[
-				"viewst",
-				"src/components/view/style.scss"
-			],
-			[
-				"orj",
-				"api/portfolio.json"
-			],
-			[
-				"tile",
-				"src/components/tile/index.js"
-			],
-			[
-				"filters",
-				"src/components/filters/index.js"
-			],
-			[
-				"porfjs",
-				"src/reducers/portfolio.js"
-			],
-			[
-				"tilsyl",
-				"src/components/tile/style.scss"
-			],
-			[
-				"sideb",
-				"src/components/sidebar/index.js"
-			],
-			[
-				"sidebatyl",
-				"src/components/sidebar/style.scss"
-			],
-			[
-				"sideba",
-				"src/components/sidebar/index.js"
-			],
-			[
-				"sidestyle",
-				"src/components/sidebar/style.scss"
-			],
-			[
-				"filtesy",
-				"src/components/filters/style.scss"
-			],
-			[
-				"radiv",
-				"src/components/radiv/index.js"
-			],
-			[
-				"packa",
-				"package.json"
-			],
-			[
-				"con",
-				"preact.config.js"
-			],
-			[
-				"filtsl",
-				"src/components/filters/style.scss"
-			],
-			[
-				"sidebsytl",
-				"src/components/sidebar/style.scss"
-			],
-			[
-				"routeportf",
-				"src/routes/portfolio/index.js"
-			],
-			[
-				"sidebstyl",
-				"src/components/sidebar/style.scss"
-			],
-			[
-				"redu",
-				"src/reducers/portfolio.js"
-			],
-			[
-				"filterstl",
-				"src/components/filters/style.scss"
-			],
-			[
-				"reduc",
-				"src/reducers/portfolio.js"
-			],
-			[
-				"policystyle",
-				"src/routes/policy-copyrights/style.scss"
-			],
-			[
-				"reset",
-				"src/style/_reset.scss"
-			],
-			[
-				"viewstyle",
-				"src/components/view/style.scss"
-			],
-			[
-				"side",
-				"src/components/sidebar/index.js"
-			],
-			[
-				"sidebastyl",
-				"src/components/sidebar/style.scss"
-			],
-			[
-				"config",
-				"preact.config.js"
-			],
-			[
-				"about",
-				"src/routes/about/style.scss"
-			],
-			[
-				"sidebar",
-				"src/components/sidebar/index.js"
-			],
-			[
-				"sidebastyle",
-				"src/components/sidebar/style.scss"
-			],
-			[
-				"aboutstyl",
-				"src/routes/about/style.scss"
-			],
-			[
-				"viewstyl",
-				"src/components/view/style.scss"
-			],
-			[
-				"indexscs",
-				"src/style/index.scss"
-			],
-			[
-				"copystyle",
-				"src/routes/policy-copyrights/style.scss"
-			],
-			[
-				"aboustyle",
-				"src/routes/about/style.scss"
-			],
-			[
-				"copy",
-				"src/routes/policy-copyrights/index.js"
-			],
-			[
-				"preac",
-				"preact.config.js"
-			],
-			[
-				"policy",
-				"src/routes/policy-copyrights/index.js"
-			],
-			[
-				"sidesty",
-				"src/components/sidebar/style.scss"
-			],
-			[
-				"splash",
-				"src/components/splash/index.js"
-			],
-			[
-				"splashi",
-				"src/components/splash/index.js"
-			],
-			[
-				"polisyle",
-				"src/routes/policy-copyrights/style.scss"
-			],
-			[
-				"view",
-				"src/components/view/index.js"
-			],
-			[
-				"viestyle",
-				"src/components/view/style.scss"
-			],
-			[
-				"vie",
-				"src/components/view/index.js"
-			],
-			[
-				"views",
-				"src/components/view/style.scss"
-			],
-			[
-				"vies",
-				"src/components/view/style.scss"
-			],
-			[
-				"logo",
-				"src/components/logo/index.js"
-			],
-			[
-				"splashstyle",
-				"src/components/splash/style.scss"
-			],
-			[
-				"splashs",
-				"src/components/splash/style.scss"
-			],
-			[
-				"sidebas",
-				"src/components/sidebar/style.scss"
-			],
-			[
-				"splas",
-				"src/components/splash/style.scss"
-			],
-			[
-				"styl",
-				"src/components/splash/style.scss"
-			],
-			[
-				"spla",
-				"src/components/splash/index.js"
-			],
-			[
-				"peact",
-				"preact.config.js"
-			],
-			[
-				"splasstyl",
-				"src/components/splash/style.scss"
-			],
-			[
-				"splashindex.js",
-				"src/components/splash/index.js"
-			],
-			[
-				"adderscss",
-				"src/components/adder/style.scss"
-			],
-			[
-				"variables",
 				"src/style/_variables.scss"
 			]
 		],

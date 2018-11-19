@@ -1,18 +1,39 @@
 import path from "path"
+import webpack from "webpack"
 
 export default (config, env, helpers) => {
-	let {alias} = config.resolve
-
-	alias.actions = path.resolve(__dirname, "src/actions")
+	/* set aliases */
+	let {alias} =	config.resolve
 	alias.assets = path.resolve(__dirname, "src/assets")
-	alias.images = path.resolve(__dirname, "src/assets/images")
 	alias.icons = path.resolve(__dirname, "src/assets/icons")
-	alias.containers = path.resolve(__dirname, "src/containers")
-	alias.components = path.resolve(__dirname, "src/components")
+	alias.images = path.resolve(__dirname, "src/assets/images")
+	alias.styles = path.resolve(__dirname, "src/assets/styles")
+
 	alias.routes = path.resolve(__dirname, "src/routes")
-	alias.reducers = path.resolve(__dirname, "src/reducers")
-	alias.models = path.resolve(__dirname, "src/assets/models")
+	alias.components = path.resolve(__dirname, "src/components")
+
+	alias.state = path.resolve(__dirname, "src/state")		
+	alias.types = path.resolve(__dirname, "src/state/types")		
+	alias.models = path.resolve(__dirname, "src/state/models")
+	alias.actions = path.resolve(__dirname, "src/state/actions")
+	alias.reducers = path.resolve(__dirname, "src/state/reducers")
 
 	alias.globals = path.resolve(__dirname, "src/globals.js")
-	alias.config = path.resolve(__dirname, "src/config.js")
+
+	/* add paths to CSS watchers */
+	config.module.loaders[4].include = [
+		path.resolve(__dirname, "src", "routes"),
+		path.resolve(__dirname, "src", "components"),
+	]
+
+	config.module.loaders[5].exclude = [
+		path.resolve(__dirname, "src", "routes"),
+		path.resolve(__dirname, "src", "components"),
+	]
+
+	/* set API var */
+	config.plugins.push(new webpack.DefinePlugin({
+		"process.env.NODE_ENV": JSON.stringify(env.isProd ? "production" : "development"),
+	  "API": JSON.stringify(env.isProd ? 'http://gregbak.com/api' : 'http://localhost:8000/api'),
+	}))
 }

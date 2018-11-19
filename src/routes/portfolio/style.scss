@@ -1,0 +1,15 @@
+@import "~styles/variables";
+
+.view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  background: red;
+}
+
+@media (max-width: $mobile) {
+  .view {
+    padding-top: 50px;
+  }
+}

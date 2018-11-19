@@ -1,0 +1,108 @@
+@import "~styles/variables";
+
+.view {
+  &.single {
+    height: 100vh;
+  }
+
+  .content {
+    height: 100%;
+    width: 100%;
+  }
+
+  .description {
+    position: fixed;
+
+    background: $dark;
+
+    .title {
+      color: $salmon;
+      font-size: 28px;
+      line-height: 32px;
+    }
+    .date,
+    .info {
+      margin: 20px 0;
+
+      color: $medium;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+    .text {
+      color: $white;
+      font-size: 16px;
+      line-height: 18px;
+
+      a {
+        color: $salmon;
+        font-weight: 800;
+        text-decoration: none;
+      }
+    }
+    .links {
+
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .view {
+    .content {
+      padding: 0 0 0 300px;
+    }
+
+    .description {
+      height: calc(100% - 100px);
+      width: 300px;
+      padding: 35px 20px;
+      top: 100px;
+      left: 0;
+    }
+  }
+}
+@media (max-width: $tablet) {
+  .view {
+    .content {
+      padding: 0 0 0 200px;
+    }
+
+    .description {
+      height: calc(100% - 300px);
+      width: 200px;
+      padding: 20px;
+      top: 300px;
+      left: 0;
+
+      .title {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .date,
+      .info {
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 14px;
+      }
+      .text {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .view {
+    background: $dark;
+
+    .content {
+      padding: 0;
+    }
+
+    .description {
+      position: static;
+      height: auto;
+      width: 100%;
+    }
+  }
+}
