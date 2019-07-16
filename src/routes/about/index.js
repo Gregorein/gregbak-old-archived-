@@ -108,6 +108,11 @@ const About = () => (
         <li class={style.learning}>Marvelous Designer</li>
       </ul>
       <ul class={style.skills}>
+        <h3>motion graphics</h3>
+        <li class={style.advanced}>Premiere Pro</li>
+        <li class={style.learning}>After Effects</li>
+      </ul>
+      <ul class={style.skills}>
         <h3>languages</h3>
         <li class={style.expert}>Polish</li>
         <li class={style.advanced}>English</li>

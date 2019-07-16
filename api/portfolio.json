@@ -7,12 +7,26 @@
 		"thumbnail": "/projects/macabre-thumb.png"
 	},
 	{
+		"title": "Greg Bak portfolio",
+		"href": "/portfolio/gregbak",
+		"tag": "web|code|design",
+		"date": 1540938600,
+		"thumbnail": "/projects/gregbak-thumb.png"
+	},
+	{
 		"title": "warmup",
 		"href": "/portfolio/warmup",
 		"tag": "art|2d",
 		"date": 1518722340,
 		"thumbnail": "/projects/warmup-thumb.png"
 	},
+  {
+    "title": "Dark Knight",
+    "href": "/portfolio/darkknight",
+    "tag": "art|2d",
+    "date": 1517603310,
+    "thumbnail": "/projects/darkknight-thumb.png"
+  },
 	{
 		"title": "opus corporis",
 		"href": "/portfolio/opus",
@@ -28,6 +42,13 @@
 		"thumbnail": "/projects/lapv-thumb.png"
 	},
 	{
+		"title": "hopeless clan logo",
+		"href": "/portfolio/hopeless",
+		"tag": "2d",
+		"date": 1492804440,
+		"thumbnail": "/projects/hopeless-thumb.png"
+	},
+	{
 		"title": "cyberpunk vivienne",
 		"href": "/portfolio/vivienne",
 		"tag": "art|3d|wip",
@@ -37,14 +58,21 @@
 	{
 		"title": "coffee",
 		"href": "/portfolio/coffee",
-		"tag": "art|3d|wip",
+		"tag": "art|3d",
 		"date": 1490016480,
 		"thumbnail": "/projects/coffee-thumb.png"
 	},
 	{
+		"title": "trees",
+		"href": "/portfolio/trees",
+		"tag": "art|3d",
+		"date": 1489769940,
+		"thumbnail": "/projects/trees-thumb.png"
+	},
+	{
 		"title": "aimi",
 		"href": "/portfolio/aimi",
-		"tag": "art|3d|wip",
+		"tag": "art|3d",
 		"date": 1485946500,
 		"thumbnail": "/projects/aimi-thumb.png"
 	},

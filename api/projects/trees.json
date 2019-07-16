@@ -1,0 +1,18 @@
+{
+  "date": 1489769940,
+  "title": "Trees",
+  "software": [
+    "Blender"
+  ],
+  "description": [
+    "A quick test of Blender Tree generator"
+  ],
+  "slides": [
+    {
+      "type": "image",
+      "height": 1080,
+      "width": 1920, 
+      "url": "/projects/trees.png"
+    }
+  ]
+}

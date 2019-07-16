@@ -1,0 +1,121 @@
+{
+  "date": 1540938600,
+  "title": "Greg Bak portfolio",
+  "software": [
+    "Photoshop",
+    "Preact"
+  ],
+  "description": [
+    "My personal portfolio website."
+  ],
+  "slides": [
+    {
+      "type": "image",
+      "height": 1080,
+      "width": 1920,
+      "url": "/projects/gregbak-DesktopHome.png"
+    },
+    {
+      "type": "image",
+      "height": 1080,
+      "width": 1920,
+      "url": "/projects/gregbak-DesktopStory.png"
+    },
+    {
+      "type": "image",
+      "height": 1080,
+      "width": 1920,
+      "url": "/projects/gregbak-DesktopPortfolio.png"
+    },
+    {
+      "type": "image",
+      "height": 1080,
+      "width": 1920,
+      "url": "/projects/gregbak-DesktopProject.png"
+    },
+    {
+      "type": "image",
+      "height": 1080,
+      "width": 1920,
+      "url": "/projects/gregbak-DesktopCopyrights.png"
+    },
+    {
+      "type": "image",
+      "height": 2670,
+      "width": 1920,
+      "url": "/projects/gregbak-DesktopAbout.png"
+    },
+    {
+      "type": "image",
+      "height": 1336,
+      "width": 1024,
+      "url": "/projects/gregbak-TabletHome.png"
+    },
+    {
+      "type": "image",
+      "height": 1336,
+      "width": 1024,
+      "url": "/projects/gregbak-TabletStory.png"
+    },
+    {
+      "type": "image",
+      "height": 1336,
+      "width": 1024,
+      "url": "/projects/gregbak-TabletPortfolio.png"
+    },
+    {
+      "type": "image",
+      "height": 1336,
+      "width": 1024,
+      "url": "/projects/gregbak-TabletProject.png"
+    },
+    {
+      "type": "image",
+      "height": 1336,
+      "width": 1024,
+      "url": "/projects/gregbak-TabletCopyrights.png"
+    },
+    {
+      "type": "image",
+      "height": 2400,
+      "width": 1024,
+      "url": "/projects/gregbak-TabletAbout.png"
+    },
+    {
+      "type": "image",
+      "height": 815,
+      "width": 375,
+      "url": "/projects/gregbak-PhoneHome.png"
+    },
+    {
+      "type": "image",
+      "height": 815,
+      "width": 375,
+      "url": "/projects/gregbak-PhoneStory.png"
+    },
+    {
+      "type": "image",
+      "height": 815,
+      "width": 375,
+      "url": "/projects/gregbak-PhonePortfolio.png"
+    },
+    {
+      "type": "image",
+      "height": 815,
+      "width": 375,
+      "url": "/projects/gregbak-PhoneProject.png"
+    },
+    {
+      "type": "image",
+      "height": 815,
+      "width": 375,
+      "url": "/projects/gregbak-PhoneCopyrights.png"
+    },
+    {
+      "type": "image",
+      "height": 2510,
+      "width": 375,
+      "url": "/projects/gregbak-PhoneAbout.png"
+    }
+  ]
+}

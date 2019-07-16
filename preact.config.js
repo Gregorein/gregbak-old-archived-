@@ -34,6 +34,6 @@ export default (config, env, helpers) => {
 	/* set API var */
 	config.plugins.push(new webpack.DefinePlugin({
 		"process.env.NODE_ENV": JSON.stringify(env.isProd ? "production" : "development"),
-	  "API": JSON.stringify(env.isProd ? 'http://gregbak.com/api' : 'http://localhost:8000/api'),
+	  "API": JSON.stringify(env.isProd ? 'https://gregbak.com/api' : 'http://localhost:8000/api'),
 	}))
 }

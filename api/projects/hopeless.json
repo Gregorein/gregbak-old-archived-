@@ -1,0 +1,36 @@
+{
+  "date": 1492804440,
+  "title": "hopeless clan logo",
+  "software": [
+    "Photoshop"
+  ],
+  "description": [
+    "A logo I created for a brief time I wasted on Korean MMOs. Never again."
+  ],
+  "slides": [
+    {
+      "type": "image",
+      "height": 1000,
+      "width": 1000,
+      "url": "/projects/hopeless.png"
+    },
+    {
+      "type": "image",
+      "height": 905,
+      "width": 935,
+      "url": "/projects/hopeless-red.png"
+    },
+    {
+      "type": "image",
+      "height": 1000,
+      "width": 1000,
+      "url": "/projects/hopeless-green.png"
+    },
+    {
+      "type": "image",
+      "height": 905,
+      "width": 935,
+      "url": "/projects/hopeless-flat.png"
+    }
+  ]
+}

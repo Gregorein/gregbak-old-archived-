@@ -1,0 +1,18 @@
+{
+  "date": 1517603310,
+  "title": "Dark Knight",
+  "software": [
+    "Photoshop"
+  ],
+  "description": [
+    "An entry for the Black Desert Online game costume contest."
+  ],
+  "slides": [
+    {
+      "type": "image",
+      "height": 1012,
+      "width": 1342,
+      "url": "/projects/darkknight.png"
+    }
+  ]
+}

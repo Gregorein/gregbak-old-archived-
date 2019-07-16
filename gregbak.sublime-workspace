@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"salm",
+				"salmon-alt"
+			],
+			[
+				"ha",
+				"handleSplash"
+			],
+			[
+				"over",
+				"overflow\tproperty"
+			],
+			[
 				"hand",
 				"handleColors"
 			],
@@ -66,10 +78,6 @@
 			[
 				"ov",
 				"overflow-x\tproperty"
-			],
-			[
-				"over",
-				"overflow-y\tproperty"
 			],
 			[
 				"menu",
@@ -506,14 +514,6 @@
 			[
 				"maxmi",
 				"maximalMatching"
-			],
-			[
-				"adja",
-				"adjacencyList"
-			],
-			[
-				"ver",
-				"vertices"
 			]
 		]
 	},
@@ -532,11 +532,19 @@
 		"selected_items":
 		[
 			[
-				"side",
+				"sideb",
 				"View: Toggle Side Bar"
 			],
 			[
-				"sideb",
+				"jaca",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"sibde",
+				"Set Syntax: NAnt Build File"
+			],
+			[
+				"side",
 				"View: Toggle Side Bar"
 			],
 			[
@@ -681,32 +689,43 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/greg/Sites/gregbak/build"
+		"/Users/greg/Sites/gregbak",
+		"/Users/greg/Sites/gregbak/src",
+		"/Users/greg/Sites/gregbak/src/routes",
+		"/Users/greg/Sites/gregbak/src/routes/about"
 	],
 	"file_history":
 	[
-		"/Users/greg/Downloads/manifest.mpd",
+		"/Users/greg/Sites/gregbak/src/routes/about/index.js",
+		"/Users/greg/Sites/gregbak/preact.config.js",
+		"/Users/greg/Desktop/localhost.har",
 		"/Users/greg/Sites/gregbak/build/index.html",
+		"/Users/greg/Sites/gregbak/src/routes/project/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/portfolio/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/portfolio/index.js",
+		"/Users/greg/Sites/gregbak/src/components/imageTile/index.js",
+		"/Users/greg/Sites/gregbak/src/components/loader/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/project/index.js",
+		"/Users/greg/Sites/gregbak/src/assets/styles/_variables.scss",
+		"/Users/greg/Sites/gregbak/src/routes/about/style.scss",
+		"/Users/greg/Sites/gregbak/build/assets/styles/_variables.scss",
+		"/Users/greg/Sites/gregbak/src/components/tile/index.js",
+		"/Users/greg/Sites/gregbak/api/portfolio.json",
+		"/Users/greg/Sites/gregbak/build/route-about.chunk.515b5.js",
+		"/Users/greg/Sites/gregbak/src/components/splash/style.scss",
+		"/Users/greg/Sites/gregbak/src/components/splash/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/home/style.scss",
+		"/Users/greg/Sites/gregbak/src/routes/home/index.js",
+		"/Users/greg/Downloads/manifest.mpd",
 		"/Users/greg/Sites/gregbak/package.json",
 		"/Users/greg/Sites/gregbak/src/template.html",
 		"/Users/greg/Sites/gregbak/src/components/view/index.js",
 		"/Users/greg/Sites/gregbak/api/projects/armlet.json",
 		"/Users/greg/Sites/gregbak/api/projects/doom.json",
-		"/Users/greg/Sites/gregbak/src/assets/styles/_variables.scss",
-		"/Users/greg/Sites/gregbak/src/components/splash/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/home/index.js",
 		"/Users/greg/Sites/gregbak/src/index.js",
 		"/Users/greg/Sites/gregbak/src/globals.js",
-		"/Users/greg/Sites/gregbak/src/components/splash/style.scss",
-		"/Users/greg/Sites/gregbak/src/routes/project/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/portfolio/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/home/style.scss",
 		"/Users/greg/Sites/gregbak/src/components/sidebar/style.scss",
-		"/Users/greg/Sites/gregbak/src/routes/about/index.js",
 		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/index.js",
-		"/Users/greg/Sites/gregbak/preact.config.js",
-		"/Users/greg/Sites/gregbak/src/routes/project/style.scss",
-		"/Users/greg/Sites/gregbak/src/components/imageTile/index.js",
 		"/Users/greg/Sites/gregbak/src/components/imageTile/style.scss",
 		"/Users/greg/Sites/gregbak/api/projects/aimi.json",
 		"/Users/greg/Sites/gregbak/src/components/sidebar/index.js",
@@ -717,17 +736,13 @@
 		"/Users/greg/Sites/gregbak/src/assets/icons/close.js",
 		"/Users/greg/Sites/gregbak/src/assets/icons/fullscreen.js",
 		"/Users/greg/Sites/gregbak/src/components/loader/style.scss",
-		"/Users/greg/Sites/gregbak/src/components/loader/index.js",
 		"/Users/greg/Sites/gregbak/src/components/tile/style.scss",
 		"/Users/greg/Sites/gregbak/src/assets/styles/_reset.scss",
-		"/Users/greg/Sites/gregbak/src/components/tile/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/portfolio/style.scss",
 		"/Users/greg/Sites/gregbak/src/components/filters/style.scss",
 		"/Users/greg/Sites/gregbak/src/state/actions/portfolio.js",
 		"/Users/greg/Sites/gregbak/src/components/mun/style.scss",
 		"/Users/greg/Sites/gregbak/src/components/mun/index.js",
 		"/Users/greg/Sites/gregbak/src/components/view/style.scss",
-		"/Users/greg/Sites/gregbak/src/routes/about/style.scss",
 		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/style.scss",
 		"/Users/greg/Sites/gregbak/src/assets/styles/index.scss",
 		"/Users/greg/Sites/gregbak/src/components/radiv/index.js",
@@ -739,7 +754,6 @@
 		"/Users/greg/Library/Application Support/Sublime Text 3/Packages/User/ESLint.sublime-settings",
 		"/Users/greg/Sites/gregbak/src/assets/style/_variables.scss",
 		"/Users/greg/Sites/gregbak/src/state/types/portfolio.js",
-		"/Users/greg/Sites/gregbak/api/portfolio.json",
 		"/Users/greg/Sites/gregbak/src/state/reducers/index.js",
 		"/Users/greg/Sites/gregbak/src/state/models/portfolio.js",
 		"/Users/greg/Sites/gregbak/src/state/types/index.js",
@@ -809,20 +823,19 @@
 		"/Users/greg/Sites/punishly/src/components/post/style.scss",
 		"/Users/greg/Sites/punishly/src/style/_variables.scss",
 		"/Users/greg/Sites/punishly/src/style/index.scss",
-		"/Users/greg/Sites/punishly/src/components/header/style.scss",
-		"/Users/greg/Sites/punishly/src/components/authenticatedRoute/index.js",
-		"/Users/greg/backup_rsa.pub",
-		"/Users/greg/backup_rsa"
+		"/Users/greg/Sites/punishly/src/components/header/style.scss"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 48.0
 	},
 	"find_in_files":
 	{
 		"height": 136.0,
 		"where_history":
 		[
+			"/Users/greg/Sites/gregbak/src",
+			"/Users/greg/Sites/gregbak",
 			"/Users/greg/Sites/gregbak/src",
 			"/Users/greg/Sites/gregbak",
 			"/Users/greg/Sites/gregbak/src"
@@ -833,6 +846,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bundle",
+			"current",
+			"http://crafton.eu",
+			"transition",
+			"3",
 			"fill={}",
 			"Math.floor",
 			"#",
@@ -957,7 +975,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1002,7 +1020,7 @@
 	"project": "gregbak.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1011,6 +1029,82 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"projestyle",
+				"src/routes/project/style.scss"
+			],
+			[
+				"portfolistyle",
+				"src/routes/portfolio/style.scss"
+			],
+			[
+				"routeportfolio",
+				"src/routes/portfolio/index.js"
+			],
+			[
+				"loader",
+				"src/components/loader/index.js"
+			],
+			[
+				"imagetile",
+				"src/components/imageTile/index.js"
+			],
+			[
+				"routeproje",
+				"src/routes/project/index.js"
+			],
+			[
+				"projectstyl",
+				"src/routes/project/style.scss"
+			],
+			[
+				"portfoliostyle",
+				"src/routes/portfolio/style.scss"
+			],
+			[
+				"routepor",
+				"src/routes/portfolio/index.js"
+			],
+			[
+				"var",
+				"gregbak/src/assets/styles/_variables.scss"
+			],
+			[
+				"aboutstyle",
+				"gregbak/src/routes/about/style.scss"
+			],
+			[
+				"tilejs",
+				"gregbak/src/components/tile/index.js"
+			],
+			[
+				"routeportfolio.js",
+				"gregbak/src/routes/portfolio/index.js"
+			],
+			[
+				"portfjs",
+				"gregbak/api/portfolio.json"
+			],
+			[
+				"portf",
+				"gregbak/api/portfolio.json"
+			],
+			[
+				"about",
+				"gregbak/src/routes/about/index.js"
+			],
+			[
+				"splash",
+				"gregbak/src/components/splash/index.js"
+			],
+			[
+				"homestyle",
+				"gregbak/src/routes/home/style.scss"
+			],
+			[
+				"homejs",
+				"gregbak/src/routes/home/index.js"
+			],
 			[
 				"template",
 				"gregbak/src/template.html"
@@ -1030,14 +1124,6 @@
 			[
 				"arml",
 				"api/projects/armlet.json"
-			],
-			[
-				"splash",
-				"src/components/splash/index.js"
-			],
-			[
-				"var",
-				"src/assets/styles/_variables.scss"
 			],
 			[
 				"doom",
@@ -1066,10 +1152,6 @@
 			[
 				"side",
 				"src/components/sidebar/style.scss"
-			],
-			[
-				"homestyle",
-				"src/routes/home/style.scss"
 			],
 			[
 				"sidestyle",
@@ -1458,70 +1540,6 @@
 			[
 				"trestyle",
 				"src/routes/trending/style.scss"
-			],
-			[
-				"treinsyle",
-				"src/routes/trending/style.scss"
-			],
-			[
-				"profliestyle",
-				"src/routes/profile/style.scss"
-			],
-			[
-				"globals",
-				"src/globals.js"
-			],
-			[
-				"postindex",
-				"src/components/post/index.js"
-			],
-			[
-				"g",
-				"src/globals.js"
-			],
-			[
-				"indexs",
-				"src/style/index.scss"
-			],
-			[
-				"vair",
-				"src/style/_variables.scss"
-			],
-			[
-				"usermsyle",
-				"src/components/userMenu/style.scss"
-			],
-			[
-				"usermen",
-				"src/components/userMenu/index.js"
-			],
-			[
-				"postsyle",
-				"src/components/post/style.scss"
-			],
-			[
-				"headsyl",
-				"src/components/header/style.scss"
-			],
-			[
-				"global",
-				"src/globals.js"
-			],
-			[
-				"usemenusyl",
-				"src/components/userMenu/style.scss"
-			],
-			[
-				"headstyle",
-				"src/components/header/style.scss"
-			],
-			[
-				"temmp",
-				"src/template.html"
-			],
-			[
-				"variab",
-				"src/style/_variables.scss"
 			]
 		],
 		"width": 0.0
