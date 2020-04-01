@@ -43,10 +43,10 @@
 
   ul.timeline {
     li {
-      margin-bottom: 20px;
       padding: 0 10px;
 
       .date {
+        margin-top: 30px;
         color: $salmon;
         font-size: 18px;
         font-weight: 700;
@@ -57,7 +57,17 @@
         font-size: 18px;
         line-height: 21px;
       }
+      .description {
+        margin: 5px 0;
+      }
+      .tech {
+        color: $salmon-alt;
+        font-weight: 600;
+        font-size: 14px;
+      }
       .location {
+        display: inline-block;
+        margin-top: 10px;
         color: $medium;
         text-decoration: none;
         line-height: 21px;
@@ -282,10 +292,20 @@
 
         text-align: right;
 
+        &:nth-of-type(2n-1) {
+          .description {
+            padding-right: 7px;
+            border-right: 3px solid $salmon-alt;
+          }
+        }
+
         &:nth-of-type(2n) {
           margin-left: 50%;
-
           text-align: left;
+          .description {
+            padding-left: 7px;
+            border-left: 3px solid $salmon-alt;
+          }
         }
       }
     }
@@ -344,7 +364,7 @@
           font-weight: 800;
           text-transform: uppercase;
           padding-left: 150px;
-          color: $salmon;
+          color: $salmon-alt;
         }
         .location {
           display: block;

@@ -4,5 +4,6 @@ build/
 *.lock
 *.sublime-project
 *.sublime-workspace
+.DS_Store
 
 package-lock.json

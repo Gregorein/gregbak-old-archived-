@@ -41,8 +41,9 @@ export default class Sidebar extends Component {
           }),
           "/portfolio": cn(style.tDark, style.hSalmon),
           "/portfolio/*": cn(style.tDark, style.hSalmon),
-          "/about": cn(style.tDark, style.hSalmonAlt), 
+          "/about": cn(style.tDark, style.hSalmonAlt),
           "/policy-copyrights": cn(style.tDark, style.hMedium),
+          "/ar": cn(style.tDark, style.hMedium),
         }}
         >
 

@@ -532,6 +532,10 @@
 		"selected_items":
 		[
 			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
 				"sideb",
 				"View: Toggle Side Bar"
 			],
@@ -562,10 +566,6 @@
 			[
 				"eslint",
 				"ESLint"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"lint",
@@ -693,12 +693,18 @@
 	],
 	"file_history":
 	[
+		"/Users/greg/Sites/gregbak/.gitignore",
+		"/Users/greg/Desktop/hosts",
+		"/Users/greg/Sites/gregbak/ar/main.js",
+		"/Users/greg/Sites/gregbak/ar/index.html",
+		"/Users/greg/Sites/gregbak/src/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/ar/index.js",
+		"/Users/greg/Sites/gregbak/src/components/sidebar/index.js",
 		"/Users/greg/Sites/gregbak/build/index.html",
 		"/Users/greg/Sites/gregbak/package.json",
 		"/Users/greg/Sites/gregbak/src/routes/about/index.js",
 		"/Users/greg/Sites/gregbak/src/routes/about/style.scss",
 		"/Users/greg/Sites/gregbak/src/assets/styles/_variables.scss",
-		"/Users/greg/Sites/gregbak/src/index.js",
 		"/Users/greg/Sites/gregbak/preact.config.js",
 		"/Users/greg/Desktop/localhost.har",
 		"/Users/greg/Sites/gregbak/src/routes/project/style.scss",
@@ -725,7 +731,6 @@
 		"/Users/greg/Sites/gregbak/src/routes/policy-copyrights/index.js",
 		"/Users/greg/Sites/gregbak/src/components/imageTile/style.scss",
 		"/Users/greg/Sites/gregbak/api/projects/aimi.json",
-		"/Users/greg/Sites/gregbak/src/components/sidebar/index.js",
 		"/Users/greg/Sites/gregbak/src/components/imageOverlay/index.js",
 		"/Users/greg/Sites/gregbak/src/components/imageOverlay/style.scss",
 		"/Users/greg/Sites/gregbak/src/state/reducers/portfolio.js",
@@ -758,7 +763,6 @@
 		"/Users/greg/Sites/gregbak/src/assets/style/index.scss",
 		"/Users/greg/Sites/gregbak/src/assets/style/_reset.scss",
 		"/Users/greg/Sites/gregbak/src/tests/.gitkeep",
-		"/Users/greg/Sites/gregbak/.gitignore",
 		"/Users/greg/Sites/gregbak/src/browserconfig.xml",
 		"/Users/greg/Sites/gregbak/src/.htaccess",
 		"/Users/greg/Sites/gregbak/src/.babelrc",
@@ -816,11 +820,7 @@
 		"/Users/greg/Sites/punishly/src/routes/home/style.scss",
 		"/Users/greg/Sites/punishly/src/components/userProfile/style.scss",
 		"/Users/greg/Sites/punishly/src/components/profile/style.scss",
-		"/Users/greg/Sites/punishly/src/components/profile/index.js",
-		"/Users/greg/Sites/punishly/src/components/post/style.scss",
-		"/Users/greg/Sites/punishly/src/style/_variables.scss",
-		"/Users/greg/Sites/punishly/src/style/index.scss",
-		"/Users/greg/Sites/punishly/src/components/header/style.scss"
+		"/Users/greg/Sites/punishly/src/components/profile/index.js"
 	],
 	"find":
 	{
@@ -843,6 +843,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"THREEx.ArToolkitContext.baseURL",
+			"mun",
+			"camera",
+			"}\n",
+			"              <PolicyCopyrights path=\"/policy-copyrights\" />\n",
+			"PolicyCopyrights",
 			"<link",
 			"><",
 			"<meta",
@@ -973,11 +979,6 @@
 			"sheets":
 			[
 			]
-		},
-		{
-			"sheets":
-			[
-			]
 		}
 	],
 	"incremental_find":
@@ -997,18 +998,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1043,6 +1037,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"sidebar",
+				"src/components/sidebar/index.js"
+			],
 			[
 				"packa",
 				"package.json"
@@ -1218,10 +1216,6 @@
 			[
 				"projein",
 				"src/routes/project/index.js"
-			],
-			[
-				"sidebar",
-				"src/components/sidebar/style.scss"
 			],
 			[
 				"html",
