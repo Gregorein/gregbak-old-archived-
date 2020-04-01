@@ -100,7 +100,6 @@
     }
     
     li {
-      height: 13px;
       width: 50%;
       margin-bottom: 10px;
       padding-right: 10px;
@@ -309,6 +308,9 @@
         }
       }
     }
+    ul.skills li {
+      height: 13px;
+    }
   }
 }
 @media (max-width: $tablet) {
@@ -387,6 +389,7 @@
       }
 
       li {
+        height: 13px;
         font-size: 18px;
 
         &::before {
@@ -448,6 +451,8 @@
       }
 
       li {
+        height: unset;
+        line-height: 13px;
         font-size: 16px;
 
         &::before {
