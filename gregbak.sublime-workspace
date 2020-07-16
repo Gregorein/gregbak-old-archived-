@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Engin",
+				"Engineering"
+			],
+			[
 				"mARG",
 				"margin-bottom\tproperty"
 			],
@@ -510,10 +514,6 @@
 			[
 				"bip",
 				"bipartiteB"
-			],
-			[
-				"bipartite",
-				"bipartiteB"
 			]
 		]
 	},
@@ -532,7 +532,31 @@
 		"selected_items":
 		[
 			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"installg",
+				"Package Control: Install Package"
+			],
+			[
 				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -556,10 +580,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"install ",
 				"Package Control: Install Package"
 			],
@@ -570,10 +590,6 @@
 			[
 				"lint",
 				"ESLint"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"ecma",
@@ -626,10 +642,6 @@
 			[
 				"scss",
 				"Set Syntax: SCSS"
-			],
-			[
-				"sass",
-				"Set Syntax: Sass"
 			],
 			[
 				"packain",
@@ -689,23 +701,30 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/greg/Sites/gregbak"
+		"/Users/greg/Sites/gregbak",
+		"/Users/greg/Sites/gregbak/src",
+		"/Users/greg/Sites/gregbak/src/routes",
+		"/Users/greg/Sites/gregbak/src/routes/about"
 	],
 	"file_history":
 	[
+		"/Users/greg/Sites/gregbak/src/routes/about/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/about/style.scss",
+		"/Users/greg/Sites/gregbak/package.json",
+		"/Users/greg/Sites/gregbak/src/components/sidebar/index.js",
+		"/Users/greg/Sites/gregbak/src/routes/home/index.js",
+		"/Users/greg/Sites/gregbak/src/assets/icons/fullscreen.js",
+		"/Users/greg/Sites/gregbak/src/components/filters/index.js",
+		"/Users/greg/Sites/gregbak/preact.config.js",
+		"/Users/greg/Sites/gregbak/src/assets/styles/_variables.scss",
+		"/Users/greg/Sites/gregbak/src/assets/styles/_reset.scss",
+		"/Users/greg/Sites/gregbak/build/index.html",
 		"/Users/greg/Sites/gregbak/.gitignore",
 		"/Users/greg/Desktop/hosts",
 		"/Users/greg/Sites/gregbak/ar/main.js",
 		"/Users/greg/Sites/gregbak/ar/index.html",
 		"/Users/greg/Sites/gregbak/src/index.js",
 		"/Users/greg/Sites/gregbak/src/routes/ar/index.js",
-		"/Users/greg/Sites/gregbak/src/components/sidebar/index.js",
-		"/Users/greg/Sites/gregbak/build/index.html",
-		"/Users/greg/Sites/gregbak/package.json",
-		"/Users/greg/Sites/gregbak/src/routes/about/index.js",
-		"/Users/greg/Sites/gregbak/src/routes/about/style.scss",
-		"/Users/greg/Sites/gregbak/src/assets/styles/_variables.scss",
-		"/Users/greg/Sites/gregbak/preact.config.js",
 		"/Users/greg/Desktop/localhost.har",
 		"/Users/greg/Sites/gregbak/src/routes/project/style.scss",
 		"/Users/greg/Sites/gregbak/src/routes/portfolio/style.scss",
@@ -720,7 +739,6 @@
 		"/Users/greg/Sites/gregbak/src/components/splash/style.scss",
 		"/Users/greg/Sites/gregbak/src/components/splash/index.js",
 		"/Users/greg/Sites/gregbak/src/routes/home/style.scss",
-		"/Users/greg/Sites/gregbak/src/routes/home/index.js",
 		"/Users/greg/Downloads/manifest.mpd",
 		"/Users/greg/Sites/gregbak/src/template.html",
 		"/Users/greg/Sites/gregbak/src/components/view/index.js",
@@ -734,12 +752,9 @@
 		"/Users/greg/Sites/gregbak/src/components/imageOverlay/index.js",
 		"/Users/greg/Sites/gregbak/src/components/imageOverlay/style.scss",
 		"/Users/greg/Sites/gregbak/src/state/reducers/portfolio.js",
-		"/Users/greg/Sites/gregbak/src/components/filters/index.js",
 		"/Users/greg/Sites/gregbak/src/assets/icons/close.js",
-		"/Users/greg/Sites/gregbak/src/assets/icons/fullscreen.js",
 		"/Users/greg/Sites/gregbak/src/components/loader/style.scss",
 		"/Users/greg/Sites/gregbak/src/components/tile/style.scss",
-		"/Users/greg/Sites/gregbak/src/assets/styles/_reset.scss",
 		"/Users/greg/Sites/gregbak/src/components/filters/style.scss",
 		"/Users/greg/Sites/gregbak/src/state/actions/portfolio.js",
 		"/Users/greg/Sites/gregbak/src/components/mun/style.scss",
@@ -824,7 +839,7 @@
 	],
 	"find":
 	{
-		"height": 48.0
+		"height": 55.0
 	},
 	"find_in_files":
 	{
@@ -843,6 +858,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			", </p>",
+			"h3",
+			"p",
+			"timeline",
+			"Master",
+			"thesis",
+			"I graduated",
+			"Adam Mickiewicz University",
+			"paper",
+			"title",
+			"date",
+			"npm",
+			"//",
+			"favicon",
+			">",
+			"style",
 			"THREEx.ArToolkitContext.baseURL",
 			"mun",
 			"camera",
@@ -954,11 +985,7 @@
 			": ",
 			"),",
 			",",
-			"dir",
-			"views",
-			"alias",
-			"\t\t\t\t\n",
-			"package"
+			"dir"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -983,7 +1010,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -1012,6 +1039,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
 	"output.exec":
 	{
 		"height": 324.0
@@ -1028,7 +1063,7 @@
 	"project": "gregbak.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1038,12 +1073,20 @@
 		"selected_items":
 		[
 			[
-				"sidebar",
-				"src/components/sidebar/index.js"
-			],
-			[
 				"packa",
 				"package.json"
+			],
+			[
+				"aboutind",
+				"src/routes/about/index.js"
+			],
+			[
+				"abouts",
+				"src/routes/about/style.scss"
+			],
+			[
+				"sidebar",
+				"src/components/sidebar/index.js"
 			],
 			[
 				"var",
@@ -1540,14 +1583,6 @@
 			[
 				"user",
 				"src/components/userMenu/index.js"
-			],
-			[
-				"cobostyle",
-				"src/components/commentBox/style.scss"
-			],
-			[
-				"comentb",
-				"src/components/commentBox/index.js"
 			]
 		],
 		"width": 0.0

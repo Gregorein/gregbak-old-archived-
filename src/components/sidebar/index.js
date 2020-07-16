@@ -73,20 +73,20 @@ export default class Sidebar extends Component {
           <Link
             class={style.link}
             activeClassName={style.active}
-            href="/portfolio"
-            title="portfolio"
-            onClick={() => this.toggleMenu(false)}
-            >
-            portfolio
-          </Link>
-          <Link
-            class={style.link}
-            activeClassName={style.active}
             href="/about"
             title="about"
             onClick={() => this.toggleMenu(false)}
             >
             about
+          </Link>
+          <Link
+            class={style.link}
+            activeClassName={style.active}
+            href="/portfolio"
+            title="portfolio"
+            onClick={() => this.toggleMenu(false)}
+            >
+            portfolio
           </Link>
           <Link
             class={style.link}
