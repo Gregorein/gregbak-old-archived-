@@ -858,6 +858,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"now",
 			", </p>",
 			"h3",
 			"p",
@@ -984,8 +985,7 @@
 			"alias.",
 			": ",
 			"),",
-			",",
-			"dir"
+			","
 		],
 		"highlight": true,
 		"in_selection": false,

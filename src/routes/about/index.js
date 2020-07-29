@@ -143,14 +143,14 @@ const About = () => (
 				</li>
 
 				<li>
-					<p class={style.date}>10.2017&mdash2.2020</p>
+					<p class={style.date}>10.2017&mdash;2.2020</p>
 					<h3 class={style.title}>I graduated my Master's of Engineering, Computer Science, Computer Science, with thesis "World-state in Augmented Reality"</h3>
 					<div class={style.location}>@Adam Mickiewicz University, Poznań</div>
 				</li>
 
 				<li>
 					<p class={style.date}>6.2018&mdash;now</p>
-					<h3 class={style.title}>I'm working as a frontend engineer in React.</h3>
+					<h3 class={style.title}>I'm working as a fullstack engineer in Javascript.</h3>
 
 					<p class={style.description}>I've worked with my team on a Business Logic BL/CRM single-page app for an international client:<br />I've kept contact with client,<br />worked on project requirements analysis,<br />designed and implemented front-end,<br />created multiple alternative designs for UI,<br />managed code refactorisation,<br />created a complex in-browser WYSIWYG text editor,<br />implemented a PDF exporter for said editor</p>
 					<p class={style.tech}>Javascript, React, Redux, SASS, Express, Webpack, Gitlab CI/CD, Jira</p>
