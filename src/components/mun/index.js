@@ -1,5 +1,4 @@
 import {h, Component} from "preact"
-import * as THREE from "three"
 
 import cn from "classnames"
 import style from "./style"

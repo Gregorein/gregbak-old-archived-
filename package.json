@@ -31,7 +31,6 @@
     "moment": "^2.24.0",
     "preact": "^8.5.3",
     "preact-router": "^2.6.1",
-    "smooth-scroll": "^12.1.5",
-    "three": "^0.92.0"
+    "smooth-scroll": "^12.1.5"
   }
 }
