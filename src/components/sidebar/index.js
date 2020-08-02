@@ -89,7 +89,7 @@ export default class Sidebar extends Component {
             portfolio
           </Link>
           <Link
-            class={style.link}
+            class={cn(style.link, style.last)}
             href="/policy-copyrights"
             title="policy & copyrights"
             onClick={() => this.toggleMenu(false)}

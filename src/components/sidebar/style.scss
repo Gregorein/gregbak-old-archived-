@@ -114,6 +114,7 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 300px;
+    
   }
 
   .link {
@@ -145,6 +146,11 @@
       right: 20px;
       z-index: -1;
       transform: translate(0, -3px);
+    }
+
+    &.last {
+      position: absolute;
+      bottom: 0; 
     }
   }
 
