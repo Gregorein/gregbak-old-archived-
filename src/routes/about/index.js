@@ -1,4 +1,3 @@
-import {h} from "preact"
 import moment from "moment"
 
 import View from "components/view"

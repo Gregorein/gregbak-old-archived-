@@ -1,7 +1,4 @@
-import {
-  h,
-  Component,
-} from "preact"
+import {useEffect} from "preact/hooks"
 import {connect} from "react-redux"
 
 import {getProjects} from "actions/portfolio"
@@ -11,30 +8,23 @@ import Tile from "components/tile"
 
 import style from "./style"
 
-class Portfolio extends Component {
-  componentWillMount() {
-    const {
-      projects,
-      getProjects,
-    } = this.props
+const Portfolio = ({projects, getProjects}) => {
+	useEffect(() => {
+		if (projects.length === 0) getProjects()
+	}, [])
 
-    if (projects.length === 0) getProjects()
-  }
-
-  render({projects}) {
-    return (
-      <View class={style.view}>
-        {projects.map(p => p.visible && <Tile project={p} />)}
-      </View>
-    )
-  }
+	return (
+		<View class={style.view}>
+			{projects.map(p => p.visible && <Tile project={p} />)}
+		</View>
+	)
 }
 
 const stateProps = (state, props) => ({
-  projects: state.portfolio.projects,
+	projects: state.portfolio.projects,
 })
 const dispatchProps = (dispatch, props) => ({
-  getProjects: () => dispatch(getProjects()),
+	getProjects: () => dispatch(getProjects()),
 })
 
 export default connect(stateProps, dispatchProps)(Portfolio)

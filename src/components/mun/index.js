@@ -3,7 +3,7 @@ import {h, Component} from "preact"
 import cn from "classnames"
 import style from "./style"
 
-export default class Mun extends Component {
+class Mun extends Component {
   state = {
     visible: false,
   }
@@ -80,3 +80,5 @@ export default class Mun extends Component {
     )
   }
 }
+
+export default Mun

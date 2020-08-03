@@ -1,14 +1,11 @@
-import {
-  h,
-  render,
-  Component,
-} from "preact"
+import {render} from "preact"
+import {useEffect} from "preact/hooks"
 import {route} from "preact-router"
 import moment from "moment"
 import {connect} from "react-redux"
 import {
-  getProject,
-  clearProject,
+	getProject,
+	clearProject,
 } from "actions/portfolio"
 
 import View from "components/view"
@@ -19,114 +16,103 @@ import ImageOverlay from "components/imageOverlay"
 import cn from "classnames"
 import style from "./style"
 
-class Project extends Component {
-  overlay
+const Project = ({project, getProject, matches, clearProject, error}) => {
+	let overlay
 
-  componentWillMount() {
-    const {
-      getProject,
-      matches: {
-        project,
-      },
-    } = this.props
+	useEffect(() => {
+		const {project} = matches
+		getProject(project)
 
-    getProject(project)
-  }
-  componentWillUnmount() {
-    const {clearProject} = this.props
+		return () => {
+			clearProject()
+		}
+	}, [])
+	useEffect(() => {
+		if (error) route("/portfolio")
+	}, [error])
 
-    clearProject()
-  }
-  componentWillReceiveProps({error}) {
-    if (error) route("/portfolio")
-  }
+	const renderOverlay = image => {
+		const overlayNode = document.getElementById("overlay")
 
-  closeOverlay = () => {
-    const overlayNode = document.getElementById("overlay")
+		overlayNode.parentNode.style.overlay = "hidden"
 
-    overlayNode.parentNode.style.overflow = ""
+		if (overlay !== undefined) render(null, overlayNode, overlay)
+		overlay = render((
+			<ImageOverlay
+				image={image}
+				handleOverlay={removeOverlay}
+				/>
+			), overlayNode)
+	}
+	const removeOverlay = () => {
+		const overlayNode = document.getElementById("overlay")
 
-    render(null, overlayNode, this.overlay)
-    this.overlay = undefined
-  }
-  renderOverlay = image => {   
-    const overlayNode = document.getElementById("overlay")
+		overlayNode.parentNode.style.overflow = ""
 
-    overlayNode.parentNode.style.overlay = "hidden"
+		render(null, overlayNode, overlay)
+		overlay = undefined
+	}
 
-    if (this.overlay !== undefined) render(null, overlayNode, this.overlay)
-    this.overlay = render((
-      <ImageOverlay
-        image={image}
-        handleOverlay={this.closeOverlay}
-        />
-      ), overlayNode)
-  }
+	const renderSlide = slide => {
+		switch(slide.type) {
+			case "image":
+				return <ImageTile
+					{...slide}
+					single={project.slides.length === 1}
+					handleClick={() => renderOverlay(`${API}${slide.url}`)}
+					/>
 
-  renderSlide = slide => {
-    const {project} = this.props
+			default: return
+		}
+	}
 
-    switch(slide.type) {
-      case "image":
-        return <ImageTile
-          {...slide}
-          single={project.slides.length === 1}
-          handleClick={() => this.renderOverlay(`${API}${slide.url}`)}
-          />
+	const renderSlides = project => {
+		const [first, ...other] = project.slides
 
-      default: return
-    }
-  }
+		return (
+			<div class={style.content}>
+				{first && renderSlide(first)}
+				{renderDescription(project)}
+				{other.map(renderSlide)}
+			</div>
+		)
+	}
 
-  renderSlides = project => {
-    const [first, ...other] = project.slides
+	const renderDescription = ({title, date, description, links}) => (
+		<div class={style.description}>
+			<h2 class={style.title}>
+				{title}
+			</h2>
+			<p class={style.date}>
+				{moment.unix(date).fromNow()}
+			</p>
+			<p
+				dangerouslySetInnerHTML={{__html: description}}
+				class={style.text}
+				/>
+			{links && <p class={style.info}>in the network</p>}
+		</div>
+	)
 
-    return (
-      <div class={style.content}>
-        {first && this.renderSlide(first)}        
-        {this.renderDescription(project)}
-        {other.map(this.renderSlide)}
-      </div>
-    )
-  }
-
-  renderDescription = project => (
-    <div class={style.description}>
-      <h2 class={style.title}>
-        {project.title}
-      </h2>
-      <p class={style.date}>
-        {moment.unix(project.date).fromNow()}
-      </p>
-      <p
-        dangerouslySetInnerHTML={{__html: project.description}}
-        class={style.text}
-        />
-      {project.links && <p class={style.info}>in the network</p>}
-    </div>
-  )
-
-  render({project}) {
-    return (
-      <View
-        class={cn(style.view, {
-          [style.single]: project && project.slides.length === 1,
-        })}
-        >
-        {!project && <Loader />}
-        {project && this.renderSlides(project)}
-      </View>
-    )
-  }
+	return (
+		<View
+			class={cn(style.view, {
+				[style.single]: project && project.slides.length === 1,
+			})}
+			>
+			{!project && <Loader />}
+			{project && renderSlides(project)}
+		</View>
+	)
 }
 
 const stateProps = (state, props) => ({
-  project: state.portfolio.currentProject,
-  error: state.portfolio.currentProjectError,
+	project: state.portfolio.currentProject,
+	error: state.portfolio.currentProjectError,
 })
 const dispatchProps = (dispatch, props) => ({
-  getProject: project => dispatch(getProject(project)),
-  clearProject: () => dispatch(clearProject())
+	getProject: project => dispatch(getProject(project)),
+	clearProject: () => dispatch(clearProject())
 })
 
 export default connect(stateProps, dispatchProps)(Project)

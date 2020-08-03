@@ -1,5 +1,3 @@
-import {h} from "preact"
-
 const Fullscreen = props => (
 	<svg 
 	width="100px"

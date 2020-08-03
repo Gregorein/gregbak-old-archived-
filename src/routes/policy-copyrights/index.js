@@ -1,5 +1,3 @@
-import {h} from "preact"
-
 import View from "components/view"
 
 import style from "./style"

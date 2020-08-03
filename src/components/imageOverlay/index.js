@@ -1,47 +1,39 @@
-import {
-  h,
-  Component,
-} from "preact"
+import {useEffect} from "preact/hooks"
 
 import Close from "icons/close"
 
 import cn from "classnames"
 import style from "./style"
 
-class ImageOverlay extends Component {
-  handleKeyDown = e => {
-    if (e.keyCode === 27) this.props.handleOverlay()
-  }
+const ImageOverlay = ({handleOverlay, image}) => {
+	const handleKeyDown = e => {
+		if (e.keyCode === 27) handleOverlay()
+	}
 
-  closeOverlay = () => {
-    this.props.handleOverlay()
-  }
+	useEffect(() => {
+		window.addEventListener("keydown", handleKeyDown)
 
-  componentDidMount() {
-    window.addEventListener("keydown", this.handleKeyDown)
-  }
-  componentWillUnmount() {
-    window.removeEventListener("keydown", this.handleKeyDown)
-  }
+		return () => {
+			window.removeEventListener("keydown", handleKeyDown)
+		}
+	}, [])
 
-  render({image}) {
-    return (
-      <div
-        tabIndex="0"
-        onKeyDown={this.handleKeyDown}
-        class={style.overlay}
-        >
-        <img
-          class={style.image}
-          src={image}
-          />
-        <Close
-          class={style.close}
-          onClick={this.closeOverlay}
-          />
-      </div>
-    )
-  } 
-}
+	return (
+		<div
+			tabIndex="0"
+			onKeyDown={handleKeyDown}
+			class={style.overlay}
+			>
+			<img
+				class={style.image}
+				src={image}
+				/>
+			<Close
+				class={style.close}
+				onClick={handleOverlay}
+				/>
+		</div>
+	)
+} 
 
 export default ImageOverlay
