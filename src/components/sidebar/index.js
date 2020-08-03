@@ -56,8 +56,9 @@ const Sidebar = ({page=0, url="/"}) => {
 				>
 				{isMenuVisible ? "hide menu" : "show menu"}
 			</div>
-			<nav class={cn(style.menu, {
-				[style.visible]: isMenuVisible,
+			<nav
+				class={cn(style.menu, {
+					[style.visible]: isMenuVisible,
 				})}
 				>
 				<Link
