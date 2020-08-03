@@ -5,8 +5,8 @@ import moment from "moment"
 
 import {Provider} from "react-redux"
 import {
-  createStore,
-  applyMiddleware,
+	createStore,
+	applyMiddleware,
 } from "redux"
 import thunk from "redux-thunk"
 import rootReducer from "reducers"
@@ -27,8 +27,8 @@ if (module.hot) require("preact/debug")
 
 // stores
 const store = createStore(
-  rootReducer,
-  applyMiddleware(thunk),
+	rootReducer,
+	applyMiddleware(thunk),
 )
 
 // moment
@@ -42,31 +42,31 @@ moment.relativeTimeThreshold("M", 24)
 
 // app
 const App = () => {
-  const [page, handleSidebar] = useState(undefined)
-  const [currentUrl, setCurrentUrl] = useState(undefined)
-  const handleRoute = ({url}) => setCurrentUrl(url)
+	const [page, handleSidebar] = useState(undefined)
+	const [currentUrl, setCurrentUrl] = useState(undefined)
+	const handleRoute = ({url}) => setCurrentUrl(url)
 
-  return (
-    <div id="app">
-      <Provider store={store}>
-        <>
-          <Splash />
-          <Sidebar page={page} url={currentUrl} />
-          <Router onChange={handleRoute}>
-            <Home
-              path="/"
-              handleSidebar={handleSidebar}
-              page={page}
-              />
-            <Portfolio path="/portfolio" />
-            <Project path="/portfolio/:project" />
-            <About path="/about" />
-            <PolicyCopyrights path="/policy-copyrights" />
-          </Router>
-        </>
-      </Provider>
-    </div>
-  )
+	return (
+		<div id="app">
+			<Provider store={store}>
+				<>
+					<Splash />
+					<Sidebar page={page} url={currentUrl} />
+					<Router onChange={handleRoute}>
+						<Home
+							path="/"
+							handleSidebar={handleSidebar}
+							page={page}
+							/>
+						<Portfolio path="/portfolio" />
+						<Project path="/portfolio/:project" />
+						<About path="/about" />
+						<PolicyCopyrights path="/policy-copyrights" />
+					</Router>
+				</>
+			</Provider>
+		</div>
+	)
 }
 
 export default App
