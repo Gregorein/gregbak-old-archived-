@@ -6,7 +6,7 @@ import {Router} from "preact-router"
 
 import moment from "moment"
 
-import {Provider} from "preact-redux"
+import {Provider} from "react-redux"
 import {
   createStore,
   applyMiddleware,

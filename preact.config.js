@@ -20,17 +20,6 @@ export default (config, env, helpers) => {
 
 	alias.globals = path.resolve(__dirname, "src/globals.js")
 
-	/* add paths to CSS watchers */
-	config.module.loaders[4].include = [
-		path.resolve(__dirname, "src", "routes"),
-		path.resolve(__dirname, "src", "components"),
-	]
-
-	config.module.loaders[5].exclude = [
-		path.resolve(__dirname, "src", "routes"),
-		path.resolve(__dirname, "src", "components"),
-	]
-
 	/* set API var */
 	config.plugins.push(new webpack.DefinePlugin({
 		"process.env.NODE_ENV": JSON.stringify(env.isProd ? "production" : "development"),

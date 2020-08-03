@@ -5,7 +5,7 @@ import {
 } from "preact"
 import {route} from "preact-router"
 import moment from "moment"
-import {connect} from "preact-redux"
+import {connect} from "react-redux"
 import {
   getProject,
   clearProject,
