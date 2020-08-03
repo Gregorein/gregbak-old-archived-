@@ -1,7 +1,4 @@
-import {
-  h,
-  Component,
-} from "preact"
+import {useState} from "preact/hooks"
 import {Router} from "preact-router"
 
 import moment from "moment"
@@ -44,43 +41,32 @@ moment.relativeTimeThreshold("d", 45)
 moment.relativeTimeThreshold("M", 24)
 
 // app
-export default class App extends Component {
-  state = {
-    page: undefined,
-  }
+const App = () => {
+  const [page, handleSidebar] = useState(undefined)
+  const [currentUrl, setCurrentUrl] = useState(undefined)
+  const handleRoute = ({url}) => setCurrentUrl(url)
 
-  handleRoute = e => {
-    this.setState({
-      currentUrl: e.url,
-    })
-  }
-  handleSidebar = page => {
-    this.setState({
-      page,
-    })
-  }
-
-  render({}, {currentUrl, page}) {
-    return (
-      <div id="app">
-        <Provider store={store}>
-          <main>
-            <Splash />
-            <Sidebar page={page} url={currentUrl} />
-            <Router onChange={this.handleRoute}>
-              <Home
-                path="/"
-                handleSidebar={this.handleSidebar}
-                page={page}
-                />
-              <Portfolio path="/portfolio" />
-              <Project path="/portfolio/:project" />
-              <About path="/about" />
-              <PolicyCopyrights path="/policy-copyrights" />
-            </Router>
-          </main>
-        </Provider>
-      </div>
-    )
-  }
+  return (
+    <div id="app">
+      <Provider store={store}>
+        <>
+          <Splash />
+          <Sidebar page={page} url={currentUrl} />
+          <Router onChange={handleRoute}>
+            <Home
+              path="/"
+              handleSidebar={handleSidebar}
+              page={page}
+              />
+            <Portfolio path="/portfolio" />
+            <Project path="/portfolio/:project" />
+            <About path="/about" />
+            <PolicyCopyrights path="/policy-copyrights" />
+          </Router>
+        </>
+      </Provider>
+    </div>
+  )
 }
+
+export default App
