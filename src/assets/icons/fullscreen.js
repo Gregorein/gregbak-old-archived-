@@ -2,7 +2,7 @@ const Fullscreen = props => (
 	<svg 
 	width="100px"
 	height="100px"
-		{...props}
+	{...props}
 	>
 		<path
 			fill="currentColor"

@@ -1,5 +1,6 @@
 import {
 	useState,
+	useCallback,
 	useEffect,
 } from "preact/hooks"
 import {randomOf} from "globals"
@@ -39,13 +40,13 @@ const Splash = () => {
 	}, [])
 
 	const handleSplash = (step, time) => setTimeout(() => setStep(step), time)
-	const handleColors = () => {
+	const handleColors = useCallback(() => {
 		const main = randomOf(colors)
 		const background = randomOf(colors.filter(c => c !== main))
 
 		setMainColor(main)
 		setBackgrounrdColor(background)
-	}
+	}, [main, background])
 
 	return step > -1 && (
 		<svg class={style.svg}>

@@ -1,11 +1,10 @@
 import {
 	useState,
 	useEffect,
-	useRef,
 } from "preact/hooks"
 
 import Loader from "components/loader"
-import Fullscreen from "icons/Fullscreen"
+import Fullscreen from "icons/fullscreen"
 
 import cn from "classnames"
 import style from "./style"
@@ -13,32 +12,23 @@ import style from "./style"
 const ImageTile = ({height, width, url, single, handleClick}) => {
 	const [updates, setUpdates] = useState(0)
 	const [loaded, toggleLoaded] = useState(false)
-	const mounted = useRef()
 	let resizeTimer
 	let img = new Image()
 
-	const updateDimensions = () => {
-		clearTimeout(resizeTimer)
-		resizeTimer = setTimeout(() => setUpdates(updates+1), 25)
-	}
+	useEffect(() => {
+		loadImage(`${API}${url}`)
+	}, [])
+
+	useEffect(() => {
+		const resizeTimer = setTimeout(() => setUpdates(updates+1), 25)
+
+		return () => clearTimeout(resizeTimer)
+	}, [window.innerHeight, window.innerWidth])
 
 	const loadImage = src => {
 		img.src = src
 		img.onload = () => toggleLoaded(true)
 	}
-
-	useEffect(() => {
-		if (!mounted.current) {
-			window.addEventListener("resize", updateDimensions)
-			loadImage(`${API}${url}`)
-		} else {
-			updateDimensions()      
-		}
-
-		return () => {
-			window.removeEventListener("resize", updateDimensions)
-		}
-	})
 
 	const isSingle = single && window.innerWidth > 768
 
