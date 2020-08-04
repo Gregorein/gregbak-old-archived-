@@ -60,7 +60,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 					>
 					what i do
 				</a>
-				<Mun />
+				<Mun altStyle />
 			</section>
 			<section id="story" class={cn(style.section, style.dark)}>
 				<div class={style.story}>
