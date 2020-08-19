@@ -16,6 +16,7 @@ import cn from "classnames"
 import style from "./style"
 
 const Home = ({projects, getProjects, page, handleSidebar}) => {
+	const [altMoon, toggleMoon] = useState(false)
 	const [project, setProject] = useState(false)
 	useEffect(() => {
 		if (projects.length === 0) getProjects()
@@ -40,6 +41,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 		currentStep = currentStep > 0 ? currentStep : 0
 
 		if (currentStep !== page) {
+			toggleMoon(currentStep)
 			handleSidebar(currentStep)
 		}
 	}
@@ -60,7 +62,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 					>
 					what i do
 				</a>
-				<Mun altStyle />
+				<Mun altStyle={altMoon} />
 			</section>
 			<section id="story" class={cn(style.section, style.dark)}>
 				<div class={style.story}>

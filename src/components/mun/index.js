@@ -8,19 +8,20 @@ import {
 import cn from "classnames"
 import style from "./style"
 
+const	textureLoader = new THREE.TextureLoader()
 const Mun = ({altStyle=false}) => {
 	const [visible, setVisible] = useState(-2)
 	const updateVisibility = useCallback(() => {
 		setVisible(visible+1)
 	}, [visible])
-	const	textureLoader = new THREE.TextureLoader()
-	const normal = textureLoader.load("assets/images/mun_n.png", updateVisibility())
-	const bump = textureLoader.load("assets/images/mun_d.png", updateVisibility())
 
 	const container = useRef(null)
+	let normal, bump
 	let mun, scene, camera, renderer
-
 	useEffect(() => {
+		normal = textureLoader.load("assets/images/mun_n.png", updateVisibility())
+		bump = textureLoader.load("assets/images/mun_d.png", updateVisibility())
+		
 		initScene()
 		makeMun()
 
@@ -88,7 +89,6 @@ const Mun = ({altStyle=false}) => {
 		<div
 			ref={container}
 			class={cn(style.mun, {
-				[style.visible]: visible === 0,
 				[style.dark]: altStyle,
 			})}
 			/>

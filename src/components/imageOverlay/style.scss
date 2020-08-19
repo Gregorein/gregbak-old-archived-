@@ -20,7 +20,8 @@
 
 .close {
   transition: opacity $t $e,
-              color $t $e;
+              color $t $e,
+              background $t $e;
 
   height: 37.5px;
   width: 37.5px;
@@ -35,13 +36,19 @@
 
   cursor: pointer;
 
+  overflow: visible;
+  transform: rotate(-45deg);
+
+  background: transparentize($dark, 0.667);
+
   path {
-    transform: translateZ(0) scale(0.25);
+    transform-origin: center center;
+    transform: translate(0, -50%) translateZ(0) scale(0.25) rotate(45deg);
   }
 
   &:hover {   
-    color: $salmon;
+    color: $dark;
 
-    opacity: 0.667;
+    background: transparentize($white, 0.333);
   }
 }

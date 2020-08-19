@@ -10,15 +10,20 @@ import cn from "classnames"
 import style from "./style"
 
 const ImageTile = ({height, width, url, single, handleClick}) => {
-	const [updates, setUpdates] = useState(0)
-	const [loaded, toggleLoaded] = useState(false)
-	let resizeTimer
 	let img = new Image()
-
+	const [loaded, toggleLoaded] = useState(false)
 	useEffect(() => {
-		loadImage(`${API}${url}`)
-	}, [])
+		toggleLoaded(false)
+		img.src = `${API}${url}`
+		img.onload = () => toggleLoaded(true)
 
+		return () => {
+			img.src = null
+		}		
+	}, [url, img.onload, img.src])
+
+	let resizeTimer
+	const [updates, setUpdates] = useState(0)
 	useEffect(() => {
 		const resizeTimer = setTimeout(() => setUpdates(updates+1), 25)
 
@@ -26,8 +31,6 @@ const ImageTile = ({height, width, url, single, handleClick}) => {
 	}, [window.innerHeight, window.innerWidth])
 
 	const loadImage = src => {
-		img.src = src
-		img.onload = () => toggleLoaded(true)
 	}
 
 	const isSingle = single && window.innerWidth > 768
