@@ -19,23 +19,12 @@
 		<meta name="theme-color" content="#bf604b">
 
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
-
-		<% for (var chunk of webpack.chunks) { %>
-		 <% if (chunk.names.length === 1 && chunk.names[0] === 'polyfills') continue; %>
-			<% for (var file of chunk.files) { %>
-				<% if (htmlWebpackPlugin.options.preload && file.match(/\.(js|css)$/)) { %>
-					<link rel="preload" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
-				<% } %>
-			<% } %>
-		<% } %>
+		
+		<% preact.headEnd %>
 	</head>
 	<body>
-		<%= htmlWebpackPlugin.options.ssr({
-			url: '/'
-		}) %>
-		<script defer src="<%= htmlWebpackPlugin.files.chunks['bundle'].entry %>"></script>
-		<script>window.fetch||document.write('<script src="<%= htmlWebpackPlugin.files.chunks["polyfills"].entry %>"><\/script>')</script>
 		<div id="overlay"></div>
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+		<% preact.bodyEnd %>
 	</body>
 </html>

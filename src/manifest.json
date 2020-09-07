@@ -1,10 +1,11 @@
 {
-  "name": "Greg Bak Portfolio",
-    "short_name": "Greg Bak Portfolio",
+  "name": "Greg Bak",
+  "short_name": "Greg Bak",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#bf604b",
+  "orientation": "portrait",
   "background_color": "#bf604b",
+  "theme_color": "#bf604b",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",

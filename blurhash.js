@@ -47,16 +47,17 @@ let searchpath
 if(!process.argv[2]) {
 	console.error("no searchpath found, exiting")
 	return
-} else searchpath = process.argv[2]
+}
+searchpath = process.argv[2]
 
 let filter 
 if(!process.argv[3]) {
-	console.error("no filter found, defaulting to /\.png/")
+	console.error("no filter found, defaulting to /.png/")
 	filter = /\.png$/
 } else filter = process.argv[3]
 
 findFiles(searchpath, filter, async f => {
- 	const data = await getImageData(f)
+	const data = await getImageData(f)
 	const blur = blurhash(data)
 
 	console.log(f, isBlurhashValid(blur).result ? blur : "ERROR!")

@@ -1,7 +1,7 @@
 import path from "path"
 import webpack from "webpack"
 
-export default (config, env, helpers) => {
+export default (config, env) => {
 	/* set aliases */
 	let {alias} =	config.resolve
 	alias.assets = path.resolve(__dirname, "src/assets")
@@ -23,6 +23,6 @@ export default (config, env, helpers) => {
 	/* set API var */
 	config.plugins.push(new webpack.DefinePlugin({
 		"process.env.NODE_ENV": JSON.stringify(env.isProd ? "production" : "development"),
-	  "API": JSON.stringify(env.isProd ? 'https://gregbak.com/api' : 'http://localhost:8000/api'),
+	  API: JSON.stringify(env.isProd ? 'https://gregbak.com/api' : 'http://localhost:8000/api'),
 	}))
 }

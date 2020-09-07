@@ -1,9 +1,0 @@
-{
-	"presets": [ 
-		["preact-cli/babel", {"modules": "commonjs"}]
-		["@babel/plugin-transform-react-jsx", {
-			"pragma": "h",
-			"pragmaFrag": "Fragment",
-		}],
-	],
-}
