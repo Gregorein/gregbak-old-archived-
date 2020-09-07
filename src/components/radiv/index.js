@@ -10,7 +10,7 @@ import {
 import cn from "classnames"
 
 // route aware div
-const radiv = ({urls, children, ...props}) => {
+const RAdiv = ({urls, children, ...props}) => {
 	const [nextUrl, setNextUrl] = useState(null)
 
 	// subscribe to url changes for urlClassMap updates
@@ -27,7 +27,7 @@ const radiv = ({urls, children, ...props}) => {
 
 	// build url Class map for styles
 	let defaultUrl = ""
-	let matchedUrl = false
+	// let matchedUrl = false
 	let urlClassMap = {}
 	for (let u in urls) {
 		if (defaultUrl === "") defaultUrl = u
@@ -35,7 +35,7 @@ const radiv = ({urls, children, ...props}) => {
 
 		const urlClass = urls[u] || ""
 		if (path.match(_u) !== null) {
-			matchedUrl = true
+			// matchedUrl = true
 			urlClassMap[urlClass] = true
 		}
 	}
@@ -50,4 +50,4 @@ const radiv = ({urls, children, ...props}) => {
 	)
 }
 
-export default radiv
+export default RAdiv

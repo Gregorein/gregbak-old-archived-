@@ -6,4 +6,7 @@ build/
 *.sublime-workspace
 **/.DS_Store
 
+report.html
+size-plugin.json
+stats.json
 package-lock.json

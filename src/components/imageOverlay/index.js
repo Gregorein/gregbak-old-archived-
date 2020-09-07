@@ -7,7 +7,6 @@ import Close from "icons/close"
 
 import Loader from "components/loader"
 
-import cn from "classnames"
 import style from "./style"
 
 const ImageOverlay = ({handleOverlay, image}) => {

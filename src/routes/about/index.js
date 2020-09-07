@@ -22,7 +22,7 @@ const About = () => (
 			<p class={style.copy}>In my family being an artist is a norm, yet I ended up being a developer. Given that background, I strive for the balance of precise technical thinking and artistic mindset. I'm heavily influenced by simplicity of the Japanese design culture – their work is created with user in mind, and that's what I do as well.</p>
 
 			<h2 class={style.smallDip}>my achievements</h2>
-				<p class={style.achievement}>Bachelor of Engineering – <span class={style.thesis}>"Motion Blending in virtual reality"</span></p>
+t				<p class={style.achievement}>Bachelor of Engineering – <span class={style.thesis}>"Motion Blending in virtual reality"</span></p>
 				<p class={style.achievement}>Master of Engineering – <span class={style.thesis}>"World-state in Augmented Reality"</span></p>
 
 			<h2 class={style.smallDip}>my timeline</h2>
@@ -39,7 +39,7 @@ const About = () => (
 					<p class={style.description}>I worked on concept art and early alpha's models of characters and structures.<br />I documented source artwork and oversaw realisation of concept art.<br />I analised source-code and optimised animations accordingly</p>
 					<p class={style.tech}>C++, Python, Blender, Adobe Photoshop, Q3 Engine dev-tools, SVN</p>
 
-					<a class={style.location} target="_blank" href="https://www.unvanquished.net">@Unvanquished Development <span>(https://www.unvanquished.net)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="https://www.unvanquished.net">@Unvanquished Development <span>(https://www.unvanquished.net)</span></a>
 				</li>
 
 				<li>
@@ -49,7 +49,7 @@ const About = () => (
 					<p class={style.description}>I translated UI from english to polish, maintained existing translations,<br />contacted Blender users to improve the quality of translations.</p>
 					<p class={style.tech}>Python, bash, git</p>
 
-					<a class={style.location} target="_blank" href="https://www.blender.org">@Blender Institute <span>(https://www.blender.org)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="https://www.blender.org">@Blender Institute <span>(https://www.blender.org)</span></a>
 				</li>
 
 				<li>
@@ -65,7 +65,7 @@ const About = () => (
 					<p class={style.description}>I worked on plugins that patched-in missing functionality of database exports,<br />analised existing database structure and setup a prototyping sandbox<br />implemented export scripts with multiple file-types,<br />reworked UI to custom user workflow.</p>
 					<p class={style.tech}>Javascript, MySQL, PHP, Varico+EPESI, bash, VirtualBox</p>
 
-					<a class={style.location} target="_blank" href="http://e-kwarta.pl">@Kwarta <span>(http://e-kwarta.pl)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="http://e-kwarta.pl">@Kwarta <span>(http://e-kwarta.pl)</span></a>
 				</li>
 
 				<li>
@@ -75,7 +75,7 @@ const About = () => (
 					<p class={style.description}>I migrated previous CMS to a new Wordpress-based solution,<br />I worked with client on a design that would fit client's upcoming rebranding,<br />I maintained backups and provided support for the system.</p>
 					<p class={style.tech}>Wordpress, PHP, Javascript, SASS, gulp, git</p>
 
-					<a class={style.location} target="_blank" href="http://www.da.poznan.dominikanie.pl">@DA Dominikanie <span>(http://www.da.poznan.dominikanie.pl)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="http://www.da.poznan.dominikanie.pl">@DA Dominikanie <span>(http://www.da.poznan.dominikanie.pl)</span></a>
 				</li>
 
 				<li>
@@ -85,7 +85,7 @@ const About = () => (
 					<p class={style.description}>I worked with client on a family-friendly design,<br />I maintained backups and provided support for the system.</p>
 					<p class={style.tech}>Wordpress, PHP, Javascript, SASS, gulp, git</p>
 
-					<a class={style.location} target="_blank" href="http://younglife.pl">@Young Life Poland <span>(http://younglife.pl)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="http://younglife.pl">@Young Life Poland <span>(http://younglife.pl)</span></a>
 				</li>
 
 				<li>
@@ -99,7 +99,7 @@ const About = () => (
 					<p class={style.description}>I worked on a single page CMS app in a small team,<br />sliced & implemented UI designs,<br />took part in code refactorisations.</p>
 					<p class={style.tech}>Javascript, React, SASS, Webpack, git, Jenkins CI, Trello</p>
 
-					<a class={style.location} target="_blank" href="http://uxdream.com">@UX Dream <span>(http://uxdream.com)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="http://uxdream.com">@UX Dream <span>(http://uxdream.com)</span></a>
 				</li>
 
 				<li>
@@ -107,7 +107,7 @@ const About = () => (
 					<h3 class={style.title}>I worked as a freelance designer and fullstack developer.</h3>
 					<p class={style.description}>I designed identification and website for a web-based newspaper,<br />I maintained backups and provided support for the system.</p>
 					<p class={style.tech}>Wordpress, PHP, Javascript, SASS, gulp, git</p>
-					<a class={style.location} target="_blank" href="http://fundamentum.com.pl">@Fundamentum <span>(http://fundamentum.com.pl)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="http://fundamentum.com.pl">@Fundamentum <span>(http://fundamentum.com.pl)</span></a>
 				</li>
 
 				<li>
@@ -128,7 +128,7 @@ const About = () => (
 				<li>
 					<p class={style.description}>I introduced ESNext, React and an update to the existing project lifecycle.</p>
 
-					<a class={style.location} target="_blank" href="http://crafton.eu">@Crafton <span>(http://crafton.eu)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="http://crafton.eu">@Crafton <span>(http://crafton.eu)</span></a>
 				</li>
 
 				<li>
@@ -138,7 +138,7 @@ const About = () => (
 					<p class={style.description}>I migrated previous CMS to a light, frontend-only solution,<br />I worked with client on a design that would fit client's upcoming rebranding,<br />I implemented RWD and PWA,<br />I maintained backups and provided support for the system.</p>
 					<p class={style.tech}>Javascript, SASS, gulp, git</p>
 
-					<a class={style.location} target="_blank" href="http://www.dapoznan.pl">@DA Poznań <span>(http://www.dapoznan.pl)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="http://www.dapoznan.pl">@DA Poznań <span>(http://www.dapoznan.pl)</span></a>
 				</li>
 
 				<li>
@@ -167,14 +167,14 @@ const About = () => (
 					<p class={style.tech}>Javascript, Typescript, React, Jest&Enzyme, Sass, Webpack, Yarn, Eslint & Tslint, Docker, Gitlab CI/CD, Jira, Confluence</p>
 				</li>
 				<li>
-					<p class={style.description}>I joined an internal parking-place management app:<br/>I've implemented new functionalities,<br />rewritten all existing views and implemented a new, mobile friendly UI library,<br />implemented cutting-edge features like location-based night-mode.</p>
+					<p class={style.description}>I joined an internal parking-place management app:<br />I've implemented new functionalities,<br />rewritten all existing views and implemented a new, mobile friendly UI library,<br />implemented cutting-edge features like location-based night-mode.</p>
 					<p class={style.tech}>Javascript, React, Eslint, Hooks, Docker, Yarn, Gitlab CI/CD, Jira</p>
 				</li>
 				<li>
 					<p class={style.description}>I joined a rebranding project of a national marketplace provider,<br />I've rewritten existing views to apply a cutting-edge UI,<br />maintained and worked on a legacy-class code and libraries,<br />worked with UI team to re-work unsupported features<br />maintained feature-parity on a complex 9-domain project<br />written code for with a maximal browser coverage in mind.</p>
 					<p class={style.tech}>PHP, JQuery, Javascript, gulp, grunt, webpack, docker</p>
 
-					<a class={style.location} target="_blank" href="https://sii.pl">@Sii_Polska <span>(https://sii.pl)</span></a>
+					<a class={style.location} target="_blank" rel="noreferrer" href="https://sii.pl">@Sii_Polska <span>(https://sii.pl)</span></a>
 				</li>
 			</ul>
 

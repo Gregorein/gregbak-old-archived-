@@ -23,10 +23,10 @@ const Projects = ({projects, getProjects}) => {
 	)
 }
 
-const stateProps = (state, props) => ({
+const stateProps = state => ({
 	projects: state.projects.list,
 })
-const dispatchProps = (dispatch, props) => ({
+const dispatchProps = dispatch => ({
 	getProjects: () => dispatch(getProjects()),
 })
 

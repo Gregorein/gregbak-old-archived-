@@ -1,5 +1,9 @@
 import path from "path"
 import webpack from "webpack"
+import BundleAnalyzerPlugin from "webpack-bundle-analyzer"
+const BundleAnalyzer = BundleAnalyzerPlugin.BundleAnalyzerPlugin; 
+
+import OpenBrowserPlugin from "open-browser-webpack-plugin"
 
 export default (config, env) => {
 	/* set aliases */
@@ -25,4 +29,11 @@ export default (config, env) => {
 		"process.env.NODE_ENV": JSON.stringify(env.isProd ? "production" : "development"),
 	  API: JSON.stringify(env.isProd ? 'https://gregbak.com/api' : 'http://localhost:8000/api'),
 	}))
+	// config.plugins.push(new BundleAnalyzer({
+	// 	openAnalyzer: false,
+	// 	analyzerHost: "localhost",
+	// 	analyzerPort: "9000",
+	// 	generateStatsFile: true,
+	// }))
+	config.plugins.push(new OpenBrowserPlugin())
 }

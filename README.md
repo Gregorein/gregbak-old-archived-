@@ -30,7 +30,7 @@ yarn api
 
 ## TO-DO
 0. Migrate to HTTP2
-1. Add service worker & cacheing
+1. Add service worker & cacheing https://preactjs.com/cli/service-worker/
 2. Update metatag descriptions
 3. Add robots.txt
 4. Handle noscript

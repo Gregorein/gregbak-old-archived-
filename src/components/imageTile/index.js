@@ -30,9 +30,6 @@ const ImageTile = ({height, width, url, single, handleClick}) => {
 		return () => clearTimeout(resizeTimer)
 	}, [window.innerHeight, window.innerWidth])
 
-	const loadImage = src => {
-	}
-
 	const isSingle = single && window.innerWidth > 768
 
 	return (
@@ -56,7 +53,8 @@ const ImageTile = ({height, width, url, single, handleClick}) => {
 					<Fullscreen class={style.fullscreen} />
 				</div>
 			) : (
-				<div style={{paddingBottom: `${100 * height/width}%`}}>q
+				<div style={{paddingBottom: `${100 * height/width}%`}}>
+					<Loader />
 				</div>
 			)}
 		</div>

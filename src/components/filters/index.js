@@ -39,11 +39,11 @@ const Filters = ({overrideClass, count, filters, resetFilters, toggleFilter}) =>
 )
 
 
-const stateProps = (state, props) => ({
+const stateProps = state => ({
 	count: state.projects.filteredCount,
 	filters: state.projects.filters,
 })
-const dispatchProps = (dispatch, props) => ({
+const dispatchProps = dispatch => ({
 	resetFilters: () => dispatch(resetFilters()),
 	toggleFilter: tag => dispatch(toggleFilter(tag)),
 })

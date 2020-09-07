@@ -107,11 +107,11 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 	)
 }
 
-const stateProps = (state, props) => ({
+const stateProps = state => ({
 	project: state.projects.currentProject,
 	error: state.projects.currentProjectError,
 })
-const dispatchProps = (dispatch, props) => ({
+const dispatchProps = dispatch => ({
 	getProject: project => dispatch(getProject(project)),
 	clearProject: () => dispatch(clearProject())
 })

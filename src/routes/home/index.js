@@ -21,7 +21,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 	useEffect(() => {
 		if (projects.length === 0) getProjects()
 
-		const ss = new SS("a[href*='#']")
+		const ss = new SS("a[href*='#']") /*eslint-disable-line no-unused-vars*/
 		window.addEventListener("scroll", onScroll)
 		return () => {
 			window.removeEventListener("scroll", onScroll)
@@ -32,8 +32,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 		setProject(randomProject)
 	}, [projects])
 
-	const onScroll = e => {
-		const maxHeight = document.querySelector("#view").clientHeight
+	const onScroll = () => {
 		const windowHeight = window.innerHeight
 		const currentHeight = window.scrollY
 
@@ -91,10 +90,10 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 	)
 }
 
-const stateProps = (state, props) => ({
+const stateProps = state => ({
 	projects: state.projects.list,
 })
-const dispatchProps = (dispatch, props) => ({
+const dispatchProps = dispatch => ({
 	getProjects: () => dispatch(getProjects())
 })
 

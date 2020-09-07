@@ -1,7 +1,7 @@
 import {useState} from "preact/hooks"
 import {Router} from "preact-router"
 
-import moment from "moment"
+// import moment from "moment"
 
 import {Provider} from "react-redux"
 import {
@@ -32,13 +32,13 @@ const store = createStore(
 )
 
 // moment
-moment.relativeTimeRounding(Math.floor)
-moment.relativeTimeThreshold("ss", 15)
-moment.relativeTimeThreshold("s", 60)
-moment.relativeTimeThreshold("m", 45)
-moment.relativeTimeThreshold("h", 18)
-moment.relativeTimeThreshold("d", 45)
-moment.relativeTimeThreshold("M", 24)
+// moment.relativeTimeRounding(Math.floor)
+// moment.relativeTimeThreshold("ss", 15)
+// moment.relativeTimeThreshold("s", 60)
+// moment.relativeTimeThreshold("m", 45)
+// moment.relativeTimeThreshold("h", 18)
+// moment.relativeTimeThreshold("d", 45)
+// moment.relativeTimeThreshold("M", 24)
 
 // app
 const App = () => {
