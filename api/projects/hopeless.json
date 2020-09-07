@@ -12,25 +12,29 @@
       "type": "image",
       "height": 1000,
       "width": 1000,
-      "url": "/projects/hopeless.png"
+      "url": "/projects/hopeless.png",
+			"blurhash": "UWKJ$3o100W;~Cf6ozfk0eWp$*jZ9[bHD%e."
     },
     {
       "type": "image",
       "height": 905,
       "width": 935,
-      "url": "/projects/hopeless-red.png"
+      "url": "/projects/hopeless-red.png",
+			"blurhash": "UWKJ7Rso0xIp}]n%r?NH00R*b^ogE1S2Fcs:"
     },
     {
       "type": "image",
       "height": 1000,
       "width": 1000,
-      "url": "/projects/hopeless-green.png"
+      "url": "/projects/hopeless-green.png",
+			"blurhash": " UUENw.oz8wRP?^kCSLV[00WA%LofD$aerDoe"
     },
     {
       "type": "image",
       "height": 905,
       "width": 935,
-      "url": "/projects/hopeless-flat.png"
+      "url": "/projects/hopeless-flat.png",
+			"blurhash": "UEF62,of00M{~qj[WCRj00Rk?bxu9FWBtQxa"
     }
   ]
 }

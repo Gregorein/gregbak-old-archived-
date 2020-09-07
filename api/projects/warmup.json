@@ -12,13 +12,15 @@
 			"type": "image",
 			"height": 2019,
 			"width": 2019,
-			"url": "/projects/warmup-updated.png"
+			"url": "/projects/warmup-updated.png",
+			"blurhash": "UIMH3|OtG^rWE8s8xtW=tkayVsbcY5R-rWoJ"
 		},
 		{
 			"type": "image",
 			"height": 4000,
 			"width": 3000,
-			"url": "/projects/warmup.png"
+			"url": "/projects/warmup.png",
+			"blurhash": "UcM7xutR_MMyxuaeRjkCt7ayRjofxuWBRjof",
 		}
 	]
 }

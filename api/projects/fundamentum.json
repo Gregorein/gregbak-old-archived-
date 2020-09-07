@@ -12,25 +12,29 @@
 			"type": "image",
 			"height": 2421,
 			"width": 1280,
-			"url": "/projects/fundamentum-home.png"
+			"url": "/projects/fundamentum-home.png",
+			"blurhash": "UwOWpVj]xtay~qj[ofay9Fa|Rjj[?ba|WBj["
 		},
 		{
 			"type": "image",
 			"height": 3485,
 			"width": 1280,
-			"url": "/projects/fundamentum-article.png"
+			"url": "/projects/fundamentum-article.png",
+			"blurhash": "UTOzD8WB~qf68^WBRjayIAayIUfQIVayWBof"
 		},
 		{
 			"type": "image",
 			"height": 1323,
 			"width": 1280,
-			"url": "/projects/fundamentum-archive.png"
+			"url": "/projects/fundamentum-archive.png",
+			"blurhash": "U7S~q.M{~q-;WBWBayj[t7WBRjt7ofWBWBof"
 		},
 		{
 			"type": "image",
 			"height": 1000,
 			"width": 1280,
-			"url": "/projects/fundamentum-login.png"
+			"url": "/projects/fundamentum-login.png",
+			"blurhash": "UMB|HQfQ00fRt7fQRjjt00fQ~qayM{fQxuaz"
 		}
 	]
 }

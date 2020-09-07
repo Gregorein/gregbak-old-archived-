@@ -13,25 +13,29 @@
 			"type": "image",
 			"height": 800,
 			"width": 1600,
-			"url": "/projects/armlet-promo.png"
+			"url": "/projects/armlet-promo.png",
+			"blurhash": "U88pl,oa00NF0{S2}us.ISbJ%Msp-ot7E1RQ"
 		},
 		{
 			"type": "image",
 			"height": 800,
 			"width": 1280,
-			"url": "/projects/armlet-ingame.png"
+			"url": "/projects/armlet-ingame.png",
+			"blurhash": "U39tS;PB00]|-=M|T1rt00Q-~DK*PTV|-VE1"
 		},
 		{
 			"type": "image",
 			"height": 512,
 			"width": 512,
-			"url": "/projects/armlet-normal.png"
+			"url": "/projects/armlet-normal.png",
+			"blurhash": "U1E:5EKO+%p9tpv%N2wgrQocaQs@I{WFoGR%"
 		},
 		{
 			"type": "image",
 			"height": 512,
 			"width": 512,
-			"url": "/projects/armlet-icon.png"
+			"url": "/projects/armlet-icon.png",
+			"blurhash": "U56R7ftR0LIUw|S3Nawa0MRj~Ax]J8xG$%J8"
 		}
 	]
 }

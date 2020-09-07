@@ -12,19 +12,22 @@
 			"type": "image",
 			"height": 2000,
 			"width": 2000, 
-			"url": "/projects/vivienne.png"
+			"url": "/projects/vivienne.png",
+			"blurhash": "U5GR|^4m00_4WBozIUxu8^t8%hRiDhog%gRP"
 		},
 		{
 			"type": "image",
 			"height": 512,
 			"width": 1024, 
-			"url": "/projects/vivienne-logo.png"
+			"url": "/projects/vivienne-logo.png",
+			"blurhash": "U26a-c%M009FIUM{xut700D%~q%M_3ofIURj"
 		},
 		{
 			"type": "image",
 			"height": 2000,
 			"width": 2000, 
-			"url": "/projects/vivienne-face.png"
+			"url": "/projects/vivienne-face.png",
+			"blurhash": "U7EVvn00~VR.D%-q9YxaslWBkDM{ITxuR+t7"
 		}
 	]
 }

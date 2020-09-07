@@ -12,31 +12,36 @@
 			"type": "image",
 			"height": 3000,
 			"width": 5500,
-			"url": "/projects/doom-promo.png"
+			"url": "/projects/doom-promo.png",
+			"blurhash": "U8QT0,~WxuNF-:RjofR*?aWBNGj[M|R*R*xa"
 		},
 		{
 			"type": "image",
 			"height": 3100,
 			"width": 4600,
-			"url": "/projects/doom-color-gear.png"
+			"url": "/projects/doom-color-gear.png",
+			"blurhash": "U27KbqXLN2E7~S-6R-I=5SxaxV%04@JAxW=_"
 		},
 		{
 			"type": "image",
 			"height": 3100,
 			"width": 4600,
-			"url": "/projects/doom-sketch-gear.png"
+			"url": "/projects/doom-sketch-gear.png",
+			"blurhash": "U04evVofofj[WBWBfQfQxuayaxaeayoffQWB"
 		},
 		{
 			"type": "image",
 			"height": 3100,
 			"width": 5400,
-			"url": "/projects/doom-sketch-armor.png"
+			"url": "/projects/doom-sketch-armor.png",
+			"blurhash": "U04Lapo}ozVs4mt7j[WBL1s:oLW=w]kCofjs"
 		},
 		{
 			"type": "image",
 			"height": 623,
 			"width": 240,
-			"url": "/projects/doom-sketch-skills.png"
+			"url": "/projects/doom-sketch-skills.png",
+			"blurhash": "U04VBwfQ.8ayWBayj[j[tRayV@j[WBj[ofay"
 		}
 	]
 }

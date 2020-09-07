@@ -4,118 +4,167 @@
 		"href": "/projects/macabre",
 		"tag": "art|2d",
 		"date": 1541096073,
-		"thumbnail": "/projects/macabre-thumb.png"
+		"thumbnail": "/projects/macabre-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "UEBXr|D%bLNGq]M{%#Iozns:DPRPUHxaDOt7"
 	},
 	{
 		"title": "Greg Bak portfolio",
 		"href": "/projects/gregbak",
 		"tag": "web|code|design",
 		"date": 1540938600,
-		"thumbnail": "/projects/gregbak-thumb.png"
+		"thumbnail": "/projects/gregbak-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U3S~x5?v8_jF0KV@D%t700?vIURjIA_4t7WA"
 	},
 	{
 		"title": "warmup",
 		"href": "/projects/warmup",
 		"tag": "art|2d",
 		"date": 1518722340,
-		"thumbnail": "/projects/warmup-thumb.png"
+		"thumbnail": "/projects/warmup-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "UCM~IN00.lP:znqGZhV@JCu4yCMKvfR5gOpH"
 	},
   {
     "title": "Dark Knight",
     "href": "/projects/darkknight",
     "tag": "art|2d",
     "date": 1517603310,
-    "thumbnail": "/projects/darkknight-thumb.png"
+    "thumbnail": "/projects/darkknight-thumb.png",
+    "blurhash": "UGAvqc~CtQ9tIUM|NHR-E1Rj$*-UIrIpNGjE"
   },
 	{
 		"title": "opus corporis",
 		"href": "/projects/opus",
 		"tag": "art|2d",
 		"date": 1499120340,
-		"thumbnail": "/projects/opus-thumb.png"
+		"thumbnail": "/projects/opus-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U47wjF_4={R._4^+NHxaxto#%2WVWBR*xYoz"
 	},
 	{
 		"title": "arc lapv",
 		"href": "/projects/lapv",
 		"tag": "art|3d|wip",
 		"date": 1493853060,
-		"thumbnail": "/projects/lapv-thumb.png"
+		"thumbnail": "/projects/lapv-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U76t{]-;IA4T_NtSD$8_?v-;D%Di%MxuMxM_"
 	},
 	{
 		"title": "hopeless clan logo",
 		"href": "/projects/hopeless",
 		"tag": "2d",
 		"date": 1492804440,
-		"thumbnail": "/projects/hopeless-thumb.png"
+		"thumbnail": "/projects/hopeless-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "UTRw[3HXRjqFo}nijFbHYQMxR5X8Q-o~ozjF"
 	},
 	{
 		"title": "cyberpunk vivienne",
 		"href": "/projects/vivienne",
 		"tag": "art|3d|wip",
 		"date": 1490634960,
-		"thumbnail": "/projects/vivienne-thumb.png"
+		"thumbnail": "/projects/vivienne-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U9IF3x?w-m9FITjtD$%M.9ocM|-;.8Rjt7bI"
 	},
 	{
 		"title": "coffee",
 		"href": "/projects/coffee",
 		"tag": "art|3d",
 		"date": 1490016480,
-		"thumbnail": "/projects/coffee-thumb.png"
+		"thumbnail": "/projects/coffee-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "UFQcF+IA.9fl?wI9X9R+-;DhIAxut6DiDixv"
 	},
 	{
 		"title": "trees",
 		"href": "/projects/trees",
 		"tag": "art|3d",
 		"date": 1489769940,
-		"thumbnail": "/projects/trees-thumb.png"
+		"thumbnail": "/projects/trees-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U8L|WA~V4.~V?HayayWB-pa|j[ofj[oLt6j["
 	},
 	{
 		"title": "aimi",
 		"href": "/projects/aimi",
 		"tag": "art|3d",
 		"date": 1485946500,
-		"thumbnail": "/projects/aimi-thumb.png"
+		"thumbnail": "/projects/aimi-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U7DItU00?d$%wI4-%MRioz-qbb%2nhE1soRP"
 	},
 	{
 		"title": "failstart",
 		"href": "/projects/failstart",
 		"tag": "art|3d",
 		"date": 1481304480,
-		"thumbnail": "/projects/failstart-thumb.png"
+		"thumbnail": "/projects/failstart-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "UGN@TymQL~NbMdMJ*Jo}xZb^kXHrofRjn$RP"
 	},
 	{
 		"title": "Fundamentum",
 		"href": "/projects/fundamentum",
 		"tag": "web|2d|code|design",
 		"date": 1473342360,
-		"thumbnail": "/projects/fundamentum-thumb.png"
+		"thumbnail": "/projects/fundamentum-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U~MaLwRjofae~qayWBWBoet7j[ofIUj]offQ"
 	},
 	{
 		"title": "munchk",
 		"href": "/projects/munchk",
 		"tag": "art|2d",
 		"date": 1461770580,
-		"thumbnail": "/projects/munchk-thumb.png"
+		"thumbnail": "/projects/munchk-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U78ziQ~q9$9upK-=?H%1N2%L-:tQ?ZoyIVV["
 	},	
 	{
 		"title": "doom",
 		"href": "/projects/doom",
 		"tag": "art|2d|wip",
 		"date": 1431031500,
-		"thumbnail": "/projects/doom-thumb.png"
+		"thumbnail": "/projects/doom-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U38W{i9FD$_24?^h~99d5jWaxvjD%eEO59xA"
 	},
 	{
 		"title": "armlet",
 		"href": "/projects/armlet",
 		"tag": "art|3d|2d",
 		"date": 1409651640,
-		"thumbnail": "/projects/armlet-thumb.png"
+		"thumbnail": "/projects/armlet-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U57^okAH00=F9bNb-Q$%02=s~B5m.8n+D%S1"
 	},
 	{
 		"title": "unvanquished",
 		"href": "/projects/unvanquished",
 		"tag": "art|3d",
 		"date": 1336169460,
-		"thumbnail": "/projects/unvanquished-thumb.png"
+		"thumbnail": "/projects/unvanquished-thumb.png",
+		"height": 400,
+		"width": 400,
+		"blurhash": "U15g*E0gIp~958xZ$%0#0h$%xY9v^ixFW;^O"
 	}
 ]
