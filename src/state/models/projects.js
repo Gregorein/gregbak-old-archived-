@@ -10,8 +10,8 @@ export default {
 	],
 	filteredCount: undefined,
 
-	projects: [],
-	projectsError: false,
+	list: [],
+	listError: false,
 	
 	currentProject: undefined,
 	currentProjectError: false,

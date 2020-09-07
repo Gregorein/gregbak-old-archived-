@@ -5,10 +5,13 @@ import Radiv from "components/radiv"
 import cn from "classnames"
 import style from "./style"
 
-const View = ({children, ...props}) => {
+const View = ({children, title, ...props}) => {
 	useEffect(() => {
 		window.scroll(0,0)
 	}, [])
+	useEffect(() => {
+		window.document.title = title
+	}, [title])
 
 	return (
 		<Radiv
@@ -16,8 +19,8 @@ const View = ({children, ...props}) => {
 			class={style.container}
 			urls={{
 				"/": style.full,
-				"/portfolio": style.bHeavy,
-				"/portfolio/*": cn(style.full, style.bHeavy),
+				"/projects": style.bHeavy,
+				"/projects/*": cn(style.full, style.bHeavy),
 				"/policy-copyrights": style.bSalmon,
 			}}
 			>

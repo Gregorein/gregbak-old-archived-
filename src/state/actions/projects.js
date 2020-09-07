@@ -9,7 +9,7 @@ import {
 	GET_PROJECT,
 	GET_PROJECT_ERROR,
 	CLEAR_PROJECT,
-} from "types/portfolio"
+} from "types/projects"
 
 export const resetFilters = () => ({
 	type: RESET_FILTERS,
@@ -23,12 +23,12 @@ export const toggleFilter = tag => ({
 })
 
 export const getProjects = () => dispatch => {
-	api(`${API}/portfolio.json`)
+	api(`${API}/projects.json`)
 	.then(data => {
 		dispatch({
 			type: GET_PROJECTS,
 			payload: {
-				projects: data,
+				list: data,
 			},
 		})
 	})

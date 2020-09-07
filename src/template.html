@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
+		<title>Greg Bak Portfolio</title>
 		<!-- title is set using View's `title` prop -->
 
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,10 +18,7 @@
 		<meta name="msapplication-TileColor" content="#bf604b">
 		<meta name="theme-color" content="#bf604b">
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
-
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
 
 		<% for (var chunk of webpack.chunks) { %>
 		 <% if (chunk.names.length === 1 && chunk.names[0] === 'polyfills') continue; %>
@@ -38,5 +36,6 @@
 		<script defer src="<%= htmlWebpackPlugin.files.chunks['bundle'].entry %>"></script>
 		<script>window.fetch||document.write('<script src="<%= htmlWebpackPlugin.files.chunks["polyfills"].entry %>"><\/script>')</script>
 		<div id="overlay"></div>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 	</body>
 </html>

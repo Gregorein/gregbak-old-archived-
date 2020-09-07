@@ -15,7 +15,7 @@ import Splash from "components/splash"
 import Sidebar from "components/sidebar"
 
 import Home from "routes/home"
-import Portfolio from "routes/portfolio"
+import Projects from "routes/projects"
 import Project from "routes/project"
 import About from "routes/about"
 import PolicyCopyrights from "routes/policy-copyrights"
@@ -58,8 +58,8 @@ const App = () => {
 							handleSidebar={handleSidebar}
 							page={page}
 							/>
-						<Portfolio path="/portfolio" />
-						<Project path="/portfolio/:project" />
+						<Projects path="/projects" />
+						<Project path="/projects/:project" />
 						<About path="/about" />
 						<PolicyCopyrights path="/policy-copyrights" />
 					</Router>

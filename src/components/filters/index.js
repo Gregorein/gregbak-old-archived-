@@ -3,7 +3,7 @@ import {connect} from "react-redux"
 import {
 	resetFilters,
 	toggleFilter
-} from "actions/portfolio"
+} from "actions/projects"
 
 import cn from "classnames"
 import style from "./style"
@@ -40,8 +40,8 @@ const Filters = ({overrideClass, count, filters, resetFilters, toggleFilter}) =>
 
 
 const stateProps = (state, props) => ({
-	count: state.portfolio.filteredCount,
-	filters: state.portfolio.filters,
+	count: state.projects.filteredCount,
+	filters: state.projects.filters,
 })
 const dispatchProps = (dispatch, props) => ({
 	resetFilters: () => dispatch(resetFilters()),

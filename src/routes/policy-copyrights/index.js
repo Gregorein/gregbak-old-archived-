@@ -3,7 +3,10 @@ import View from "components/view"
 import style from "./style"
 
 const PolicyCopyrights = () => (
-	<View class={style.view}>
+	<View
+		title="Greg Bak | policy & copyrights"
+		class={style.view}
+		>
 		<h1>Policy &amp; Copyrights</h1>
 			<p>This website and the content by <a target="_blank" href="/" title="Greg Bak Portfolio">Greg Bak</a> is licensed under a <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" title="Attribution 4.0 International">Attribution 4.0 International</a>, unless otherwise noted.</p>
 			<h2>Simply:</h2>

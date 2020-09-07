@@ -8,7 +8,7 @@ import cn from "classnames"
 import style from "./style"
 
 const About = () => (
-	<View>
+	<View title="Greg Bak | about">
 		<div class={style.view}>
 			<div class={style.avatar}>
 				<img src={Avatar} />

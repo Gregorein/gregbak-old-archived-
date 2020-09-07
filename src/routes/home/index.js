@@ -4,7 +4,7 @@ import {
 } from "preact/hooks"
 import {connect} from "react-redux"
 
-import {getProjects} from "actions/portfolio"
+import {getProjects} from "actions/projects"
 import {randomOf} from "globals"
 
 import View from "components/view"
@@ -47,7 +47,11 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 	}
 
 	return (
-		<View id="view" class={style.view}>
+		<View
+			title="Greg Bak"
+			id="view"
+			class={style.view}
+			>
 			<section class={style.section}>
 				<div class={style.mountain} />
 				<h1 class={style.cta}>
@@ -69,7 +73,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 					<div class={style.text}>
 						<h2>
 							Hi, 
-							<span>Welcome to my portfolio!</span>
+							<span>Welcome!</span>
 						</h2> 
 						<p>6 years ago I started my adventure looking for the perfect button and I'm not going back. Having worked both freelance and corporate, I've experienced different approaches and helped developing many good practices. Be it sculpting an art-focused newspaper or developing in the dynamic environment of cryptocurrency trading platforms, I can't get enough of beatiful, yet simple designs. But all that will be meaningless without keeping the end user in mind.</p> 
 						<p>Yet, in free time I play a lot with CGI and dwell in the uncanny valley – You'll find here my personal experiments and ideas that I finished over the time.</p>
@@ -88,7 +92,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 }
 
 const stateProps = (state, props) => ({
-	projects: state.portfolio.projects,
+	projects: state.projects.list,
 })
 const dispatchProps = (dispatch, props) => ({
 	getProjects: () => dispatch(getProjects())

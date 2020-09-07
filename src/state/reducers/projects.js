@@ -7,17 +7,17 @@ import {
 	GET_PROJECT,
 	GET_PROJECT_ERROR,
 	CLEAR_PROJECT,
-} from "types/portfolio"
-import initialState from "models/portfolio"
+} from "types/projects"
+import initialState from "models/projects"
 
-const portfolio = (state=initialState, action) => {
+const projects = (state=initialState, action) => {
 	switch (action.type) {
 		case RESET_FILTERS: {
 			let filters = state.filters.map(f => ({
 				...f,
 				active: false,
 			}))
-			let projects = state.projects.map(p => ({
+			let list = state.list.map(p => ({
 				...p,
 				visible: true,
 			}))
@@ -25,13 +25,13 @@ const portfolio = (state=initialState, action) => {
 			return {
 				...state,
 				filters,
-				projects,
+				list,
 				filteredCount: undefined,
 			}
 		}
 
 		case TOGGLE_FILTER: {
-			let filteredCount = state.projects.length
+			let filteredCount = state.list.length
 			const filters = state.filters.map(f => ({
 				...f,
 				active: (f.tag === action.payload.tag) ? !f.active : f.active,
@@ -39,7 +39,7 @@ const portfolio = (state=initialState, action) => {
 
 			const activeTags = filters.filter(f => f.active).map(f => f.tag)
 
-			const projects = state.projects.map(p => {
+			const list = state.list.map(p => {
 				p.visible = true
 
 				if (activeTags.filter(tag => !p.tag.includes(tag)).length) {
@@ -50,32 +50,32 @@ const portfolio = (state=initialState, action) => {
 				return p
 			})
 
-			if (filteredCount === state.projects.length) filteredCount = undefined
+			if (filteredCount === state.list.length) filteredCount = undefined
 
 			return {
 				...state,
 				filters,
-				projects,
+				list,
 				filteredCount,
 			}
 		}
 
 		case GET_PROJECTS: {
-			let projects = action.payload.projects.map(p => ({
+			let list = action.payload.list.map(p => ({
 				...p,
 				visible: true,
 			}))
 
 			return {
 				...state,
-				projects,
-				projectsError: false,
+				list,
+				listError: false,
 			}
 		}
 		case GET_PROJECTS_ERROR: {
 			return {
 				...state,
-				projectsError: true,
+				listError: true,
 			}
 		}
 
@@ -106,4 +106,4 @@ const portfolio = (state=initialState, action) => {
 	}
 }
 
-export default portfolio
+export default projects

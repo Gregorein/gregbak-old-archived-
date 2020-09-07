@@ -18,8 +18,8 @@ const Sidebar = ({page=0, url="/"}) => {
 	return (
 		<Radiv
 			class={cn(style.sidebar, {
-				[style.activeFilters]: url === "/portfolio",
-				[style.activeReturn]: url.startsWith("/portfolio/"),
+				[style.activeFilters]: url === "/projects",
+				[style.activeReturn]: url.startsWith("/projects/"),
 			})}
 			urls={{
 				"/": cn({
@@ -30,8 +30,8 @@ const Sidebar = ({page=0, url="/"}) => {
 					[style.tSalmon]: page >= 1,
 					[style.hMedium]: page >= 1,
 				}),
-				"/portfolio": cn(style.tDark, style.hSalmon),
-				"/portfolio/*": cn(style.tDark, style.hSalmon),
+				"/projects": cn(style.tDark, style.hSalmon),
+				"/projects/*": cn(style.tDark, style.hSalmon),
 				"/about": cn(style.tDark, style.hSalmonAlt),
 				"/policy-copyrights": cn(style.tDark, style.hMedium),
 			}}
@@ -73,11 +73,11 @@ const Sidebar = ({page=0, url="/"}) => {
 				<Link
 					class={style.link}
 					activeClassName={style.active}
-					href="/portfolio"
-					title="portfolio"
+					href="/projects"
+					title="personal projects"
 					onClick={() => toggleMenu(false)}
 					>
-					portfolio
+					personal projects
 				</Link>
 				<Link
 					class={cn(style.link, style.last)}
@@ -89,7 +89,7 @@ const Sidebar = ({page=0, url="/"}) => {
 				</Link>          
 			</nav>
 
-			{url === "/portfolio" && <Filters overrideClass={style.filters} />}
+			{url === "/projects" && <Filters overrideClass={style.filters} />}
 		</Radiv>
 	)
 }

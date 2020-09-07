@@ -1,7 +1,7 @@
 import {combineReducers} from "redux"
 
-import portfolio from "reducers/portfolio"
+import projects from "reducers/projects"
 
 export default combineReducers({
-	portfolio,
+	projects,
 })

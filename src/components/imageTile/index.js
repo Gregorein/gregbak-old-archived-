@@ -25,7 +25,7 @@ const ImageTile = ({height, width, url, single, handleClick}) => {
 	let resizeTimer
 	const [updates, setUpdates] = useState(0)
 	useEffect(() => {
-		const resizeTimer = setTimeout(() => setUpdates(updates+1), 25)
+		resizeTimer = setTimeout(() => setUpdates(updates+1), 25)
 
 		return () => clearTimeout(resizeTimer)
 	}, [window.innerHeight, window.innerWidth])
@@ -56,8 +56,7 @@ const ImageTile = ({height, width, url, single, handleClick}) => {
 					<Fullscreen class={style.fullscreen} />
 				</div>
 			) : (
-				<div style={{paddingBottom: `${100 * height/width}%`}}>
-					<Loader />
+				<div style={{paddingBottom: `${100 * height/width}%`}}>q
 				</div>
 			)}
 		</div>

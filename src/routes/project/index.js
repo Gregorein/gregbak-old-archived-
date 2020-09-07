@@ -6,7 +6,7 @@ import {connect} from "react-redux"
 import {
 	getProject,
 	clearProject,
-} from "actions/portfolio"
+} from "actions/projects"
 
 import View from "components/view"
 import Loader from "components/loader"
@@ -28,7 +28,7 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 		}
 	}, [])
 	useEffect(() => {
-		if (error) route("/portfolio")
+		if (error) route("/projects")
 	}, [error])
 
 	const renderOverlay = image => {
@@ -96,6 +96,7 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 
 	return (
 		<View
+			title={`Greg Bak | ${!project ? "loading..." : project.title}`}
 			class={cn(style.view, {
 				[style.single]: project && project.slides.length === 1,
 			})}
@@ -107,8 +108,8 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 }
 
 const stateProps = (state, props) => ({
-	project: state.portfolio.currentProject,
-	error: state.portfolio.currentProjectError,
+	project: state.projects.currentProject,
+	error: state.projects.currentProjectError,
 })
 const dispatchProps = (dispatch, props) => ({
 	getProject: project => dispatch(getProject(project)),

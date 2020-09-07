@@ -58,7 +58,7 @@ const Mun = ({altStyle=false}) => {
 
 	const makeMun = () => {
 		mun = new THREE.Mesh(
-			new THREE.SphereGeometry(200, 128, 64),
+			new THREE.IcosahedronGeometry(200, 4),
 			new THREE.MeshStandardMaterial({
 				color: 0xfffdfa,
 				roughness: 0.75,
