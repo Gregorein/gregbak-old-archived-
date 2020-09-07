@@ -30,7 +30,7 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 		if (error) route("/projects")
 	}, [error])
 
-	const renderOverlay = image => {
+	const renderOverlay = (image, height, width, blurhash) => {
 		const overlayNode = document.getElementById("overlay")
 
 		overlayNode.parentNode.style.overlay = "hidden"
@@ -38,8 +38,11 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 		if (overlay !== undefined) render(null, overlayNode, overlay)
 		overlay = render((
 			<ImageOverlay
-				image={image}
 				handleOverlay={removeOverlay}
+				image={image}
+				height={height}
+				width={width}
+				blurhash={blurhash}
 				/>
 			), overlayNode)
 	}
@@ -58,16 +61,21 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 				return <ImageTile
 					{...slide}
 					single={project.slides.length === 1}
-					handleClick={() => renderOverlay(`${API}${slide.url}`)}
+					handleClick={() => renderOverlay(
+						`${API}${slide.url}`,
+							slide.height,
+							slide.width,
+							slide.blurhash
+						)}
 					/>
 
 			default: return
 		}
 	}
-
 	const renderSlides = project => {
 		const [first, ...other] = project.slides
 
+		// description is rendered between first and other posts, don't move
 		return (
 			<div class={style.content}>
 				{first && renderSlide(first)}
@@ -76,7 +84,6 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 			</div>
 		)
 	}
-
 	const renderDescription = ({title, date, description, links}) => (
 		<div class={style.description}>
 			<h2 class={style.title}>

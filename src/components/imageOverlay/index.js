@@ -1,31 +1,14 @@
-import {
-	useState,
-	useEffect,
-} from "preact/hooks"
+import {useEffect} from "preact/hooks"
 
+import Img from "components/img"
 import Close from "icons/close"
-
-import Loader from "components/loader"
 
 import style from "./style"
 
-const ImageOverlay = ({handleOverlay, image}) => {
-	let img = new Image()
-	const [loaded, toggleLoaded] = useState(false)
-	useEffect(() => {
-		toggleLoaded(false)
-		img.src = image
-		img.onload = () => toggleLoaded(true)
-
-		return () => {
-			img.src = null
-		}		
-	}, [image, img.onload, img.src])
-
+const ImageOverlay = ({handleOverlay, image, width, height, blurhash}) => {
 	const handleKeyDown = e => {
 		if (e.keyCode === 27) handleOverlay()
 	}
-
 	useEffect(() => {
 		window.addEventListener("keydown", handleKeyDown)
 
@@ -40,14 +23,16 @@ const ImageOverlay = ({handleOverlay, image}) => {
 			onKeyDown={handleKeyDown}
 			class={style.overlay}
 			>
-			{loaded ? (
-				<img
-					class={style.image}
-					src={image}
+			<div style={{width, height}}>
+				<Img
+					url={image}
+					alt={false}
+					height={height}
+					width={width}
+					blurhash={blurhash}
 					/>
-			) : (
-				<Loader />
-			)}
+			</div>
+
 			<Close
 				class={style.close}
 				onClick={handleOverlay}

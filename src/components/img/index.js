@@ -4,8 +4,6 @@ import {
 } from "preact/hooks"
 import {Blurhash} from "react-blurhash"
 
-import Loader from "components/loader"
-
 import cn from "classnames"
 import style from "./style"
 
@@ -21,7 +19,7 @@ const Img = ({url="", alt, blurhash, extraClass}) => {
 
 			setTimeout(() => {
 				toggleVisible(false)
-			}, 1000)
+			}, 1)
 		}
 
 		return () => {
@@ -37,11 +35,6 @@ const Img = ({url="", alt, blurhash, extraClass}) => {
 				hash={blurhash}
 				width="100%"
 				height="100%"
-				/>
-			<Loader
-				extraClass={cn(style.loader, {
-					[style.hidden]: !visible,
-				})}
 				/>
 			{loaded && <img
 				class={cn(style.image, {

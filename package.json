@@ -6,7 +6,7 @@
   "license": "Attribution 4.0 International",
   "scripts": {
     "start": "preact watch --template src/template.html",
-    "build": "rm -rf build/ && preact build --template src/template.html --no-prerender",
+    "build": "preact build --template src/template.html --no-prerender",
     "serve": "sirv build -p 9000 --cors --single",
     "stats": "yarn build --analyze",
     "api": "http-server -p 8000 --cors",

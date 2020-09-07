@@ -7,6 +7,8 @@ import {connect} from "react-redux"
 import {getProjects} from "actions/projects"
 import {randomOf} from "globals"
 
+import Img from "components/img"
+import Mountain from "images/mountain.png"
 import View from "components/view"
 import Mun from "components/mun"
 import ProjectTile from "components/projectTile"
@@ -53,7 +55,18 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 			class={style.view}
 			>
 			<section class={style.section}>
-				<div class={style.mountain} />
+				<div
+					class={style.mountain}
+					style={{
+						width: "100vw",
+						height: "13.41vw",
+					}}>
+					<Img
+						url={Mountain}
+						alt={false}
+						blurhash="URQvwRD%~q?b00Rj?bxuIUxuj[IURjxuj[Rj"
+						/>
+				</div>
 				<h1 class={style.cta}>
 					<span class={style.word1}>i am</span>
 					<span class={style.word2}>Greg</span>

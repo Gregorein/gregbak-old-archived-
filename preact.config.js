@@ -30,10 +30,6 @@ export default (config, env) => {
 		patterns: [
 			{from: "robots.txt"},
 			{from: ".htaccess"},
-			{
-				from: "../api",
-				to: "/api,"
-			}
 		],
 	}))
 	// config.plugins.push(new OpenBrowserPlugin())

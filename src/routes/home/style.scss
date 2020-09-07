@@ -13,12 +13,11 @@
 }
 
 .mountain {
-  height: 180px;
-  width: 100%;
-  background-image: url("~images/mountain.png");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transform: translate(0, -12.5%);
 }
 
 .cta {
@@ -182,7 +181,7 @@
 }
 @media (max-width: $tablet) {
   .mountain {
-    height: 100px;
+
   }
 
   .cta {
@@ -240,7 +239,7 @@
   }
 
   .mountain {
-    height: 50px;
+
   }
 
   .cta {
