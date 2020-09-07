@@ -6,11 +6,8 @@
 # install dependencies
 yarn install
 
-# run application with regard to env
-yarn start
-
 # serve with hot reload at localhost:8080
-yarn dev
+yarn start
 
 # build for production with minification
 yarn build
@@ -22,20 +19,16 @@ yarn serve
 yarn test
 
 # run blurhash generator for images
-yarn hash
+yarn blur
 
 # run mock api
 yarn api
 ```
 
 ## TO-DO
-0. Migrate to HTTP2
-1. Add service worker & cacheing https://preactjs.com/cli/service-worker/
-2. Update metatag descriptions
-3. Add robots.txt
-4. Handle noscript
-5. Fix font fallback
-6. Update localstorage 
-7. Migrate to Typescript
+0. implement blurhash
+1. Add service worker & cacheing [preact cli sw](https://preactjs.com/cli/service-worker/)
+2. Apache caching [docs]](https://httpd.apache.org/docs/2.4/caching.html)
+3. Migrate to Typescript
 
 For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
