@@ -1,7 +1,20 @@
 @import "~styles/variables";
 
+$x: -50%;
+$y: -57.74%;
+$s: .5;
+
+$c-primary: $medium;
+$c-secondary: $dark;
+
+$t-primary: $t*30;
+$t-secondary: $t*20;
+
+$c: 1.03;
+$o: .8;
+
 .loader {
-  animation: loader $t*30 infinite;
+  animation: loader $t-primary linear infinite;
 
   pointer-events: none;
 
@@ -9,27 +22,27 @@
   top: 50%;
   left: 50%;
 
-  transform-origin: 44px 50.8px;
-  transform: translate(-50%, -50%) scale(0.75);
+  transform-origin: 50% 66.67%;
+  transform: translate($x, $y) scale($s);
 
-  color: $dark;
+  color: $c-primary;
 
   overflow: visible;
 
   .left {
-    animation: left $t*10 infinite;
+    animation: left $t-secondary $e infinite;
 
     transform-origin: 0 76.21px;
     transform: scale(1.03);
   }
   .top {
-    animation: top $t*10 infinite;
+    animation: top $t-secondary $e infinite;
 
     transform-origin: 44px 0px;
     transform: scale(1.03);
   }
   .right {
-    animation: right $t*10 infinite;
+    animation: right $t-secondary $e infinite;
 
     transform-origin: 88px 76.21px;
     transform: scale(0.8);
@@ -38,65 +51,63 @@
 
 @keyframes loader {
   0% {
-    transform: translate(-50%, -50%) scale(0.5);
-    color: $dark; 
+    transform: translate($x, $y) scale($s);
+    color: $c-primary; 
   }
   33% {
-    transform: translate(-50%, -50%) scale(0.5) rotate(-120deg);
+    transform: translate($x, $y) scale($s) rotate(120deg);
   }
   50% {
-    color: $salmon;
+    color: $c-secondary;
   }
   66% {
-    transform: translate(-50%, -50%) scale(0.5) rotate(-240deg);
+    transform: translate($x, $y) scale($s) rotate(240deg);
   }
   100% {
-    transform: translate(-50%, -50%) scale(0.5);
+    transform: translate($x, $y) scale($s);
   }
 }
 
 @keyframes left {
   23% {
-    transform: scale(1.03);
+    transform: scale($c);
   }
   28% {
-    transform: scale(0.8);
+    transform: scale($o);
   }
   38% {
-    transform: scale(0.8);
+    transform: scale($o);
   }
   43% {
-    transform: scale(1.03);
+    transform: scale($c);
   }
 }
-
 @keyframes top {
   56% {
-    transform: scale(1.03);
+    transform: scale($c);
   }
   61% {
-    transform: scale(0.8);
+    transform: scale($o);
   }
   71% {
-    transform: scale(0.8);
+    transform: scale($o);
   }
   76% {
-    transform: scale(1.03);
+    transform: scale($c);
   }
 }
-
 @keyframes right {
   5% {
-    transform: scale(0.8);
+    transform: scale($o);
   }
   10% {
-    transform: scale(1.03);   
+    transform: scale($c);
   }
 
   90% {
-    transform: scale(1.03);   
+    transform: scale($c);
   }
   95% {
-    transform: scale(0.8);
+    transform: scale($o);
   }
 }

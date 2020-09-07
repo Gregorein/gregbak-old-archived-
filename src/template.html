@@ -3,28 +3,36 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Greg Bak Portfolio</title>
-		<!-- title is set using View's `title` prop -->
+		<meta name="author" content="Greg Bak" />
+		<meta name="keywords" content="Greg Bak, work, resume, code, art, React, JavaScript, frontend, developer" />
+		
+		<!-- title and some meta tags are managed through `View` compoent props -->
+		<title>Greg Bak</title>
+		<meta name="title" content="Greg Bak" />
+		<meta name="description" content="Greg Bak's website. Resume and a portfolio. Click the link, the one above. Click it. I'm Greg Bak and even I would click this link." />
 
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="robots" content="index, follow" />
 
-		<link rel="manifest" href="/manifest.json">
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-		<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#bf604b">
-		<meta name="msapplication-TileColor" content="#bf604b">
-		<meta name="theme-color" content="#bf604b">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<link rel="manifest" href="/manifest.json" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+		<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#bf604b" />
+		<meta name="msapplication-TileColor" content="#bf604b" />
+		<meta name="theme-color" content="#bf604b" />
 
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700&subset=latin-ext&display=swap" />		
 		<% preact.headEnd %>
 	</head>
 	<body>
 		<div id="overlay"></div>
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 		<% preact.bodyEnd %>
 	</body>
 </html>

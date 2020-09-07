@@ -9,7 +9,7 @@ import {randomOf} from "globals"
 
 import View from "components/view"
 import Mun from "components/mun"
-import Tile from "components/tile"
+import ProjectTile from "components/projectTile"
 
 import SS from "smooth-scroll"
 import cn from "classnames"
@@ -48,6 +48,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 	return (
 		<View
 			title="Greg Bak"
+			description="Greg Bak's website. Resume and a portfolio. Click the link, the one above. Click it. I'm Greg Bak and even I would click this link."
 			id="view"
 			class={style.view}
 			>
@@ -79,7 +80,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 						<p>Click the tile <span class={style.horizontal}>on your right</span><span class={style.vertical}>below</span>.</p>
 					</div>
 					{project && (
-						<Tile
+						<ProjectTile
 							overrideClass={style.tile}
 							project={project}
 							/>

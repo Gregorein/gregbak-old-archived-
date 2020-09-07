@@ -1,0 +1,37 @@
+@import "~styles/variables";
+
+.container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	> canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.loader {
+	transition: opacity 1s $e;
+
+	opacity: 1;
+	&.hidden {
+		opacity: 0;
+	}
+}
+
+.image {
+	height: 100%;
+	width: 100%;
+	transition: opacity 1s $e;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	opacity: 1;
+	&.hidden {
+		opacity: 0;
+	}
+}

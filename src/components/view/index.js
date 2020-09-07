@@ -5,13 +5,17 @@ import Radiv from "components/radiv"
 import cn from "classnames"
 import style from "./style"
 
-const View = ({children, title, ...props}) => {
+const View = ({children, title, description, ...props}) => {
 	useEffect(() => {
 		window.scroll(0,0)
 	}, [])
 	useEffect(() => {
-		window.document.title = title
+		document.title = title
+		document.getElementsByTagName("meta").title.content = title;
 	}, [title])
+	useEffect(() => {
+		document.getElementsByTagName("meta").description.content = description;
+	}, [description])
 
 	return (
 		<Radiv

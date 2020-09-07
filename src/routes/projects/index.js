@@ -4,7 +4,7 @@ import {connect} from "react-redux"
 import {getProjects} from "actions/projects"
 
 import View from "components/view"
-import Tile from "components/tile"
+import ProjectTile from "components/projectTile"
 
 import style from "./style"
 
@@ -16,9 +16,10 @@ const Projects = ({projects, getProjects}) => {
 	return (
 		<View
 			title="Greg Bak | personal projects"
+			description="Greg Bak's personal projects. Click here to view the full list."
 			class={style.view}
 			>
-			{projects.map(p => p.visible && <Tile project={p} />)}
+			{projects.map(p => p.visible && <ProjectTile project={p} />)}
 		</View>
 	)
 }

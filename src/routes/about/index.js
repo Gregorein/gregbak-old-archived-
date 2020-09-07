@@ -1,6 +1,5 @@
-import moment from "moment"
-
 import View from "components/view"
+import Img from "components/img"
 
 import Avatar from "images/avatar.png"
 
@@ -8,10 +7,19 @@ import cn from "classnames"
 import style from "./style"
 
 const About = () => (
-	<View title="Greg Bak | about">
+	<View
+		title="Greg Bak | about"
+		description="Greg Bak's info and all about his work experience. Click here to read more about him."
+		>
 		<div class={style.view}>
 			<div class={style.avatar}>
-				<img src={Avatar} />
+				<Img
+					url={Avatar}
+					alt="Greg Bak"
+					height={250}
+					width={250}
+					blurhash="UUNdByE2?wVs~V%MS2RPS5M|MxbHXSV@nhxu"
+					/>
 			</div>
 			<h2>about me</h2>
 			<h1 class={style.copy}>I’m Greg Bak (Grzegorz Bąk)</h1>
@@ -22,8 +30,8 @@ const About = () => (
 			<p class={style.copy}>In my family being an artist is a norm, yet I ended up being a developer. Given that background, I strive for the balance of precise technical thinking and artistic mindset. I'm heavily influenced by simplicity of the Japanese design culture – their work is created with user in mind, and that's what I do as well.</p>
 
 			<h2 class={style.smallDip}>my achievements</h2>
-t				<p class={style.achievement}>Bachelor of Engineering – <span class={style.thesis}>"Motion Blending in virtual reality"</span></p>
-				<p class={style.achievement}>Master of Engineering – <span class={style.thesis}>"World-state in Augmented Reality"</span></p>
+			<p class={style.achievement}>Bachelor of Engineering – <span class={style.thesis}>"Motion Blending in virtual reality"</span></p>
+			<p class={style.achievement}>Master of Engineering – <span class={style.thesis}>"World-state in Augmented Reality"</span></p>
 
 			<h2 class={style.smallDip}>my timeline</h2>
 			<ul class={style.timeline}>

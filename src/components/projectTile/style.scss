@@ -2,7 +2,7 @@
 
 .tile {
   display: block;
-  width: 33.333%;
+  width: 33.33%;
   position: relative;
 
   text-decoration: none;
@@ -14,9 +14,19 @@
     width: 100%;
     padding-bottom: 100%;
 
+    position: relative;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   .header {
@@ -38,7 +48,7 @@
   .date {
     color: $medium;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 600;
     font-variant: small-caps;
     line-height: 24px;
   }

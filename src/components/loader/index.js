@@ -1,8 +1,9 @@
+import cn from "classnames"
 import style from "./style"
 
-const Loader = props => (
+const Loader = ({extraClass, ...props}) => (
 	<svg
-		class={style.loader}
+		class={cn(style.loader, extraClass)}
 		width="88px"
 		height="76.21px"
 		{...props}

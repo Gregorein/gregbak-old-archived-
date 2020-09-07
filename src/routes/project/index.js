@@ -1,7 +1,6 @@
 import {render} from "preact"
 import {useEffect} from "preact/hooks"
 import {route} from "preact-router"
-import moment from "moment"
 import {connect} from "react-redux"
 import {
 	getProject,
@@ -97,6 +96,7 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 	return (
 		<View
 			title={`Greg Bak | ${!project ? "loading..." : project.title}`}
+			description={!project ? "loading..." : `Greg Bak's project "${project.title}". ${project.description}. Click here to view the project.`}
 			class={cn(style.view, {
 				[style.single]: project && project.slides.length === 1,
 			})}

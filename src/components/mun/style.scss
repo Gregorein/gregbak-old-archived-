@@ -1,7 +1,7 @@
 @import "~styles/variables";
 
 .mun {
-  transition: opacity $t $e,
+  transition: opacity 1s $e,
   						filter $t $e;
   						
   height: 400px;
@@ -16,5 +16,9 @@
 
   &.dark {
   	filter: invert(0.333) sepia(1) hue-rotate(-30deg) saturate(200%) brightness(40%);
+  }
+
+  &.hidden {
+    opacity: 0;
   }
 }

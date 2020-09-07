@@ -1,6 +1,5 @@
 import {
 	useState,
-	useCallback,
 	useEffect,
 	useRef,
 } from "preact/hooks"
@@ -10,17 +9,16 @@ import style from "./style"
 
 const	textureLoader = new THREE.TextureLoader()
 const Mun = ({altStyle=false}) => {
-	const [visible, setVisible] = useState(-2)
-	const updateVisibility = useCallback(() => {
-		setVisible(visible+1)
-	}, [visible])
+	const [normalLoaded, toggleNormalLoaded] = useState(false)
+	const [bumpLoaded, toggleBumpLoaded] = useState(false)
 
 	const container = useRef(null)
-	let normal, bump
+	const normal = useRef(null)
+	const bump = useRef(null)
 	let mun, scene, camera, renderer
 	useEffect(() => {
-		normal = textureLoader.load("assets/images/mun_n.png", updateVisibility())
-		bump = textureLoader.load("assets/images/mun_d.png", updateVisibility())
+		normal.current = textureLoader.load("assets/images/mun_n.png", toggleNormalLoaded(true))
+		bump.current = textureLoader.load("assets/images/mun_d.png", toggleBumpLoaded(true))
 		
 		initScene()
 		makeMun()
@@ -64,11 +62,11 @@ const Mun = ({altStyle=false}) => {
 				roughness: 0.75,
 				metalness: 0.1,
 
-				displacementMap: bump,
+				displacementMap: bump.current,
 				displacementScale: -40,
 				displacementBias: 0,
 
-				normalMap: normal,
+				normalMap: normal.current,
 			})
 		)
 		mun.castShadow = true
@@ -90,6 +88,7 @@ const Mun = ({altStyle=false}) => {
 			ref={container}
 			class={cn(style.mun, {
 				[style.dark]: altStyle,
+				[style.hidden]: !(bumpLoaded && normalLoaded),
 			})}
 			/>
 	)
