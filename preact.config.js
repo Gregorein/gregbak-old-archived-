@@ -1,9 +1,7 @@
 import path from "path"
 import webpack from "webpack"
-import BundleAnalyzerPlugin from "webpack-bundle-analyzer"
-const BundleAnalyzer = BundleAnalyzerPlugin.BundleAnalyzerPlugin; 
-
-import OpenBrowserPlugin from "open-browser-webpack-plugin"
+import CopyPlugin from "copy-webpack-plugin"
+// import OpenBrowserPlugin from "open-browser-webpack-plugin"
 
 export default (config, env) => {
 	/* set aliases */
@@ -26,14 +24,17 @@ export default (config, env) => {
 
 	/* set API var */
 	config.plugins.push(new webpack.DefinePlugin({
-		"process.env.NODE_ENV": JSON.stringify(env.isProd ? "production" : "development"),
 	  API: JSON.stringify(env.isProd ? 'https://gregbak.com/api' : 'http://localhost:8000/api'),
 	}))
-	// config.plugins.push(new BundleAnalyzer({
-	// 	openAnalyzer: false,
-	// 	analyzerHost: "localhost",
-	// 	analyzerPort: "9000",
-	// 	generateStatsFile: true,
-	// }))
-	config.plugins.push(new OpenBrowserPlugin())
+	config.plugins.push(new CopyPlugin({
+		patterns: [
+			{from: "robots.txt"},
+			{from: ".htaccess"},
+			{
+				from: "../api",
+				to: "/api,"
+			}
+		],
+	}))
+	// config.plugins.push(new OpenBrowserPlugin())
 }
