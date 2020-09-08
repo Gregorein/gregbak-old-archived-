@@ -29,14 +29,14 @@
 		"width": 400,
 		"blurhash": "UCM~IN00.lP:znqGZhV@JCu4yCMKvfR5gOpH"
 	},
-  {
-    "title": "Dark Knight",
-    "href": "/projects/darkknight",
-    "tag": "art|2d",
-    "date": 1517603310,
-    "thumbnail": "/projects/darkknight-thumb.png",
-    "blurhash": "UGAvqc~CtQ9tIUM|NHR-E1Rj$*-UIrIpNGjE"
-  },
+	{
+		"title": "Dark Knight",
+		"href": "/projects/darkknight",
+		"tag": "art|2d",
+		"date": 1517603310,
+		"thumbnail": "/projects/darkknight-thumb.png",
+		"blurhash": "UGAvqc~CtQ9tIUM|NHR-E1Rj$*-UIrIpNGjE"
+	},
 	{
 		"title": "opus corporis",
 		"href": "/projects/opus",
