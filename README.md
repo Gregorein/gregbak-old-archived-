@@ -26,9 +26,8 @@ yarn api
 ```
 
 ## TO-DO
-0. implement blurhash
-1. Add service worker & cacheing [preact cli sw](https://preactjs.com/cli/service-worker/)
-2. Apache caching [docs]](https://httpd.apache.org/docs/2.4/caching.html)
-3. Migrate to Typescript
+0. Add service worker & cacheing [preact cli sw](https://preactjs.com/cli/service-worker/)
+1. Apache caching [docs]](https://httpd.apache.org/docs/2.4/caching.html)
+2. Migrate to Typescript
 
 For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
