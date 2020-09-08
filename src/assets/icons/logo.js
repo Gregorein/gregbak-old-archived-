@@ -1,3 +1,5 @@
+import {h} from "preact"
+
 const Logo = props => (
 	<svg
 		width="88px"

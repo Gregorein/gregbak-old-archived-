@@ -1,3 +1,5 @@
+import {h} from "preact"
+
 const Close = props => (
 	<svg 
 		width="150px"

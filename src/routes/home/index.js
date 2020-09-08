@@ -1,3 +1,4 @@
+import {h} from "preact"
 import {
 	useState,
 	useEffect,
@@ -52,7 +53,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 			title="Greg Bak"
 			description="Greg Bak's website. Resume and a portfolio. Click the link, the one above. Click it. I'm Greg Bak and even I would click this link."
 			id="view"
-			class={style.view}
+			extraClass={style.view}
 			>
 			<section class={style.section}>
 				<div
@@ -63,7 +64,7 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 					}}>
 					<Img
 						url={Mountain}
-						alt={false}
+						alt="Background image for page"
 						blurhash="URQvwRD%~q?b00Rj?bxuIUxuj[IURjxuj[Rj"
 						/>
 				</div>

@@ -1,3 +1,5 @@
+import {h} from "preact"
+
 import View from "components/view"
 import Img from "components/img"
 

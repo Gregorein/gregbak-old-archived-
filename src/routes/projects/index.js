@@ -1,3 +1,4 @@
+import {h} from "preact"
 import {useEffect} from "preact/hooks"
 import {connect} from "react-redux"
 
@@ -17,7 +18,7 @@ const Projects = ({projects, getProjects}) => {
 		<View
 			title="Greg Bak | personal projects"
 			description="Greg Bak's personal projects. Click here to view the full list."
-			class={style.view}
+			extraClass={style.view}
 			>
 			{projects.map(p => p.visible && <ProjectTile project={p} />)}
 		</View>

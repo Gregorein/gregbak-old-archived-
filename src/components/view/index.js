@@ -1,3 +1,4 @@
+import {h} from "preact"
 import {useEffect} from "preact/hooks"
 
 import Radiv from "components/radiv"
@@ -5,7 +6,7 @@ import Radiv from "components/radiv"
 import cn from "classnames"
 import style from "./style"
 
-const View = ({children, title, description, ...props}) => {
+const View = ({children, title, description, extraClass, ...props}) => {
 	useEffect(() => {
 		window.scroll(0,0)
 	}, [])
@@ -28,7 +29,7 @@ const View = ({children, title, description, ...props}) => {
 				"/policy-copyrights": style.bSalmon,
 			}}
 			>
-			<div class={cn(style.view, ...props.class)}>
+			<div class={cn(style.view, extraClass)}>
 				{children}
 			</div>
 		</Radiv>

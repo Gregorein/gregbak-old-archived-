@@ -1,3 +1,5 @@
+import {h} from "preact"
+
 import Img from "components/img"
 
 import cn from "classnames"

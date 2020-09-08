@@ -1,3 +1,4 @@
+import {h} from "preact"
 import {useState} from "preact/hooks"
 import {Router} from "preact-router"
 
@@ -30,13 +31,15 @@ const store = createStore(
 )
 
 // moment
-moment.relativeTimeRounding(Math.floor)
-moment.relativeTimeThreshold("ss", 15)
-moment.relativeTimeThreshold("s", 60)
-moment.relativeTimeThreshold("m", 45)
-moment.relativeTimeThreshold("h", 18)
-moment.relativeTimeThreshold("d", 45)
-moment.relativeTimeThreshold("M", 24)
+if (moment.relativeTimeRounding) {
+	moment.relativeTimeRounding(Math.floor)
+	moment.relativeTimeThreshold("ss", 15)
+	moment.relativeTimeThreshold("s", 60)
+	moment.relativeTimeThreshold("m", 45)
+	moment.relativeTimeThreshold("h", 18)
+	moment.relativeTimeThreshold("d", 45)
+	moment.relativeTimeThreshold("M", 24)
+}
 
 // app
 const App = () => {

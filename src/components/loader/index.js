@@ -1,3 +1,5 @@
+import {h} from "preact"
+
 import cn from "classnames"
 import style from "./style"
 

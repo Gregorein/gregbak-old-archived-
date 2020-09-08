@@ -1,3 +1,4 @@
+import {h} from "preact"
 import {useEffect} from "preact/hooks"
 
 import Img from "components/img"

@@ -1,3 +1,4 @@
+import {h} from "preact"
 import {
 	useState,
 	useEffect,
@@ -23,7 +24,7 @@ const Img = ({url="", alt, blurhash, extraClass}) => {
 		}
 
 		return () => {
-			img.src = null
+			img.src = ""
 		}
 	}, [])
 
@@ -31,11 +32,12 @@ const Img = ({url="", alt, blurhash, extraClass}) => {
 		<div
 			class={cn(style.container, extraClass)}
 			>
-			<Blurhash
+			{blurhash && <Blurhash
 				hash={blurhash}
 				width="100%"
 				height="100%"
 				/>
+			}
 			{loaded && <img
 				class={cn(style.image, {
 					[style.hidden]: visible,
