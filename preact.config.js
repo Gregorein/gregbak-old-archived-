@@ -3,7 +3,7 @@ import webpack from "webpack"
 import CopyPlugin from "copy-webpack-plugin"
 // import OpenBrowserPlugin from "open-browser-webpack-plugin"
 
-export default (config, env) => {
+export default config => {
 	/* set aliases */
 	let {alias} =	config.resolve
 	alias.assets = path.resolve(__dirname, "src/assets")
@@ -24,7 +24,7 @@ export default (config, env) => {
 
 	/* set API var */
 	config.plugins.push(new webpack.DefinePlugin({
-	  API: JSON.stringify(env.isProd ? 'https://gregbak.com/api' : 'http://localhost:8000/api'),
+		API: JSON.stringify("https://gregbak-api.herokuapp.com/") // JSON.stringify(env.isProd ? 'https://gregbak-api.herokuapp.com/' : 'http://localhost:8000/api'),
 	}))
 	config.plugins.push(new CopyPlugin({
 		patterns: [

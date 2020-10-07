@@ -20,7 +20,7 @@ const Img = ({url="", alt, blurhash, extraClass}) => {
 
 			setTimeout(() => {
 				toggleVisible(false)
-			}, 1)
+		}, 1000)
 		}
 
 		return () => {

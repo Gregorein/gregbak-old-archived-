@@ -40,7 +40,6 @@ const Filters = ({overrideClass, count, filters, resetFilters, toggleFilter}) =>
 	</div>
 )
 
-
 const stateProps = state => ({
 	count: state.projects.filteredCount,
 	filters: state.projects.filters,

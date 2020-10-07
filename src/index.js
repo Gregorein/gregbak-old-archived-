@@ -51,7 +51,7 @@ const App = () => {
 		<div id="app">
 			<Provider store={store}>
 				<>
-					<Splash />
+					{<Splash />}
 					<Sidebar page={page} url={currentUrl} />
 					<Router onChange={handleRoute}>
 						<Home

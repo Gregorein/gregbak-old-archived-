@@ -30,7 +30,7 @@ const Splash = () => {
 	useEffect(() => {
 		handleColors()
 
-		let time = 250
+		let time = 500
 
 		for (let i = 0; i < step; i++) {
 			handleSplash(

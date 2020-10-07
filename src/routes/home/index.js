@@ -65,7 +65,6 @@ const Home = ({projects, getProjects, page, handleSidebar}) => {
 					<Img
 						url={Mountain}
 						alt="Background image for page"
-						blurhash="URQvwRD%~q?b00Rj?bxuIUxuj[IURjxuj[Rj"
 						/>
 				</div>
 				<h1 class={style.cta}>
