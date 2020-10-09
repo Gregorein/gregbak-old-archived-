@@ -16,7 +16,7 @@
 
   filter: sepia(10%) hue-rotate(0deg) saturate(100%) brightness(100%);
   &.dark {
-  	filter: sepia(10%) hue-rotate(160deg) saturate(200%) brightness(90%);
+  	filter: sepia(50%) hue-rotate(-15deg) saturate(150%) brightness(80%);
   }
 
   &.hidden {

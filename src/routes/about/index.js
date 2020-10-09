@@ -382,7 +382,7 @@ const About = () => (
 		</div>
 		<div class={style.theEnd}>
 			<div class={style.center}>
-				<h2>I'm open to work!</h2>
+				{/*<h2>I'm open to work!</h2>*/}
 				<p>
 					Say hello at <a href="mailto:gregbak@me.com?subject= Portfolio feedback |&body=Hello Greg," title="my contact email">gregbak@me.com</a>
 				</p>
