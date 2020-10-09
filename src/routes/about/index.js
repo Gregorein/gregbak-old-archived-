@@ -307,6 +307,13 @@ const About = () => (
 				</li>
 
 				<li>
+					<p class={style.date}>9.2019&mdash;6.2020</p>
+					<h3 class={style.title}>I was a host in student radio broadcast "Akademik"</h3>
+
+					<a class={style.location} target="_blank" rel="noreferrer" href="https://radioemaus.pl">@Radio Emaus <span>(https://radioemaus.pl)</span></a>
+				</li>
+
+				<li>
 					<p class={style.date}>10.2020&mdash;now</p>
 					<h3 class={style.title}>I joined as a frontend developer.</h3>
 
