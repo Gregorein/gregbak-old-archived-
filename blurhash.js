@@ -41,6 +41,12 @@ const getImageData = async filepath => {
 	return context.getImageData(0, 0, width, height)
 }
 
+function escapeRegExp(stringToGoIntoTheRegex) {
+  const _s = stringToGoIntoTheRegex.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+
+  return new RegExp(_s, "g")
+}
+
 const blurhash = ({data, width, height}) => encode(data, width, height, 4, 4) 
 
 let searchpath
@@ -54,7 +60,7 @@ let filter
 if(!process.argv[3]) {
 	console.error("no filter found, defaulting to /.png/")
 	filter = /\.png$/
-} else filter = process.argv[3]
+} else filter = escapeRegExp(process.argv[3])
 
 findFiles(searchpath, filter, async f => {
 	const data = await getImageData(f)
