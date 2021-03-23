@@ -230,7 +230,7 @@ const About = () => (
 
 				<li>
 					<p class={style.date}>6.2018&mdash;9.2020</p>
-					<h3 class={style.title}>I'm working as a fullstack engineer in Javascript.</h3>
+					<h3 class={style.title}>I worked as a fullstack engineer in Javascript.</h3>
 
 					<p class={style.description}>
 						I've worked with my team on a BL/CRM single-page app for an international client: <br/>
