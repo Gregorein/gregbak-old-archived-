@@ -10,6 +10,8 @@ import {
 import View from "components/view"
 import Loader from "components/loader"
 import ImageTile from "components/imageTile"
+import YoutubeTile from "components/youtubeTile"
+import VideoTile from "components/videoTile"
 import ImageOverlay from "components/imageOverlay"
 
 import cn from "classnames"
@@ -67,7 +69,13 @@ const Project = ({project, getProject, matches, clearProject, error}) => {
 							slide.width,
 							slide.blurhash
 						)}
-					/>
+					/>;
+
+			case "movie":
+				return <VideoTile {...slide} />
+
+			case "youtube":
+				return <YoutubeTile {...slide} />
 
 			default: return
 		}

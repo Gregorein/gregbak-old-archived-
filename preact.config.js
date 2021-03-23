@@ -24,7 +24,7 @@ export default config => {
 
 	/* set API var */
 	config.plugins.push(new webpack.DefinePlugin({
-		API: JSON.stringify("https://gregbak-api.herokuapp.com/") // JSON.stringify(env.isProd ? 'https://gregbak-api.herokuapp.com/' : 'http://localhost:8000/api'),
+		API: JSON.stringify("https://gregbak-api.herokuapp.com"),
 	}))
 	config.plugins.push(new CopyPlugin({
 		patterns: [

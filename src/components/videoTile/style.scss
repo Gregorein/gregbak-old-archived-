@@ -1,0 +1,35 @@
+@import "~styles/variables";
+
+.videoWrap {
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  position: relative;
+
+  &.single {
+    height: 100vh;
+
+    .container {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+  }
+};
+
+.video {
+  height: 100%;
+  width: 100%;
+  transition: opacity 1s $e;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 1;
+  &.hidden {
+    opacity: 0;
+  }
+}

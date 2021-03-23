@@ -1,0 +1,20 @@
+@import "~styles/variables";
+
+.videoWrap {
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  position: relative;
+
+  &.single {
+    height: 100vh;
+
+    .container {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+  }
+};
