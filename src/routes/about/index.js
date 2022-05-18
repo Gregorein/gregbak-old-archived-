@@ -327,56 +327,59 @@ const About = () => (
 				<li class={style.expert}>macOS</li>
 				<li class={style.advanced}>UNIX</li>
 				<li class={style.advanced}>Windows</li>
-				<li class={style.advanced}>bootloaders & kext patching</li>
+				<li class={style.advanced}>bootloaders & custom kext patching, vbios modding, hackintoshing. yeah.</li>
 				<li class={style.intermediate}>emulation & virtualisation</li>
+				<li class={style.learning}>docker & containers in general. I'm not going for Devops, but it's useful when running AI packages.</li>
 			</ul>
 			<ul class={style.skills}>
 				<h3>web stack</h3>
-				<li class={style.expert}>SASS (with BEM)</li>
-				<li class={style.advanced}>React/Preact</li>
-				<li class={style.basic}>Angular 2+</li>
-				<li class={style.advanced}>React hooks, Redux with Thunk</li>
-				<li class={style.intermediate}>Saga, Axios, RX.js</li>
-				<li class={style.advanced}>Typescript & ES7/ESNext, with linters</li>
+				{"<!-- <li class={style.expert}>SASS (with BEM)</li> -->"}
+				<li class={style.advanced}>styled components</li>
 				<li class={style.advanced}>Webpack</li>
-				<li class={style.advanced}>Jest & Enzyme, Selenium & BrowserStack</li>
+				<li class={style.advanced}>React/Preact</li>
+				<li class={style.advanced}>React hooks, Redux with Thunk</li>
+				<li class={style.advanced}>Typescript & ES7/ESNext, with linters</li>
+				<li class={style.advanced}>Headless CMS</li>
+				<li class={style.intermediate}>NextJS</li>
+				<li class={style.intermediate}>Vercel, Heroku</li>
+				<li class={style.intermediate}>Jest & Enzyme, Selenium & BrowserStack</li>
 				<li class={style.intermediate}>Node.js, Express</li>
 				<li class={style.basic}>MySQL/MSSQL, Mongo</li>
 			</ul>
 			<ul class={style.skills}>
 				<h3>code</h3>
-				<li class={style.advanced}>Golang</li>
-				<li class={style.advanced}>Python</li>
-				<li class={style.intermediate}>C#, C++</li>
-				<li class={style.intermediate}>Swift, Obj-C</li>
-				<li class={style.intermediate}>bash/zsh</li>
+				{"<!-- <li class={cn(style.advanced, style.butwhytho)}>PHP 7</li> -->"}
+				<li class={style.advanced}>bash/zsh</li>
+				<li class={style.intermediate}>Python</li>
+				<li class={style.basic}>Golang</li>
+				<li class={style.basic}>C#, C++</li>
+				<li class={style.basic}>Swift, Obj-C</li>
 				<li class={style.learning}>ReactNative</li>
-				<li class={cn(style.intermediate, style.butwhytho)}>PHP 7</li>
 			</ul>
 			<ul class={style.skills}>
 				<h3>project & engineering</h3>
 				<li class={style.advanced}>Pen & Paper</li>
-				<li class={style.intermediate}>Figma, Invision, Sketch, Zeplin, Webflow</li>
-				<li class={style.advanced}>Git, Mercurial, SVN</li>
+				<li class={style.advanced}>Git, Mercurial. I even used SVN and didn't delete project by mistake - that's advanced for you.</li>
 				<li class={style.advanced}>Agile, Scrum, Kanban</li>
-				<li class={style.intermediate}>Github, Gitlab, Bitbucket,</li>
+				<li class={style.advanced}>Github, Gitlab, Bitbucket,</li>
+				<li class={style.intermediate}>Figma, Invision, Sketch, Zeplin</li>
 				<li class={style.intermediate}>Xcode, Vim w/g++ & gdb</li>
-				<li class={style.advanced}>UML & Application Architecture Design</li>
-				<li class={style.intermediate}>Redmine, Jenkins CI, Gitlab CI, Github CI</li>
+				<li class={style.intermediate}>UML & Application Architecture Design</li>
+				<li class={style.basic}>Redmine, Jenkins CI, Gitlab CI, Github CI</li>
 			</ul>
 			<ul class={style.skills}>
 				<h3>graphics</h3>
 				<li class={style.expert}>Adobe Photoshop</li>
 				<li class={style.advanced}>Adobe Experience Designer</li>
-				<li class={style.intermediate}>Adobe Illustrator</li>
 				<li class={style.advanced}>Blender with Cycles/EEVEE render engines</li>
+				<li class={style.basic}>Adobe Illustrator</li>
 				<li class={style.learning}>Substance Painter</li>
 				<li class={style.learning}>Marvelous Designer</li>
 			</ul>
 			<ul class={style.skills}>
 				<h3>motion graphics</h3>
 				<li class={style.advanced}>Adobe Premiere Pro</li>
-				<li class={style.learning}>Adobe After Effects</li>
+				<li class={style.basic}>Adobe After Effects</li>
 			</ul>
 			<ul class={style.skills}>
 				<h3>languages</h3>
@@ -384,12 +387,12 @@ const About = () => (
 				<li class={style.advanced}>English</li>
 				<li class={style.intermediate}>German</li>
 				<li class={style.basic}>Japanese</li>
-				<li class={cn(style.basic, style.loremipsum)}>Latin</li>
+				<li class={cn(style.intermediate, style.loremipsum)}>Latin</li>
 			</ul>
 		</div>
 		<div class={style.theEnd}>
 			<div class={style.center}>
-				{/*<h2>I'm open to work!</h2>*/}
+				<h2>I'm open to work!</h2>
 				<p>
 					Say hello at <a href="mailto:gregbak@me.com?subject= Portfolio feedback |&body=Hello Greg," title="my contact email">gregbak@me.com</a>
 				</p>
