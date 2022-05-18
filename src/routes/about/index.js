@@ -25,7 +25,7 @@ const About = () => (
 			</div>
 			<h2>about me</h2>
 			<h1 class={style.copy}>I’m Greg Bak (Grzegorz Bąk)</h1>
-			<p class={style.copy}>I’m a {moment("19940728", "YYYYMMDD").fromNow(false)} old Software Engineer (MEng, Computer Science) and a self-taught CGI generalist based in Poland. In my free time I learn languages, climb rocks and play piano. Unfortunately, I'm unable to perform all of that at the same time.</p>
+			<p class={style.copy}>I’m a {moment("19940728", "YYYYMMDD").fromNow(false)} old Software Engineer (MEng, Computer Science) and a self-taught CGI generalist based in Poland. In my free time I perform ancient music - I've been singing for around {moment("20110728", "YYYYMMDD").fromNow(false)} years now. I also tinker with 3d and bake croissants worth killing for.</p>
 
 			<p class={style.copy}>{moment("20140401", "YYYYMMDD").fromNow(false)} ago I started as a backend junior developer and after a lot of work I created my first button through the spaghetti-like code of an ancient PHP framework. I still shudder at that memory, but I recall that wasn't my first time tinkering with code – I remember how {moment("20040728", "YYYYMMDD").fromNow(false)} I opened my space game save file in a resource editor and without much understanding I changed different values until I found the right one, making my space pilot so rich it broke the simple economy of the simulation. Few years later, in Junior High my friend and I created a simple game. It had two different characters, an island and a lot of crazy net-code, that allowed us to develop this game over the wire – it's not a lot given today's standars, but it gave me the spark I needed.</p>
 
@@ -316,6 +316,15 @@ const About = () => (
 				<li>
 					<p class={style.date}>10.2020&mdash;now</p>
 					<h3 class={style.title}>I joined as a frontend developer.</h3>
+					
+					<p class={style.description}>
+						I've worked on various projects as a Frontend Developer or even as a Design consultant.
+						Size of projects varied - from a small one-off project to a large ones with multiple teams.
+						I implemented new features, improved existing ones.
+						I wrote custom tools for product designers to streamline their workflow and help with client communication.
+					</p>
+
+					<p class={style.tech}>Javascript, Typescript, React, NextJS, DatoCMS, Webpack, Yarn, Eslint & Tslint, Docker, Gitlab CI/CD, Jira, Confluence</p>
 
 					<a class={style.location} target="_blank" rel="noreferrer" href="http://netguru.com">@Netguru <span>(http://netguru.com)</span></a>
 				</li>
@@ -327,13 +336,12 @@ const About = () => (
 				<li class={style.expert}>macOS</li>
 				<li class={style.advanced}>UNIX</li>
 				<li class={style.advanced}>Windows</li>
-				<li class={style.advanced}>bootloaders & custom kext patching, vbios modding, hackintoshing. yeah.</li>
+				<li class={style.advanced}>bootloaders & custom kext patching, vbios modding, hackintoshing</li>
 				<li class={style.intermediate}>emulation & virtualisation</li>
 				<li class={style.learning}>docker & containers in general. I'm not going for Devops, but it's useful when running AI packages.</li>
 			</ul>
 			<ul class={style.skills}>
 				<h3>web stack</h3>
-				{"<!-- <li class={style.expert}>SASS (with BEM)</li> -->"}
 				<li class={style.advanced}>styled components</li>
 				<li class={style.advanced}>Webpack</li>
 				<li class={style.advanced}>React/Preact</li>
@@ -348,7 +356,6 @@ const About = () => (
 			</ul>
 			<ul class={style.skills}>
 				<h3>code</h3>
-				{"<!-- <li class={cn(style.advanced, style.butwhytho)}>PHP 7</li> -->"}
 				<li class={style.advanced}>bash/zsh</li>
 				<li class={style.intermediate}>Python</li>
 				<li class={style.basic}>Golang</li>
@@ -359,7 +366,7 @@ const About = () => (
 			<ul class={style.skills}>
 				<h3>project & engineering</h3>
 				<li class={style.advanced}>Pen & Paper</li>
-				<li class={style.advanced}>Git, Mercurial. I even used SVN and didn't delete project by mistake - that's advanced for you.</li>
+				<li class={style.advanced}>Git, Mercurial. I even used SVN and didn't delete project by mistake</li>
 				<li class={style.advanced}>Agile, Scrum, Kanban</li>
 				<li class={style.advanced}>Github, Gitlab, Bitbucket,</li>
 				<li class={style.intermediate}>Figma, Invision, Sketch, Zeplin</li>

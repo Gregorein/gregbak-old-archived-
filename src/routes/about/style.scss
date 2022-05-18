@@ -325,9 +325,6 @@
 				}
 			}
 		}
-		ul.skills li {
-			height: 13px;
-		}
 	}
 }
 @media (max-width: $tablet) {
@@ -406,7 +403,6 @@
 			}
 
 			li {
-				height: 13px;
 				font-size: 18px;
 
 				&::before {
